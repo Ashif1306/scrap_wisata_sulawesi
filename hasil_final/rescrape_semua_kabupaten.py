@@ -4,7 +4,8 @@ SCRIPT: Koreksi Kabupaten Seluruh Data Wisata Sulawesi
 =================================================================
 Strategi Multi-Level:
   Level 1: Nominatim reverse geocoding (dari koordinat lat/long)
-  Level 2: Playwright Google Maps (dari place_id) — fallback
+  Level 2: Playwright Google Maps (dari place_id)
+  Level 3: DuckDuckGo search (dari nama wisata)
 
 Fitur:
   - Auto-resume jika terputus
@@ -26,6 +27,7 @@ import signal
 import json
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
+from ddgs import DDGS
 
 # ── KONFIGURASI ──────────────────────────────────────
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -325,24 +327,160 @@ def phase_playwright(df, already_done, fixes):
     return fixes
 
 
+# ── LEVEL 3: DUCKDUCKGO SEARCH ───────────────────────
+
+def extract_kab_from_text(text):
+    """Ekstrak kabupaten/kota dari teks hasil pencarian."""
+    if not text:
+        return None
+    # Cari pattern Kabupaten/Kota diikuti nama
+    matches = re.findall(
+        r'(Kabupaten\s+[A-Z][\w\s\-\']+|Kota\s+[A-Z][\w\s\-\']+)',
+        text
+    )
+    if matches:
+        # Ambil yang paling sering muncul
+        from collections import Counter
+        counts = Counter()
+        for m in matches:
+            clean = m.strip()
+            # Buang jika cuma "Kabupaten" atau "Kota" tanpa nama
+            if len(clean.split()) >= 2:
+                # Bersihkan trailing provinsi
+                for p in PROVINSI_LIST:
+                    clean = clean.replace(p, '').strip()
+                clean = re.sub(r'\s+\d{5}$', '', clean).strip()
+                if len(clean.split()) >= 2:
+                    counts[clean] += 1
+        if counts:
+            return counts.most_common(1)[0][0]
+    return None
+
+
+def phase_ddgs(df, already_done, fixes):
+    """
+    Phase 3: Untuk entry yang Nominatim & Playwright gagal,
+    cari info kabupaten via DuckDuckGo search.
+    Query: "nama_wisata kabupaten Sulawesi"
+    """
+    global shutdown_flag
+
+    fixed_indices = {f['idx'] for f in fixes}
+    unfixed = [i for i in already_done if i not in fixed_indices]
+
+    # Load Playwright done list
+    pw_done = set()
+    ddgs_done_key = 'ddgs_done'
+    ddgs_done = set()
+    if os.path.exists(PROGRESS_FILE):
+        try:
+            with open(PROGRESS_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            pw_done = set(data.get('pw_done', []))
+            ddgs_done = set(data.get(ddgs_done_key, []))
+        except Exception:
+            pass
+
+    # Hanya proses yang Playwright juga sudah gagal & belum dicoba DDGS
+    candidates = [i for i in unfixed if i in pw_done and i not in ddgs_done]
+
+    if not candidates:
+        print("  Tidak ada entry untuk Phase 3.")
+        return fixes
+
+    print(f"  Mencari kabupaten via DuckDuckGo: {len(candidates)} entry")
+
+    ddgs_client = DDGS()
+
+    for count, idx in enumerate(candidates):
+        if shutdown_flag:
+            break
+
+        row = df.iloc[idx]
+        old_kab = str(row['kabupaten'])
+        nama = str(row['nama_wisata'])
+        prov = str(row['provinsi'])
+
+        query = f"{nama} kabupaten {prov}"
+
+        try:
+            results = ddgs_client.text(query, max_results=5)
+            combined_text = ""
+            for r in results:
+                combined_text += f" {r.get('title', '')} {r.get('body', '')}"
+
+            new_kab = extract_kab_from_text(combined_text)
+
+            if new_kab and normalize_kab(new_kab) != normalize_kab(old_kab):
+                fixes.append({
+                    'idx': idx,
+                    'nama': nama,
+                    'old_kab': old_kab,
+                    'new_kab': new_kab,
+                    'method': 'ddgs'
+                })
+                print(f"  [DDGS-FIX] {nama}: {old_kab} -> {new_kab}")
+        except Exception as e:
+            print(f"  [DDGS-ERR] {nama}: {e}")
+
+        ddgs_done.add(idx)
+
+        # Auto-save setiap 10
+        if (count + 1) % 10 == 0 or shutdown_flag:
+            with open(PROGRESS_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            data[ddgs_done_key] = list(ddgs_done)
+            data['fixes'] = fixes
+            with open(PROGRESS_FILE, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            print(f"  [DDGS-SAVE] {count+1}/{len(candidates)}")
+
+        time.sleep(0.5)
+
+    # Final save
+    try:
+        with open(PROGRESS_FILE, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        data[ddgs_done_key] = list(ddgs_done)
+        data['fixes'] = fixes
+        with open(PROGRESS_FILE, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+    except Exception:
+        pass
+
+    return fixes
+
+
 # ── APPLY FIXES & SAVE ──────────────────────────────
 
 def apply_and_save(df, fixes):
     """Terapkan semua fixes ke dataframe dan simpan."""
     change_count = 0
+    by_method = {}
     for fix in fixes:
         idx = fix['idx']
         df.at[idx, 'kabupaten'] = fix['new_kab']
         if 'new_alamat' in fix:
             df.at[idx, 'alamat'] = fix['new_alamat']
         change_count += 1
+        method = fix.get('method', 'unknown')
+        by_method[method] = by_method.get(method, 0) + 1
 
     df.to_csv(OUTPUT_FILE, index=False, encoding='utf-8-sig')
     print(f"\n{'='*60}")
     print(f"SELESAI!")
     print(f"Total kabupaten diperbaiki: {change_count}")
+    for method, cnt in by_method.items():
+        print(f"  - {method}: {cnt}")
     print(f"File disimpan: {OUTPUT_FILE}")
     print(f"{'='*60}")
+
+    # Laporan entry yang tidak berhasil diperbaiki
+    fixed_indices = {f['idx'] for f in fixes}
+    unresolved = [i for i in range(len(df)) if i not in fixed_indices]
+    # Ini bukan masalah — artinya kabupaten-nya sudah benar dari awal
+    # Tapi kita log yang Nominatim tidak bisa resolve untuk referensi
+    print(f"\nEntry yang kabupaten-nya TETAP (sudah benar / tidak bisa diverifikasi): {len(unresolved)}")
 
 
 # ── MAIN ─────────────────────────────────────────────
@@ -352,7 +490,7 @@ def main():
 
     print("=" * 60)
     print("KOREKSI KABUPATEN SELURUH DATA WISATA SULAWESI")
-    print("Strategi: Nominatim (koordinat) -> Playwright (Google Maps)")
+    print("Strategi: Nominatim -> Playwright -> Alamat Fallback")
     print("=" * 60)
 
     df = pd.read_csv(INPUT_FILE)
@@ -365,7 +503,7 @@ def main():
         print(f"Resume: {len(already_done)} sudah diproses, {len(fixes)} fixes.")
 
     # ── PHASE 1: NOMINATIM ───────────────
-    print("\n--- PHASE 1: Nominatim Reverse Geocoding ---")
+    print("\n--- PHASE 1: Nominatim Reverse Geocoding (dari koordinat) ---")
     already_done, fixes = phase_nominatim(df, already_done, fixes)
 
     if shutdown_flag:
@@ -374,8 +512,17 @@ def main():
         return
 
     # ── PHASE 2: PLAYWRIGHT ──────────────
-    print("\n--- PHASE 2: Playwright Google Maps ---")
+    print("\n--- PHASE 2: Playwright Google Maps (dari place_id) ---")
     fixes = phase_playwright(df, already_done, fixes)
+
+    if shutdown_flag:
+        print(f"\nDihentikan. Progress tersimpan.")
+        print("Jalankan ulang untuk melanjutkan.")
+        return
+
+    # ── PHASE 3: DUCKDUCKGO ──────────────
+    print("\n--- PHASE 3: DuckDuckGo Search (dari nama wisata) ---")
+    fixes = phase_ddgs(df, already_done, fixes)
 
     if shutdown_flag:
         print(f"\nDihentikan. Progress tersimpan.")
