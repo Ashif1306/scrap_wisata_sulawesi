@@ -1,0 +1,316 @@
+09:32:21 | INFO    | Memulai Scraper Ulasan Google Maps
+09:32:21 | INFO    | Total data wisata: 2708. Sudah diproses: 0
+09:32:23 | INFO    | Scraping ulasan selesai!
+09:35:12 | INFO    | Memulai Scraper Ulasan Google Maps
+09:35:12 | INFO    | Total data wisata: 2708. Sudah diproses: 0
+09:35:14 | INFO    | [1/2708] Scraping ulasan: Losari Beach Platform
+09:35:33 | ERROR   |   -> Gagal memproses Losari Beach Platform: Timeout 15000ms exceeded.
+09:35:33 | INFO    | [2/2708] Scraping ulasan: Benteng Rotterdam
+09:35:49 | ERROR   |   -> Gagal memproses Benteng Rotterdam: Timeout 15000ms exceeded.
+09:35:49 | INFO    | [3/2708] Scraping ulasan: Taman Nasional Bantimurung Bulusaraung
+09:38:48 | INFO    | ==================================================
+09:38:48 | INFO    | Memulai Scraper Ulasan Wisata
+09:38:48 | INFO    | ==================================================
+09:38:48 | INFO    | Total wisata: 2708 | Eligible (>10 ulasan): 2043 | Sudah diproses: 0
+09:38:49 | INFO    | [1/2708] [17574 ulasan] Losari Beach Platform
+09:39:02 | WARNING |   -> Tab ulasan tidak ditemukan, skip.
+09:39:02 | INFO    | [2/2708] [14273 ulasan] Benteng Rotterdam
+09:39:44 | INFO    |   -> OK: 10 ulasan tersimpan.
+09:39:44 | INFO    | [3/2708] [12283 ulasan] Taman Nasional Bantimurung Bulusaraung
+09:40:25 | INFO    |   -> OK: 10 ulasan tersimpan.
+09:40:25 | INFO    | [4/2708] [6828 ulasan] Pantai Tak Berombak, PTB Maros
+09:40:39 | WARNING |   -> Tab ulasan tidak ditemukan, skip.
+09:40:39 | INFO    | [5/2708] [6780 ulasan] Tongkonan Ke'te' Kesu'
+09:41:20 | INFO    |   -> OK: 10 ulasan tersimpan.
+09:41:20 | INFO    | [6/2708] [6145 ulasan] Menara Keagungan Limboto
+09:42:01 | INFO    |   -> OK: 10 ulasan tersimpan.
+09:42:01 | INFO    | [7/2708] [5922 ulasan] Taman Pakui Sayang
+09:42:41 | INFO    |   -> OK: 10 ulasan tersimpan.
+09:42:41 | INFO    | [8/2708] [5833 ulasan] Masjid Raya Makassar
+09:43:40 | WARNING | 
+[!] Dihentikan manual. Menyimpan progress...
+09:43:40 | INFO    | Progress disimpan ke 'resume_ulasan.json'. Jalankan ulang untuk melanjutkan.
+09:43:49 | ERROR   | Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed
+09:43:49 | ERROR   | Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed
+09:49:55 | INFO    | ==================================================
+09:49:55 | INFO    | Memulai Scraper Ulasan Wisata
+09:49:55 | INFO    | ==================================================
+09:49:55 | INFO    | Resume dari CSV: 5 wisata sudah punya ulasan.
+09:49:55 | INFO    | Resume dari JSON (Skip List) dimatikan sementara agar bisa retry.
+09:49:55 | INFO    | Total: 2708 | Eligible: 2043 | Sisa belum diproses: 2038
+09:49:56 | INFO    | [1/2708] [17574 ulasan] Losari Beach Platform
+09:50:10 | WARNING |   -> Tab ulasan tidak ditemukan, coba retry di sesi selanjutnya.
+09:50:10 | INFO    | [4/2708] [6828 ulasan] Pantai Tak Berombak, PTB Maros
+09:50:23 | WARNING |   -> Tab ulasan tidak ditemukan, coba retry di sesi selanjutnya.
+09:50:23 | INFO    | [8/2708] [5833 ulasan] Masjid Raya Makassar
+09:58:06 | INFO    |   -> Tersimpan: 6 ulasan.
+09:58:06 | INFO    | [9/2708] [5432 ulasan] Taman Vatulemo
+09:58:47 | INFO    |   -> Tersimpan: 10 ulasan.
+09:58:47 | INFO    | [10/2708] [4886 ulasan] Monumen Cinta Sejati Habibie-Ainun
+09:59:29 | INFO    |   -> Tersimpan: 10 ulasan.
+09:59:29 | INFO    | [11/2708] [4873 ulasan] Pantai Losari
+10:00:09 | INFO    |   -> Tersimpan: 10 ulasan.
+10:00:09 | INFO    | [12/2708] [4698 ulasan] Tribun Pantai Seruni
+10:00:48 | INFO    |   -> Tersimpan: 10 ulasan.
+10:00:48 | INFO    | [13/2708] [4694 ulasan] Bugis Waterpark Adventure
+10:01:29 | INFO    |   -> Tersimpan: 10 ulasan.
+10:01:29 | INFO    | [14/2708] [4614 ulasan] Taman Kalong Watansoppeng
+10:02:08 | INFO    |   -> Tersimpan: 10 ulasan.
+10:02:08 | INFO    | [15/2708] [4347 ulasan] Patung Tuhan Yesus Memberkati
+10:02:49 | INFO    |   -> Tersimpan: 10 ulasan.
+10:02:49 | INFO    | [16/2708] [4226 ulasan] Pantai Losari
+10:03:30 | INFO    |   -> Tersimpan: 10 ulasan.
+10:03:30 | INFO    | [17/2708] [4065 ulasan] Tugu Zero Point
+10:04:08 | INFO    |   -> Tersimpan: 10 ulasan.
+10:04:08 | INFO    | [18/2708] [4062 ulasan] Cinta Souvenir Bantimurung
+10:04:49 | INFO    |   -> Tersimpan: 10 ulasan.
+10:04:49 | INFO    | [19/2708] [3927 ulasan] Lolai - To' Tombi, Negeri di atas awan
+10:05:31 | INFO    |   -> Tersimpan: 10 ulasan.
+10:05:31 | INFO    | [20/2708] [3677 ulasan] Pantai Bira Pasir Putih
+10:06:13 | INFO    |   -> Tersimpan: 10 ulasan.
+10:06:13 | INFO    | [21/2708] [3507 ulasan] Taman Gor
+10:06:52 | INFO    |   -> Tersimpan: 10 ulasan.
+10:06:52 | INFO    | [22/2708] [3387 ulasan] Lolai Tongkonan Lempe
+10:07:35 | INFO    |   -> Tersimpan: 10 ulasan.
+10:07:35 | INFO    | [23/2708] [3338 ulasan] Monumen Yesus Memberkati
+10:08:15 | INFO    |   -> Tersimpan: 10 ulasan.
+10:08:15 | INFO    | [24/2708] [3295 ulasan] Wisata Kebun Gowa
+10:15:57 | INFO    |   -> Tersimpan: 8 ulasan.
+10:15:57 | INFO    | [25/2708] [3197 ulasan] Taman Nasional Bunaken
+10:16:37 | INFO    |   -> Tersimpan: 10 ulasan.
+10:16:37 | INFO    | [26/2708] [3167 ulasan] Taman Kota Kendari
+10:17:15 | INFO    |   -> Tersimpan: 10 ulasan.
+10:17:15 | INFO    | [27/2708] [3012 ulasan] Malino highlands
+10:25:07 | INFO    |   -> Tersimpan: 0 ulasan.
+10:25:07 | INFO    | [28/2708] [2868 ulasan] Pantai Akkarena
+10:25:47 | INFO    |   -> Tersimpan: 10 ulasan.
+10:25:47 | INFO    | [29/2708] [2669 ulasan] Taman Macan
+10:26:28 | INFO    |   -> Tersimpan: 10 ulasan.
+10:26:28 | INFO    | [30/2708] [2613 ulasan] Kampoeng Karst Rammang Rammang
+10:27:10 | INFO    |   -> Tersimpan: 10 ulasan.
+10:27:10 | INFO    | [31/2708] [2582 ulasan] Lasinrang Park
+10:27:50 | INFO    |   -> Tersimpan: 10 ulasan.
+10:27:50 | INFO    | [32/2708] [2527 ulasan] Tebing Apparalang
+10:28:31 | INFO    |   -> Tersimpan: 10 ulasan.
+10:28:31 | INFO    | [33/2708] [2431 ulasan] Taman Nasional Bantimurung Bulusaraung
+10:29:11 | INFO    |   -> Tersimpan: 10 ulasan.
+10:29:11 | INFO    | [34/2708] [2390 ulasan] Masjid Kubah 99
+10:29:53 | INFO    |   -> Tersimpan: 10 ulasan.
+10:29:53 | INFO    | [35/2708] [2362 ulasan] Taman Musafir
+10:30:31 | INFO    |   -> Tersimpan: 10 ulasan.
+10:30:31 | INFO    | [36/2708] [2356 ulasan] Taman Arkeologi Leang Leang
+10:31:13 | INFO    |   -> Tersimpan: 10 ulasan.
+10:31:13 | INFO    | [37/2708] [2314 ulasan] Tonrangeng Riverside
+10:31:53 | INFO    |   -> Tersimpan: 10 ulasan.
+10:31:53 | INFO    | [38/2708] [2279 ulasan] Taman Wisata Alam Lejja
+10:32:32 | INFO    |   -> Tersimpan: 10 ulasan.
+10:32:32 | INFO    | [39/2708] [2275 ulasan] Space iklan 5x10. Anjungan Pantai Manakarra
+10:33:13 | INFO    |   -> Tersimpan: 10 ulasan.
+10:33:13 | INFO    | [40/2708] [2261 ulasan] Pantai Paal
+10:33:51 | INFO    |   -> Tersimpan: 10 ulasan.
+10:33:51 | INFO    | [41/2708] [2257 ulasan] Masjid Al Markaz Al Islami Maros
+10:34:32 | INFO    |   -> Tersimpan: 10 ulasan.
+10:34:32 | INFO    | [42/2708] [2241 ulasan] Museum Balla Lompoa
+10:35:13 | INFO    |   -> Tersimpan: 10 ulasan.
+10:35:13 | INFO    | [43/2708] [2149 ulasan] Londa Ancient Graveyard
+10:35:54 | INFO    |   -> Tersimpan: 10 ulasan.
+10:35:54 | INFO    | [44/2708] [2146 ulasan] Taman Nasional Wakatobi
+10:36:33 | INFO    |   -> Tersimpan: 10 ulasan.
+10:36:33 | INFO    | [45/2708] [2146 ulasan] Pelabuhan Paotere
+10:37:14 | INFO    |   -> Tersimpan: 10 ulasan.
+10:37:14 | INFO    | [46/2708] [2099 ulasan] Pantai Tanjung Bira
+10:37:53 | INFO    |   -> Tersimpan: 10 ulasan.
+10:37:53 | INFO    | [47/2708] [2099 ulasan] Air Terjun Takapala
+10:38:35 | INFO    |   -> Tersimpan: 10 ulasan.
+10:38:35 | INFO    | [48/2708] [2037 ulasan] Benteng Otanaha
+10:39:16 | INFO    |   -> Tersimpan: 10 ulasan.
+10:39:16 | INFO    | [49/2708] [1986 ulasan] Taman Mattirotasi
+10:39:56 | INFO    |   -> Tersimpan: 10 ulasan.
+10:39:56 | INFO    | [50/2708] [1973 ulasan] Wisata Bahari Seafood Restaurant
+10:40:02 | INFO    |   -> Tersimpan: 0 ulasan.
+10:40:02 | INFO    | [51/2708] [1952 ulasan] Rumah Alam Manado Adventure Park
+10:40:42 | INFO    |   -> Tersimpan: 10 ulasan.
+10:40:42 | INFO    | [52/2708] [1830 ulasan] Alun Alun Kota Polewali
+10:41:22 | INFO    |   -> Tersimpan: 10 ulasan.
+10:41:22 | INFO    | [53/2708] [1809 ulasan] Wisata Pantai Topejawa
+10:42:04 | INFO    |   -> Tersimpan: 10 ulasan.
+10:42:04 | INFO    | [54/2708] [1770 ulasan] Masjid Agung Baiturrahim Gorontalo
+10:42:45 | INFO    |   -> Tersimpan: 10 ulasan.
+10:42:45 | INFO    | [55/2708] [1744 ulasan] Titik Nol KM Sulsel
+10:43:27 | INFO    |   -> Tersimpan: 10 ulasan.
+10:43:27 | INFO    | [56/2708] [1685 ulasan] Pantai Pohon Cinta
+10:44:07 | INFO    |   -> Tersimpan: 10 ulasan.
+10:44:07 | INFO    | [57/2708] [1662 ulasan] Benteng Keraton Kesultanan Buton (Negeri Khalifatul Khamis)
+10:44:49 | INFO    |   -> Tersimpan: 10 ulasan.
+10:44:49 | INFO    | [58/2708] [1657 ulasan] Taman Berkat (GODBLESS PARK) Manado
+10:45:27 | INFO    |   -> Tersimpan: 10 ulasan.
+10:45:27 | INFO    | [59/2708] [1647 ulasan] Pantai Kilo 5
+10:46:06 | INFO    |   -> Tersimpan: 10 ulasan.
+10:46:06 | INFO    | [60/2708] [1619 ulasan] Wisata Pantai Bintang Galesong
+10:46:43 | INFO    |   -> Tersimpan: 10 ulasan.
+10:46:43 | INFO    | [61/2708] [1614 ulasan] Bukit Kasih Kanonang
+10:47:25 | INFO    |   -> Tersimpan: 10 ulasan.
+10:47:25 | INFO    | [62/2708] [1547 ulasan] Kurenai Beach Resort
+10:48:07 | INFO    |   -> Tersimpan: 10 ulasan.
+10:48:07 | INFO    | [63/2708] [1531 ulasan] Paputo Beach
+10:48:46 | INFO    |   -> Tersimpan: 10 ulasan.
+10:48:46 | INFO    | [64/2708] [1514 ulasan] Danau Perintis
+10:49:27 | INFO    |   -> Tersimpan: 10 ulasan.
+10:49:27 | INFO    | [65/2708] [1502 ulasan] Pantai Malalayang
+10:50:38 | INFO    |   -> Tersimpan: 10 ulasan.
+10:50:38 | INFO    | [66/2708] [1500 ulasan] Kendari Beach
+10:51:20 | INFO    |   -> Tersimpan: 10 ulasan.
+10:51:20 | INFO    | [67/2708] [1497 ulasan] Makatete Hills
+10:52:03 | INFO    |   -> Tersimpan: 10 ulasan.
+10:52:03 | INFO    | [68/2708] [1490 ulasan] Pantai Kilo Lima
+10:52:42 | INFO    |   -> Tersimpan: 10 ulasan.
+10:52:42 | INFO    | [69/2708] [1486 ulasan] Dermaga I Rammang-Rammang
+10:53:23 | INFO    |   -> Tersimpan: 10 ulasan.
+10:53:23 | INFO    | [70/2708] [1482 ulasan] Taman Wisata Puncak Bila Sidrap
+10:54:04 | INFO    |   -> Tersimpan: 10 ulasan.
+10:54:04 | INFO    | [71/2708] [1481 ulasan] Pantai Tanjung Karang
+10:54:44 | INFO    |   -> Tersimpan: 10 ulasan.
+10:54:44 | INFO    | [72/2708] [1478 ulasan] Dermaga Dua Rammang Rammang
+10:55:27 | INFO    |   -> Tersimpan: 10 ulasan.
+10:55:27 | INFO    | [73/2708] [1463 ulasan] pantai kamali
+10:56:07 | INFO    |   -> Tersimpan: 10 ulasan.
+10:56:07 | INFO    | [74/2708] [1393 ulasan] Taman Hutan Kota Palu
+10:56:45 | INFO    |   -> Tersimpan: 10 ulasan.
+10:56:45 | INFO    | [75/2708] [1345 ulasan] Sierra Sky View
+10:57:26 | INFO    |   -> Tersimpan: 10 ulasan.
+10:57:26 | INFO    | [76/2708] [1337 ulasan] Wisata Hiu Paus Botubarani Gorontalo
+11:05:09 | INFO    |   -> Tersimpan: 2 ulasan.
+11:05:09 | INFO    | [77/2708] [1323 ulasan] Pulau Wisata Bokori
+11:05:49 | INFO    |   -> Tersimpan: 10 ulasan.
+11:05:49 | INFO    | [78/2708] [1307 ulasan] Pantai Ide
+11:06:31 | INFO    |   -> Tersimpan: 10 ulasan.
+11:06:31 | INFO    | [79/2708] [1271 ulasan] Pantai Biru
+11:07:13 | INFO    |   -> Tersimpan: 10 ulasan.
+11:07:13 | INFO    | [80/2708] [1236 ulasan] Taman dan Pantai Bahari Polewali
+11:07:55 | INFO    |   -> Tersimpan: 10 ulasan.
+11:07:55 | INFO    | [81/2708] [1207 ulasan] Samalona island
+11:08:35 | INFO    |   -> Tersimpan: 10 ulasan.
+11:08:35 | INFO    | [82/2708] [1201 ulasan] Kebun Raya Kendari
+11:09:17 | INFO    |   -> Tersimpan: 10 ulasan.
+11:09:17 | INFO    | [83/2708] [1196 ulasan] Kebun Denassa (Denassa Botanical Garden)
+11:09:56 | INFO    |   -> Tersimpan: 10 ulasan.
+11:09:56 | INFO    | [84/2708] [1181 ulasan] Pantai Nirwana
+11:10:34 | INFO    |   -> Tersimpan: 10 ulasan.
+11:10:34 | INFO    | [85/2708] [1178 ulasan] Danau Biru Kolaka Utara
+11:11:16 | INFO    |   -> Tersimpan: 10 ulasan.
+11:11:16 | INFO    | [86/2708] [1178 ulasan] Objek Wisata Rante Kalimbuang Bori'
+11:18:59 | INFO    |   -> Tersimpan: 9 ulasan.
+11:18:59 | INFO    | [87/2708] [1169 ulasan] Pantai Tanjung Bira
+11:19:41 | INFO    |   -> Tersimpan: 10 ulasan.
+11:19:41 | INFO    | [88/2708] [1159 ulasan] Masjid Jami Tua Palopo
+11:20:22 | INFO    |   -> Tersimpan: 10 ulasan.
+11:20:22 | INFO    | [89/2708] [1159 ulasan] Tuur Ma'asering Kumelembuai Tomohon
+11:28:07 | INFO    |   -> Tersimpan: 5 ulasan.
+11:28:07 | INFO    | [90/2708] [1157 ulasan] Benteng Ulanta
+11:28:47 | INFO    |   -> Tersimpan: 10 ulasan.
+11:28:47 | INFO    | [91/2708] [1153 ulasan] Gong Perdamaian
+11:36:29 | INFO    |   -> Tersimpan: 9 ulasan.
+11:36:29 | INFO    | [92/2708] [1140 ulasan] Taman Bambu Runcing
+11:37:07 | INFO    |   -> Tersimpan: 10 ulasan.
+11:37:07 | INFO    | [93/2708] [1137 ulasan] Pantai Tamborasi
+11:37:23 | WARNING | 
+[!] Dihentikan manual. Progress sudah tersimpan di CSV.
+11:37:23 | INFO    | Jalankan ulang untuk melanjutkan dari wisata yang belum diproses.
+11:53:41 | INFO    | ==================================================
+11:53:41 | INFO    | Memulai Scraper Ulasan Wisata
+11:53:41 | INFO    | ==================================================
+11:53:41 | INFO    | Resume dari CSV: 88 wisata sudah punya ulasan.
+11:53:41 | INFO    | Resume dari JSON (Skip List) dimatikan sementara agar bisa retry.
+11:53:41 | INFO    | Total: 2708 | Eligible: 2043 | Sisa belum diproses: 1955
+11:53:55 | INFO    | [1/2708] [17574 ulasan] Losari Beach Platform
+11:54:12 | WARNING |   -> Tab ulasan tidak ditemukan, coba retry di sesi selanjutnya.
+11:54:12 | INFO    | [4/2708] [6828 ulasan] Pantai Tak Berombak, PTB Maros
+11:54:26 | WARNING |   -> Tab ulasan tidak ditemukan, coba retry di sesi selanjutnya.
+11:54:26 | INFO    | [27/2708] [3012 ulasan] Malino highlands
+12:02:20 | INFO    |   -> Tersimpan: 0 ulasan.
+12:02:20 | INFO    | [50/2708] [1973 ulasan] Wisata Bahari Seafood Restaurant
+12:02:26 | INFO    |   -> Tersimpan: 0 ulasan.
+12:02:26 | INFO    | [93/2708] [1137 ulasan] Pantai Tamborasi
+12:03:07 | INFO    |   -> Tersimpan: 10 ulasan.
+12:03:07 | INFO    | [94/2708] [1125 ulasan] Pantai Dato Majene
+12:03:48 | INFO    |   -> Tersimpan: 10 ulasan.
+12:03:48 | INFO    | [95/2708] [1109 ulasan] Hutan Mangrove Tongke-tongke
+12:04:28 | INFO    |   -> Tersimpan: 10 ulasan.
+12:04:28 | INFO    | [96/2708] [1096 ulasan] GPI Waterpark
+12:05:08 | INFO    |   -> Tersimpan: 10 ulasan.
+12:05:08 | INFO    | [97/2708] [1080 ulasan] Kebun Raya Jompie Kota Parepare
+12:05:52 | INFO    |   -> Tersimpan: 10 ulasan.
+12:05:52 | INFO    | [98/2708] [1074 ulasan] Taman Wisata Tangga 2000
+12:06:41 | INFO    |   -> Tersimpan: 10 ulasan.
+12:06:41 | INFO    | [99/2708] [1073 ulasan] Wisata Kuliner Kab.Kolaka
+12:06:50 | INFO    |   -> Tersimpan: 0 ulasan.
+12:06:50 | INFO    | [100/2708] [1071 ulasan] Menara Alfa Omega
+12:06:58 | INFO    |   -> Tersimpan: 0 ulasan.
+12:06:58 | INFO    | [101/2708] [1071 ulasan] Pantai Harapan Ammani
+12:07:06 | INFO    |   -> Tersimpan: 0 ulasan.
+12:07:06 | INFO    | [102/2708] [1050 ulasan] CitraLand WaterPark Manado
+12:07:15 | INFO    |   -> Tersimpan: 0 ulasan.
+12:07:15 | INFO    | [103/2708] [1045 ulasan] Pango-Pango Makale
+12:07:24 | INFO    |   -> Tersimpan: 0 ulasan.
+12:07:24 | INFO    | [104/2708] [1043 ulasan] Dante Pine
+12:07:33 | INFO    |   -> Tersimpan: 0 ulasan.
+12:07:33 | INFO    | [105/2708] [1038 ulasan] Bukit Keles
+12:07:42 | INFO    |   -> Tersimpan: 0 ulasan.
+12:07:42 | INFO    | [106/2708] [1030 ulasan] CitraLand Waterpark
+12:07:50 | INFO    |   -> Tersimpan: 0 ulasan.
+12:07:50 | INFO    | [107/2708] [1021 ulasan] Bukit Doa Mahawu
+12:08:35 | INFO    |   -> Tersimpan: 10 ulasan.
+12:08:35 | INFO    | [108/2708] [1017 ulasan] Tugu Adipura
+12:09:27 | INFO    |   -> Tersimpan: 10 ulasan.
+12:09:27 | INFO    | [109/2708] [1006 ulasan] Tanjung Pallette
+12:10:26 | INFO    |   -> Tersimpan: 10 ulasan.
+12:10:26 | INFO    | [110/2708] [993 ulasan] Benteng Somba Opu
+12:11:09 | INFO    |   -> Tersimpan: 10 ulasan.
+12:11:09 | INFO    | [111/2708] [972 ulasan] Monumen Patung Lakipadada
+12:11:51 | INFO    |   -> Tersimpan: 10 ulasan.
+12:11:51 | INFO    | [112/2708] [967 ulasan] Pantai Kampung Nelayan
+12:19:33 | INFO    |   -> Tersimpan: 9 ulasan.
+12:19:33 | INFO    | [113/2708] [920 ulasan] Monumen B.J. Habibie
+12:20:14 | INFO    |   -> Tersimpan: 10 ulasan.
+12:20:14 | INFO    | [114/2708] [909 ulasan] Monumen Mandala Pembebasan Irian Barat
+12:27:59 | INFO    |   -> Tersimpan: 9 ulasan.
+12:27:59 | INFO    | [115/2708] [905 ulasan] Lappa Laona
+12:28:42 | INFO    |   -> Tersimpan: 10 ulasan.
+12:28:42 | INFO    | [116/2708] [904 ulasan] Danau Linow
+12:29:23 | INFO    |   -> Tersimpan: 10 ulasan.
+12:29:23 | INFO    | [117/2708] [876 ulasan] Pantai Topejawa Takalar
+12:30:03 | INFO    |   -> Tersimpan: 10 ulasan.
+12:30:03 | INFO    | [118/2708] [871 ulasan] Wisata Bahari Kawasan Megamas
+12:30:43 | INFO    |   -> Tersimpan: 10 ulasan.
+12:30:43 | INFO    | [119/2708] [869 ulasan] Pantai Lumpue
+12:31:23 | INFO    |   -> Tersimpan: 10 ulasan.
+12:31:23 | INFO    | [120/2708] [866 ulasan] Taman Laut Olele
+12:39:09 | INFO    |   -> Tersimpan: 6 ulasan.
+12:39:09 | INFO    | [121/2708] [855 ulasan] WISATA TAMENDAO BEACH
+12:39:53 | INFO    |   -> Tersimpan: 10 ulasan.
+12:39:53 | INFO    | [122/2708] [855 ulasan] Permandian Lereng Hijau Bulu Dua
+12:40:34 | INFO    |   -> Tersimpan: 10 ulasan.
+12:40:34 | INFO    | [123/2708] [854 ulasan] Danau Paisu Pok Luk Panenteng
+12:41:17 | INFO    |   -> Tersimpan: 10 ulasan.
+12:41:17 | INFO    | [124/2708] [828 ulasan] Puncak Tetetana Suluan
+12:42:00 | INFO    |   -> Tersimpan: 10 ulasan.
+12:42:00 | INFO    | [125/2708] [828 ulasan] Pantai Toronipa
+12:42:40 | INFO    |   -> Tersimpan: 10 ulasan.
+12:42:40 | INFO    | [126/2708] [811 ulasan] Taman Purbakala Sumpang Bita
+12:43:24 | INFO    |   -> Tersimpan: 10 ulasan.
+12:43:24 | INFO    | [127/2708] [807 ulasan] Air Terjun Saluopa
+12:44:05 | INFO    |   -> Tersimpan: 10 ulasan.
+12:44:05 | INFO    | [128/2708] [788 ulasan] Taman Teratai
+12:44:46 | INFO    |   -> Tersimpan: 10 ulasan.
+12:44:46 | INFO    | [129/2708] [786 ulasan] RM Bahari
+12:44:53 | INFO    |   -> Tersimpan: 0 ulasan.
+12:44:53 | INFO    | [130/2708] [786 ulasan] Pantai Indah Bosowa
+12:45:35 | INFO    |   -> Tersimpan: 10 ulasan.
+12:45:35 | INFO    | [131/2708] [783 ulasan] Pantai Botutonuo
+12:50:15 | WARNING | 
+[!] Dihentikan manual. Progress sudah tersimpan di CSV.
+12:50:15 | INFO    | Jalankan ulang untuk melanjutkan dari wisata yang belum diproses.

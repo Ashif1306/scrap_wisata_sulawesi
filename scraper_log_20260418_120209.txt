@@ -1,0 +1,1109 @@
+12:02:09 [INFO] =================================================================
+12:02:09 [INFO]   SCRAPER WISATA SULAWESI v4 – Provinsi → Kab/Kota → Keyword
+12:02:09 [INFO]   Mulai   : 2026-04-18 12:02:09
+12:02:09 [INFO]   Output  : wisata_sulawesi_20260418_120209.csv
+12:02:09 [INFO] =================================================================
+12:02:09 [INFO] 
+═════════════════════════════════════════════════════════════════
+12:02:09 [INFO]   PROVINSI [1/6]: Sulawesi Selatan (24 kab/kota)
+12:02:09 [INFO] ═════════════════════════════════════════════════════════════════
+12:02:09 [INFO] 
+  ── Kab/Kota [1/24]: Makassar
+12:02:10 [INFO]      📍 'tempat wisata di Makassar' → +20 (total: 20)
+12:02:17 [WARNING]       ✗ API Status: DEADLINE_EXCEEDED
+12:02:20 [INFO]      📍 'air terjun di Makassar' → +14 (total: 34)
+12:02:24 [INFO]      📍 'gunung di Makassar' → +1 (total: 35)
+12:02:31 [WARNING]       ✗ API Status: DEADLINE_EXCEEDED
+12:02:38 [WARNING]       ✗ API Status: DEADLINE_EXCEEDED
+12:02:41 [INFO]      📍 'wisata alam di Makassar' → +8 (total: 43)
+12:02:44 [INFO]      📍 'wisata sejarah di Makassar' → +5 (total: 48)
+12:02:47 [INFO]      📍 'desa wisata di Makassar' → +1 (total: 49)
+12:02:50 [INFO]      📍 'wisata bahari di Makassar' → +12 (total: 61)
+12:02:54 [INFO]      📍 Nearby [Makassar] → +12 (total: 73)
+12:02:57 [INFO]      📍 Nearby wisata [Makassar] → +14 (total: 87)
+12:03:00 [INFO]      📍 Nearby pantai [Makassar] → +12 (total: 99)
+12:03:02 [INFO] 
+  ── Kab/Kota [2/24]: Gowa
+12:03:04 [INFO]      📍 'tempat wisata di Gowa' → +9 (total: 108)
+12:03:07 [INFO]      📍 'pantai di Gowa' → +3 (total: 111)
+12:03:10 [INFO]      📍 'air terjun di Gowa' → +11 (total: 122)
+12:03:13 [INFO]      📍 'gunung di Gowa' → +8 (total: 130)
+12:03:16 [INFO]      📍 'danau di Gowa' → +1 (total: 131)
+12:03:19 [INFO]      📍 'bukit di Gowa' → +11 (total: 142)
+12:03:22 [INFO]      📍 'wisata alam di Gowa' → +4 (total: 146)
+12:03:25 [INFO]      📍 'wisata sejarah di Gowa' → +4 (total: 150)
+12:03:28 [INFO]      📍 'desa wisata di Gowa' → +7 (total: 157)
+12:03:31 [INFO]      📍 'wisata bahari di Gowa' → +4 (total: 161)
+12:03:35 [INFO]      📍 Nearby [Gowa] → +14 (total: 175)
+12:03:38 [INFO]      📍 Nearby wisata [Gowa] → +6 (total: 181)
+12:03:43 [INFO] 
+  ── Kab/Kota [3/24]: Maros
+12:03:44 [INFO]      📍 'tempat wisata di Maros' → +10 (total: 191)
+12:03:47 [INFO]      📍 'pantai di Maros' → +2 (total: 193)
+12:03:50 [INFO]      📍 'air terjun di Maros' → +7 (total: 200)
+12:03:53 [INFO]      📍 'gunung di Maros' → +2 (total: 202)
+12:03:56 [INFO]      📍 'danau di Maros' → +9 (total: 211)
+12:03:59 [INFO]      📍 'bukit di Maros' → +6 (total: 217)
+12:04:02 [INFO]      📍 'wisata alam di Maros' → +8 (total: 225)
+12:04:05 [INFO]      📍 'wisata sejarah di Maros' → +2 (total: 227)
+12:04:08 [INFO]      📍 'desa wisata di Maros' → +2 (total: 229)
+12:04:11 [INFO]      📍 'wisata bahari di Maros' → +2 (total: 231)
+12:04:14 [INFO]      📍 Nearby [Maros] → +15 (total: 246)
+12:04:17 [INFO]      📍 Nearby wisata [Maros] → +4 (total: 250)
+12:04:23 [INFO] 
+  ── Kab/Kota [4/24]: Takalar
+12:04:24 [INFO]      📍 'tempat wisata di Takalar' → +18 (total: 268)
+12:04:27 [INFO]      📍 'pantai di Takalar' → +1 (total: 269)
+12:04:34 [INFO]      📍 'gunung di Takalar' → +6 (total: 275)
+12:04:38 [INFO]      📍 'danau di Takalar' → +8 (total: 283)
+12:04:42 [INFO]      📍 'bukit di Takalar' → +3 (total: 286)
+12:04:48 [INFO]      📍 'wisata alam di Takalar' → +7 (total: 293)
+12:04:51 [INFO]      📍 'wisata sejarah di Takalar' → +4 (total: 297)
+12:04:54 [INFO]      📍 'desa wisata di Takalar' → +6 (total: 303)
+12:05:00 [INFO]      📍 Nearby [Takalar] → +15 (total: 318)
+12:05:04 [INFO]      📍 Nearby wisata [Takalar] → +6 (total: 324)
+12:05:09 [INFO]      📍 Nearby pantai [Takalar] → +2 (total: 326)
+12:05:11 [INFO] 
+  ── Kab/Kota [5/24]: Pangkajene Kepulauan
+12:05:15 [INFO]      📍 'tempat wisata di Pangkajene Kepulauan' → +17 (total: 343)
+12:05:19 [INFO]      📍 'pantai di Pangkajene Kepulauan' → +4 (total: 347)
+12:05:23 [INFO]      📍 'air terjun di Pangkajene Kepulauan' → +5 (total: 352)
+12:05:26 [INFO]      📍 'gunung di Pangkajene Kepulauan' → +6 (total: 358)
+12:05:29 [INFO]      📍 'danau di Pangkajene Kepulauan' → +1 (total: 359)
+12:05:32 [INFO]      📍 'bukit di Pangkajene Kepulauan' → +1 (total: 360)
+12:05:35 [INFO]      📍 'wisata alam di Pangkajene Kepulauan' → +2 (total: 362)
+12:05:38 [INFO]      📍 'wisata sejarah di Pangkajene Kepulauan' → +6 (total: 368)
+12:05:41 [INFO]      📍 'desa wisata di Pangkajene Kepulauan' → +7 (total: 375)
+12:05:44 [INFO]      📍 'wisata bahari di Pangkajene Kepulauan' → +3 (total: 378)
+12:05:47 [INFO]      📍 Nearby [Pangkajene Kepulauan] → +13 (total: 391)
+12:05:50 [INFO]      📍 Nearby wisata [Pangkajene Kepulauan] → +3 (total: 394)
+12:05:54 [INFO]      📍 Nearby pantai [Pangkajene Kepulauan] → +1 (total: 395)
+12:05:56 [INFO] 
+  ── Kab/Kota [6/24]: Barru
+12:05:57 [INFO]      📍 'tempat wisata di Barru' → +19 (total: 414)
+12:06:00 [INFO]      📍 'pantai di Barru' → +17 (total: 431)
+12:06:04 [INFO]      📍 'air terjun di Barru' → +4 (total: 435)
+12:06:07 [INFO]      📍 'gunung di Barru' → +10 (total: 445)
+12:06:10 [INFO]      📍 'danau di Barru' → +2 (total: 447)
+12:06:14 [INFO]      📍 'bukit di Barru' → +4 (total: 451)
+12:06:17 [INFO]      📍 'wisata alam di Barru' → +4 (total: 455)
+12:06:20 [INFO]      📍 'wisata sejarah di Barru' → +7 (total: 462)
+12:06:23 [INFO]      📍 'desa wisata di Barru' → +2 (total: 464)
+12:06:30 [INFO]      📍 Nearby [Barru] → +13 (total: 477)
+12:06:33 [INFO]      📍 Nearby wisata [Barru] → +2 (total: 479)
+12:06:36 [INFO]      📍 Nearby pantai [Barru] → +1 (total: 480)
+12:06:38 [INFO] 
+  ── Kab/Kota [7/24]: Parepare
+12:06:41 [INFO]      📍 'tempat wisata di Parepare' → +17 (total: 497)
+12:06:44 [INFO]      📍 'pantai di Parepare' → +6 (total: 503)
+12:06:51 [INFO]      📍 'gunung di Parepare' → +8 (total: 511)
+12:06:54 [INFO]      📍 'danau di Parepare' → +6 (total: 517)
+12:06:57 [INFO]      📍 'bukit di Parepare' → +1 (total: 518)
+12:07:00 [INFO]      📍 'wisata alam di Parepare' → +4 (total: 522)
+12:07:03 [INFO]      📍 'wisata sejarah di Parepare' → +1 (total: 523)
+12:07:06 [INFO]      📍 'desa wisata di Parepare' → +2 (total: 525)
+12:07:09 [INFO]      📍 'wisata bahari di Parepare' → +1 (total: 526)
+12:07:12 [INFO]      📍 Nearby [Parepare] → +14 (total: 540)
+12:07:15 [INFO]      📍 Nearby wisata [Parepare] → +10 (total: 550)
+12:07:18 [INFO]      📍 Nearby pantai [Parepare] → +3 (total: 553)
+12:07:20 [INFO] 
+  ── Kab/Kota [8/24]: Pinrang
+12:07:21 [INFO]      📍 'tempat wisata di Pinrang' → +15 (total: 568)
+12:07:24 [INFO]      📍 'pantai di Pinrang' → +11 (total: 579)
+12:07:27 [INFO]      📍 'air terjun di Pinrang' → +15 (total: 594)
+12:07:29 [INFO]      📍 'gunung di Pinrang' → +8 (total: 602)
+12:07:35 [INFO]      📍 'bukit di Pinrang' → +4 (total: 606)
+12:07:38 [INFO]      📍 'wisata alam di Pinrang' → +1 (total: 607)
+12:07:43 [INFO]      📍 'desa wisata di Pinrang' → +4 (total: 611)
+12:07:49 [INFO]      📍 Nearby [Pinrang] → +16 (total: 627)
+12:07:52 [INFO]      📍 Nearby wisata [Pinrang] → +5 (total: 632)
+12:07:57 [INFO] 
+  ── Kab/Kota [9/24]: Sidenreng Rappang
+12:07:58 [INFO]      📍 'tempat wisata di Sidenreng Rappang' → +15 (total: 647)
+12:08:01 [INFO]      📍 'pantai di Sidenreng Rappang' → +6 (total: 653)
+12:08:04 [INFO]      📍 'air terjun di Sidenreng Rappang' → +2 (total: 655)
+12:08:07 [INFO]      📍 'gunung di Sidenreng Rappang' → +14 (total: 669)
+12:08:13 [INFO]      📍 'bukit di Sidenreng Rappang' → +4 (total: 673)
+12:08:16 [INFO]      📍 'wisata alam di Sidenreng Rappang' → +3 (total: 676)
+12:08:19 [INFO]      📍 'wisata sejarah di Sidenreng Rappang' → +3 (total: 679)
+12:08:23 [INFO]      📍 'desa wisata di Sidenreng Rappang' → +4 (total: 683)
+12:08:29 [INFO]      📍 Nearby [Sidenreng Rappang] → +13 (total: 696)
+12:08:32 [INFO]      📍 Nearby wisata [Sidenreng Rappang] → +1 (total: 697)
+12:08:37 [INFO] 
+  ── Kab/Kota [10/24]: Wajo
+12:08:38 [INFO]      📍 'tempat wisata di Wajo' → +14 (total: 711)
+12:08:41 [INFO]      📍 'pantai di Wajo' → +4 (total: 715)
+12:08:44 [INFO]      📍 'air terjun di Wajo' → +2 (total: 717)
+12:08:47 [INFO]      📍 'gunung di Wajo' → +3 (total: 720)
+12:08:54 [INFO]      📍 'bukit di Wajo' → +4 (total: 724)
+12:08:57 [INFO]      📍 'wisata alam di Wajo' → +6 (total: 730)
+12:09:00 [INFO]      📍 'wisata sejarah di Wajo' → +7 (total: 737)
+12:09:03 [INFO]      📍 'desa wisata di Wajo' → +8 (total: 745)
+12:09:06 [INFO]      📍 'wisata bahari di Wajo' → +2 (total: 747)
+12:09:09 [INFO]      📍 Nearby [Wajo] → +11 (total: 758)
+12:09:13 [INFO]      📍 Nearby wisata [Wajo] → +6 (total: 764)
+12:09:18 [INFO] 
+  ── Kab/Kota [11/24]: Bone
+12:09:19 [INFO]      📍 'tempat wisata di Bone' → +14 (total: 778)
+12:09:23 [INFO]      📍 'pantai di Bone' → +2 (total: 780)
+12:09:26 [INFO]      📍 'air terjun di Bone' → +13 (total: 793)
+12:09:31 [INFO]      📍 'gunung di Bone' → +3 (total: 796)
+12:09:34 [INFO]      📍 'danau di Bone' → +1 (total: 797)
+12:09:37 [INFO]      📍 'bukit di Bone' → +1 (total: 798)
+12:09:43 [INFO]      📍 'wisata alam di Bone' → +9 (total: 807)
+12:09:47 [INFO]      📍 'wisata sejarah di Bone' → +3 (total: 810)
+12:09:50 [INFO]      📍 'desa wisata di Bone' → +4 (total: 814)
+12:09:53 [INFO]      📍 'wisata bahari di Bone' → +3 (total: 817)
+12:09:56 [INFO]      📍 Nearby [Bone] → +17 (total: 834)
+12:10:00 [INFO]      📍 Nearby wisata [Bone] → +11 (total: 845)
+12:10:03 [INFO]      📍 Nearby pantai [Bone] → +2 (total: 847)
+12:10:05 [INFO] 
+  ── Kab/Kota [12/24]: Soppeng
+12:10:06 [INFO]      📍 'tempat wisata di Soppeng' → +16 (total: 863)
+12:10:09 [INFO]      📍 'pantai di Soppeng' → +1 (total: 864)
+12:10:12 [INFO]      📍 'air terjun di Soppeng' → +2 (total: 866)
+12:10:16 [INFO]      📍 'gunung di Soppeng' → +10 (total: 876)
+12:10:22 [INFO]      📍 'bukit di Soppeng' → +4 (total: 880)
+12:10:25 [INFO]      📍 'wisata alam di Soppeng' → +3 (total: 883)
+12:10:28 [INFO]      📍 'wisata sejarah di Soppeng' → +2 (total: 885)
+12:10:31 [INFO]      📍 'desa wisata di Soppeng' → +5 (total: 890)
+12:10:34 [INFO]      📍 'wisata bahari di Soppeng' → +3 (total: 893)
+12:10:37 [INFO]      📍 Nearby [Soppeng] → +8 (total: 901)
+12:10:41 [INFO]      📍 Nearby wisata [Soppeng] → +2 (total: 903)
+12:10:47 [INFO] 
+  ── Kab/Kota [13/24]: Bulukumba
+12:10:48 [INFO]      📍 'tempat wisata di Bulukumba' → +18 (total: 921)
+12:10:52 [INFO]      📍 'pantai di Bulukumba' → +11 (total: 932)
+12:10:55 [INFO]      📍 'air terjun di Bulukumba' → +5 (total: 937)
+12:10:59 [INFO]      📍 'gunung di Bulukumba' → +7 (total: 944)
+12:11:03 [INFO]      📍 'danau di Bulukumba' → +5 (total: 949)
+12:11:07 [INFO]      📍 'bukit di Bulukumba' → +3 (total: 952)
+12:11:11 [INFO]      📍 'wisata alam di Bulukumba' → +5 (total: 957)
+12:11:14 [INFO]      📍 'wisata sejarah di Bulukumba' → +4 (total: 961)
+12:11:17 [INFO]      📍 'desa wisata di Bulukumba' → +4 (total: 965)
+12:11:21 [INFO]      📍 'wisata bahari di Bulukumba' → +3 (total: 968)
+12:11:24 [INFO]      📍 Nearby [Bulukumba] → +18 (total: 986)
+12:11:27 [INFO]      📍 Nearby wisata [Bulukumba] → +12 (total: 998)
+12:11:32 [INFO] 
+  ── Kab/Kota [14/24]: Bantaeng
+12:11:33 [INFO]      📍 'tempat wisata di Bantaeng' → +18 (total: 1016)
+12:11:40 [INFO]      📍 'air terjun di Bantaeng' → +11 (total: 1027)
+12:11:49 [INFO]      📍 'gunung di Bantaeng' → +1 (total: 1028)
+12:11:53 [INFO]      📍 'danau di Bantaeng' → +2 (total: 1030)
+12:11:56 [INFO]      📍 'bukit di Bantaeng' → +4 (total: 1034)
+12:12:00 [INFO]      📍 'wisata alam di Bantaeng' → +1 (total: 1035)
+12:12:03 [INFO]      📍 'wisata sejarah di Bantaeng' → +1 (total: 1036)
+12:12:06 [INFO]      📍 'desa wisata di Bantaeng' → +8 (total: 1044)
+12:12:09 [INFO]      📍 'wisata bahari di Bantaeng' → +1 (total: 1045)
+12:12:13 [INFO]      📍 Nearby [Bantaeng] → +14 (total: 1059)
+12:12:16 [INFO]      📍 Nearby wisata [Bantaeng] → +8 (total: 1067)
+12:12:20 [INFO]      📍 Nearby pantai [Bantaeng] → +3 (total: 1070)
+12:12:22 [INFO] 
+  ── Kab/Kota [15/24]: Jeneponto
+12:12:23 [INFO]      📍 'tempat wisata di Jeneponto' → +7 (total: 1077)
+12:12:26 [INFO]      📍 'pantai di Jeneponto' → +2 (total: 1079)
+12:12:29 [INFO]      📍 'air terjun di Jeneponto' → +9 (total: 1088)
+12:12:36 [INFO]      📍 'danau di Jeneponto' → +1 (total: 1089)
+12:12:40 [INFO]      📍 'bukit di Jeneponto' → +2 (total: 1091)
+12:12:43 [INFO]      📍 'wisata alam di Jeneponto' → +4 (total: 1095)
+12:12:45 [INFO]      📍 'wisata sejarah di Jeneponto' → +3 (total: 1098)
+12:12:48 [INFO]      📍 'desa wisata di Jeneponto' → +6 (total: 1104)
+12:12:51 [INFO]      📍 'wisata bahari di Jeneponto' → +5 (total: 1109)
+12:12:54 [INFO]      📍 Nearby [Jeneponto] → +16 (total: 1125)
+12:12:57 [INFO]      📍 Nearby wisata [Jeneponto] → +6 (total: 1131)
+12:13:00 [INFO]      📍 Nearby pantai [Jeneponto] → +2 (total: 1133)
+12:13:02 [INFO] 
+  ── Kab/Kota [16/24]: Sinjai
+12:13:03 [INFO]      📍 'tempat wisata di Sinjai' → +19 (total: 1152)
+12:13:07 [INFO]      📍 'pantai di Sinjai' → +12 (total: 1164)
+12:13:10 [INFO]      📍 'air terjun di Sinjai' → +13 (total: 1177)
+12:13:13 [INFO]      📍 'gunung di Sinjai' → +2 (total: 1179)
+12:13:17 [INFO]      📍 'danau di Sinjai' → +2 (total: 1181)
+12:13:20 [INFO]      📍 'bukit di Sinjai' → +4 (total: 1185)
+12:13:23 [INFO]      📍 'wisata alam di Sinjai' → +4 (total: 1189)
+12:13:30 [INFO]      📍 'desa wisata di Sinjai' → +7 (total: 1196)
+12:13:36 [INFO]      📍 Nearby [Sinjai] → +15 (total: 1211)
+12:13:39 [INFO]      📍 Nearby wisata [Sinjai] → +3 (total: 1214)
+12:13:42 [INFO]      📍 Nearby pantai [Sinjai] → +1 (total: 1215)
+12:13:44 [INFO] 
+  ── Kab/Kota [17/24]: Selayar
+12:13:46 [INFO]      📍 'tempat wisata di Selayar' → +17 (total: 1232)
+12:13:49 [INFO]      📍 'pantai di Selayar' → +12 (total: 1244)
+12:13:55 [INFO]      📍 'gunung di Selayar' → +2 (total: 1246)
+12:13:58 [INFO]      📍 'danau di Selayar' → +1 (total: 1247)
+12:14:08 [INFO]      📍 'wisata sejarah di Selayar' → +1 (total: 1248)
+12:14:11 [INFO]      📍 'desa wisata di Selayar' → +5 (total: 1253)
+12:14:15 [INFO]      📍 'wisata bahari di Selayar' → +1 (total: 1254)
+12:14:18 [INFO]      📍 Nearby [Selayar] → +16 (total: 1270)
+12:14:21 [INFO]      📍 Nearby wisata [Selayar] → +12 (total: 1282)
+12:14:25 [INFO]      📍 Nearby pantai [Selayar] → +3 (total: 1285)
+12:14:27 [INFO] 
+  ── Kab/Kota [18/24]: Tana Toraja
+12:14:28 [INFO]      📍 'tempat wisata di Tana Toraja' → +20 (total: 1305)
+12:14:32 [INFO]      📍 'pantai di Tana Toraja' → +5 (total: 1310)
+12:14:35 [INFO]      📍 'air terjun di Tana Toraja' → +17 (total: 1327)
+12:14:38 [INFO]      📍 'gunung di Tana Toraja' → +12 (total: 1339)
+12:14:42 [INFO]      📍 'danau di Tana Toraja' → +3 (total: 1342)
+12:14:45 [INFO]      📍 'bukit di Tana Toraja' → +10 (total: 1352)
+12:14:48 [INFO]      📍 'wisata alam di Tana Toraja' → +6 (total: 1358)
+12:14:51 [INFO]      📍 'wisata sejarah di Tana Toraja' → +11 (total: 1369)
+12:14:54 [INFO]      📍 'desa wisata di Tana Toraja' → +4 (total: 1373)
+12:14:58 [INFO]      📍 'wisata bahari di Tana Toraja' → +3 (total: 1376)
+12:15:01 [INFO]      📍 Nearby [Tana Toraja] → +14 (total: 1390)
+12:15:04 [INFO]      📍 Nearby wisata [Tana Toraja] → +9 (total: 1399)
+12:15:09 [INFO] 
+  ── Kab/Kota [19/24]: Toraja Utara
+12:15:11 [INFO]      📍 'tempat wisata di Toraja Utara' → +2 (total: 1401)
+12:15:14 [INFO]      📍 'pantai di Toraja Utara' → +2 (total: 1403)
+12:15:19 [INFO]      📍 'air terjun di Toraja Utara' → +6 (total: 1409)
+12:15:22 [INFO]      📍 'gunung di Toraja Utara' → +3 (total: 1412)
+12:15:25 [INFO]      📍 'danau di Toraja Utara' → +1 (total: 1413)
+12:15:28 [INFO]      📍 'bukit di Toraja Utara' → +5 (total: 1418)
+12:15:32 [INFO]      📍 'wisata alam di Toraja Utara' → +3 (total: 1421)
+12:15:35 [INFO]      📍 'wisata sejarah di Toraja Utara' → +3 (total: 1424)
+12:15:38 [INFO]      📍 'desa wisata di Toraja Utara' → +3 (total: 1427)
+12:15:41 [INFO]      📍 'wisata bahari di Toraja Utara' → +1 (total: 1428)
+12:15:44 [INFO]      📍 Nearby [Toraja Utara] → +14 (total: 1442)
+12:15:53 [INFO] 
+  ── Kab/Kota [20/24]: Enrekang
+12:15:55 [INFO]      📍 'tempat wisata di Enrekang' → +20 (total: 1462)
+12:15:58 [INFO]      📍 'pantai di Enrekang' → +4 (total: 1466)
+12:16:01 [INFO]      📍 'air terjun di Enrekang' → +8 (total: 1474)
+12:16:04 [INFO]      📍 'gunung di Enrekang' → +5 (total: 1479)
+12:16:07 [INFO]      📍 'danau di Enrekang' → +1 (total: 1480)
+12:16:10 [INFO]      📍 'bukit di Enrekang' → +6 (total: 1486)
+12:16:14 [INFO]      📍 'wisata alam di Enrekang' → +1 (total: 1487)
+12:16:17 [INFO]      📍 'wisata sejarah di Enrekang' → +3 (total: 1490)
+12:16:20 [INFO]      📍 'desa wisata di Enrekang' → +5 (total: 1495)
+12:16:26 [INFO]      📍 Nearby [Enrekang] → +10 (total: 1505)
+12:16:30 [INFO]      📍 Nearby wisata [Enrekang] → +9 (total: 1514)
+12:16:35 [INFO] 
+  ── Kab/Kota [21/24]: Luwu
+12:16:37 [INFO]      📍 'tempat wisata di Luwu' → +19 (total: 1533)
+12:16:40 [INFO]      📍 'pantai di Luwu' → +14 (total: 1547)
+12:16:43 [INFO]      📍 'air terjun di Luwu' → +17 (total: 1564)
+12:16:46 [INFO]      📍 'gunung di Luwu' → +10 (total: 1574)
+12:16:50 [INFO]      📍 'danau di Luwu' → +4 (total: 1578)
+12:16:53 [INFO]      📍 'bukit di Luwu' → +4 (total: 1582)
+12:16:56 [INFO]      📍 'wisata alam di Luwu' → +9 (total: 1591)
+12:16:59 [INFO]      📍 'wisata sejarah di Luwu' → +5 (total: 1596)
+12:17:03 [INFO]      📍 'desa wisata di Luwu' → +11 (total: 1607)
+12:17:06 [INFO]      📍 'wisata bahari di Luwu' → +2 (total: 1609)
+12:17:18 [INFO] 
+  ── Kab/Kota [22/24]: Luwu Utara
+12:17:19 [INFO]      📍 'tempat wisata di Luwu Utara' → +9 (total: 1618)
+12:17:23 [INFO]      📍 'pantai di Luwu Utara' → +7 (total: 1625)
+12:17:26 [INFO]      📍 'air terjun di Luwu Utara' → +8 (total: 1633)
+12:17:29 [INFO]      📍 'gunung di Luwu Utara' → +11 (total: 1644)
+12:17:42 [INFO]      📍 'wisata sejarah di Luwu Utara' → +2 (total: 1646)
+12:17:45 [INFO]      📍 'desa wisata di Luwu Utara' → +6 (total: 1652)
+12:17:52 [INFO]      📍 Nearby [Luwu Utara] → +11 (total: 1663)
+12:17:55 [INFO]      📍 Nearby wisata [Luwu Utara] → +5 (total: 1668)
+12:18:00 [INFO] 
+  ── Kab/Kota [23/24]: Luwu Timur
+12:18:02 [INFO]      📍 'tempat wisata di Luwu Timur' → +11 (total: 1679)
+12:18:05 [INFO]      📍 'pantai di Luwu Timur' → +6 (total: 1685)
+12:18:08 [INFO]      📍 'air terjun di Luwu Timur' → +10 (total: 1695)
+12:18:11 [INFO]      📍 'gunung di Luwu Timur' → +6 (total: 1701)
+12:18:14 [INFO]      📍 'danau di Luwu Timur' → +1 (total: 1702)
+12:18:18 [INFO]      📍 'bukit di Luwu Timur' → +7 (total: 1709)
+12:18:21 [INFO]      📍 'wisata alam di Luwu Timur' → +7 (total: 1716)
+12:18:24 [INFO]      📍 'wisata sejarah di Luwu Timur' → +5 (total: 1721)
+12:18:28 [INFO]      📍 'desa wisata di Luwu Timur' → +7 (total: 1728)
+12:18:31 [INFO]      📍 'wisata bahari di Luwu Timur' → +1 (total: 1729)
+12:18:35 [INFO]      📍 Nearby [Luwu Timur] → +14 (total: 1743)
+12:18:39 [INFO]      📍 Nearby wisata [Luwu Timur] → +4 (total: 1747)
+12:18:42 [INFO]      📍 Nearby pantai [Luwu Timur] → +1 (total: 1748)
+12:18:44 [INFO] 
+  ── Kab/Kota [24/24]: Palopo
+12:18:45 [INFO]      📍 'tempat wisata di Palopo' → +16 (total: 1764)
+12:18:48 [INFO]      📍 'pantai di Palopo' → +5 (total: 1769)
+12:18:55 [INFO]      📍 'gunung di Palopo' → +5 (total: 1774)
+12:18:58 [INFO]      📍 'danau di Palopo' → +4 (total: 1778)
+12:19:01 [INFO]      📍 'bukit di Palopo' → +1 (total: 1779)
+12:19:04 [INFO]      📍 'wisata alam di Palopo' → +2 (total: 1781)
+12:19:14 [INFO]      📍 'wisata bahari di Palopo' → +1 (total: 1782)
+12:19:17 [INFO]      📍 Nearby [Palopo] → +8 (total: 1790)
+12:19:21 [INFO]      📍 Nearby wisata [Palopo] → +4 (total: 1794)
+12:19:24 [INFO]      📍 Nearby pantai [Palopo] → +3 (total: 1797)
+12:19:26 [INFO] 
+  ✓ Selesai Sulawesi Selatan | Total sementara: 1797 data
+12:19:26 [INFO] 
+═════════════════════════════════════════════════════════════════
+12:19:26 [INFO]   PROVINSI [2/6]: Sulawesi Utara (15 kab/kota)
+12:19:26 [INFO] ═════════════════════════════════════════════════════════════════
+12:19:26 [INFO] 
+  ── Kab/Kota [1/15]: Manado
+12:19:27 [INFO]      📍 'tempat wisata di Manado' → +19 (total: 1816)
+12:19:31 [INFO]      📍 'pantai di Manado' → +14 (total: 1830)
+12:19:34 [INFO]      📍 'air terjun di Manado' → +3 (total: 1833)
+12:19:38 [INFO]      📍 'gunung di Manado' → +6 (total: 1839)
+12:19:41 [INFO]      📍 'danau di Manado' → +4 (total: 1843)
+12:19:44 [INFO]      📍 'bukit di Manado' → +8 (total: 1851)
+12:19:47 [INFO]      📍 'wisata alam di Manado' → +2 (total: 1853)
+12:19:50 [INFO]      📍 'wisata sejarah di Manado' → +6 (total: 1859)
+12:19:53 [INFO]      📍 'desa wisata di Manado' → +4 (total: 1863)
+12:19:56 [INFO]      📍 'wisata bahari di Manado' → +2 (total: 1865)
+12:20:00 [INFO]      📍 Nearby [Manado] → +17 (total: 1882)
+12:20:03 [INFO]      📍 Nearby wisata [Manado] → +7 (total: 1889)
+12:20:07 [INFO]      📍 Nearby pantai [Manado] → +1 (total: 1890)
+12:20:09 [INFO] 
+  ── Kab/Kota [2/15]: Bitung
+12:20:10 [INFO]      📍 'tempat wisata di Bitung' → +19 (total: 1909)
+12:20:13 [INFO]      📍 'pantai di Bitung' → +13 (total: 1922)
+12:20:19 [INFO]      📍 'gunung di Bitung' → +1 (total: 1923)
+12:20:22 [INFO]      📍 'danau di Bitung' → +4 (total: 1927)
+12:20:26 [INFO]      📍 'bukit di Bitung' → +12 (total: 1939)
+12:20:32 [INFO]      📍 'wisata sejarah di Bitung' → +2 (total: 1941)
+12:20:35 [INFO]      📍 'desa wisata di Bitung' → +1 (total: 1942)
+12:20:39 [INFO]      📍 'wisata bahari di Bitung' → +1 (total: 1943)
+12:20:42 [INFO]      📍 Nearby [Bitung] → +11 (total: 1954)
+12:20:45 [INFO]      📍 Nearby wisata [Bitung] → +7 (total: 1961)
+12:20:50 [INFO] 
+  ── Kab/Kota [3/15]: Tomohon
+12:20:52 [INFO]      📍 'tempat wisata di Tomohon' → +16 (total: 1977)
+12:20:55 [INFO]      📍 'pantai di Tomohon' → +4 (total: 1981)
+12:20:58 [INFO]      📍 'air terjun di Tomohon' → +5 (total: 1986)
+12:21:02 [INFO]      📍 'gunung di Tomohon' → +4 (total: 1990)
+12:21:09 [INFO]      📍 'bukit di Tomohon' → +2 (total: 1992)
+12:21:15 [INFO]      📍 'wisata sejarah di Tomohon' → +4 (total: 1996)
+12:21:19 [INFO]      📍 'desa wisata di Tomohon' → +2 (total: 1998)
+12:21:25 [INFO]      📍 Nearby [Tomohon] → +16 (total: 2014)
+12:21:28 [INFO]      📍 Nearby wisata [Tomohon] → +13 (total: 2027)
+12:21:34 [INFO] 
+  ── Kab/Kota [4/15]: Kotamobagu
+12:21:35 [INFO]      📍 'tempat wisata di Kotamobagu' → +15 (total: 2042)
+12:21:38 [INFO]      📍 'pantai di Kotamobagu' → +2 (total: 2044)
+12:21:41 [INFO]      📍 'air terjun di Kotamobagu' → +2 (total: 2046)
+12:21:44 [INFO]      📍 'gunung di Kotamobagu' → +2 (total: 2048)
+12:21:47 [INFO]      📍 'danau di Kotamobagu' → +1 (total: 2049)
+12:21:50 [INFO]      📍 'bukit di Kotamobagu' → +3 (total: 2052)
+12:21:53 [INFO]      📍 'wisata alam di Kotamobagu' → +2 (total: 2054)
+12:21:59 [INFO]      📍 'desa wisata di Kotamobagu' → +2 (total: 2056)
+12:22:02 [INFO]      📍 'wisata bahari di Kotamobagu' → +3 (total: 2059)
+12:22:05 [INFO]      📍 Nearby [Kotamobagu] → +14 (total: 2073)
+12:22:09 [INFO]      📍 Nearby wisata [Kotamobagu] → +12 (total: 2085)
+12:22:14 [INFO] 
+  ── Kab/Kota [5/15]: Minahasa
+12:22:15 [INFO]      📍 'tempat wisata di Minahasa' → +11 (total: 2096)
+12:22:18 [INFO]      📍 'pantai di Minahasa' → +16 (total: 2112)
+12:22:21 [INFO]      📍 'air terjun di Minahasa' → +17 (total: 2129)
+12:22:25 [INFO]      📍 'gunung di Minahasa' → +9 (total: 2138)
+12:22:28 [INFO]      📍 'danau di Minahasa' → +1 (total: 2139)
+12:22:31 [INFO]      📍 'bukit di Minahasa' → +13 (total: 2152)
+12:22:34 [INFO]      📍 'wisata alam di Minahasa' → +7 (total: 2159)
+12:22:37 [INFO]      📍 'wisata sejarah di Minahasa' → +8 (total: 2167)
+12:22:41 [INFO]      📍 'desa wisata di Minahasa' → +4 (total: 2171)
+12:22:44 [INFO]      📍 'wisata bahari di Minahasa' → +4 (total: 2175)
+12:22:47 [INFO]      📍 Nearby [Minahasa] → +14 (total: 2189)
+12:22:50 [INFO]      📍 Nearby wisata [Minahasa] → +1 (total: 2190)
+12:22:53 [INFO]      📍 Nearby pantai [Minahasa] → +2 (total: 2192)
+12:22:55 [INFO] 
+  ── Kab/Kota [6/15]: Minahasa Utara
+12:22:56 [INFO]      📍 'tempat wisata di Minahasa Utara' → +11 (total: 2203)
+12:23:00 [INFO]      📍 'pantai di Minahasa Utara' → +14 (total: 2217)
+12:23:03 [INFO]      📍 'air terjun di Minahasa Utara' → +4 (total: 2221)
+12:23:06 [INFO]      📍 'gunung di Minahasa Utara' → +4 (total: 2225)
+12:23:09 [INFO]      📍 'danau di Minahasa Utara' → +1 (total: 2226)
+12:23:12 [INFO]      📍 'bukit di Minahasa Utara' → +5 (total: 2231)
+12:23:15 [INFO]      📍 'wisata alam di Minahasa Utara' → +2 (total: 2233)
+12:23:18 [INFO]      📍 'wisata sejarah di Minahasa Utara' → +4 (total: 2237)
+12:23:22 [INFO]      📍 'desa wisata di Minahasa Utara' → +7 (total: 2244)
+12:23:25 [INFO]      📍 'wisata bahari di Minahasa Utara' → +2 (total: 2246)
+12:23:28 [INFO]      📍 Nearby [Minahasa Utara] → +17 (total: 2263)
+12:23:31 [INFO]      📍 Nearby wisata [Minahasa Utara] → +4 (total: 2267)
+12:23:36 [INFO] 
+  ── Kab/Kota [7/15]: Minahasa Selatan
+12:23:38 [INFO]      📍 'tempat wisata di Minahasa Selatan' → +12 (total: 2279)
+12:23:41 [INFO]      📍 'pantai di Minahasa Selatan' → +15 (total: 2294)
+12:23:44 [INFO]      📍 'air terjun di Minahasa Selatan' → +10 (total: 2304)
+12:23:47 [INFO]      📍 'gunung di Minahasa Selatan' → +9 (total: 2313)
+12:23:50 [INFO]      📍 'danau di Minahasa Selatan' → +6 (total: 2319)
+12:23:53 [INFO]      📍 'bukit di Minahasa Selatan' → +6 (total: 2325)
+12:23:56 [INFO]      📍 'wisata alam di Minahasa Selatan' → +2 (total: 2327)
+12:23:59 [INFO]      📍 'wisata sejarah di Minahasa Selatan' → +7 (total: 2334)
+12:24:03 [INFO]      📍 'desa wisata di Minahasa Selatan' → +6 (total: 2340)
+12:24:09 [INFO]      📍 Nearby [Minahasa Selatan] → +18 (total: 2358)
+12:24:12 [INFO]      📍 Nearby wisata [Minahasa Selatan] → +4 (total: 2362)
+12:24:17 [INFO] 
+  ── Kab/Kota [8/15]: Minahasa Tenggara
+12:24:19 [INFO]      📍 'tempat wisata di Minahasa Tenggara' → +6 (total: 2368)
+12:24:22 [INFO]      📍 'pantai di Minahasa Tenggara' → +9 (total: 2377)
+12:24:25 [INFO]      📍 'air terjun di Minahasa Tenggara' → +4 (total: 2381)
+12:24:28 [INFO]      📍 'gunung di Minahasa Tenggara' → +5 (total: 2386)
+12:24:31 [INFO]      📍 'danau di Minahasa Tenggara' → +4 (total: 2390)
+12:24:34 [INFO]      📍 'bukit di Minahasa Tenggara' → +3 (total: 2393)
+12:24:38 [INFO]      📍 'wisata alam di Minahasa Tenggara' → +1 (total: 2394)
+12:24:44 [INFO]      📍 'desa wisata di Minahasa Tenggara' → +1 (total: 2395)
+12:24:50 [INFO]      📍 Nearby [Minahasa Tenggara] → +12 (total: 2407)
+12:24:53 [INFO]      📍 Nearby wisata [Minahasa Tenggara] → +2 (total: 2409)
+12:24:58 [INFO] 
+  ── Kab/Kota [9/15]: Bolaang Mongondow
+12:25:00 [INFO]      📍 'tempat wisata di Bolaang Mongondow' → +15 (total: 2424)
+12:25:03 [INFO]      📍 'pantai di Bolaang Mongondow' → +8 (total: 2432)
+12:25:10 [WARNING]       ✗ API Status: DEADLINE_EXCEEDED
+12:25:13 [INFO]      📍 'gunung di Bolaang Mongondow' → +12 (total: 2444)
+12:25:16 [INFO]      📍 'danau di Bolaang Mongondow' → +5 (total: 2449)
+12:25:20 [INFO]      📍 'bukit di Bolaang Mongondow' → +9 (total: 2458)
+12:25:23 [INFO]      📍 'wisata alam di Bolaang Mongondow' → +9 (total: 2467)
+12:25:29 [INFO]      📍 'wisata sejarah di Bolaang Mongondow' → +5 (total: 2472)
+12:25:32 [INFO]      📍 'desa wisata di Bolaang Mongondow' → +13 (total: 2485)
+12:25:35 [INFO]      📍 'wisata bahari di Bolaang Mongondow' → +6 (total: 2491)
+12:25:38 [INFO]      📍 Nearby [Bolaang Mongondow] → +18 (total: 2509)
+12:25:42 [INFO]      📍 Nearby wisata [Bolaang Mongondow] → +3 (total: 2512)
+12:25:47 [INFO] 
+  ── Kab/Kota [10/15]: Bolaang Mongondow Utara
+12:25:48 [INFO]      📍 'tempat wisata di Bolaang Mongondow Utara' → +5 (total: 2517)
+12:25:52 [INFO]      📍 'pantai di Bolaang Mongondow Utara' → +2 (total: 2519)
+12:25:55 [INFO]      📍 'air terjun di Bolaang Mongondow Utara' → +9 (total: 2528)
+12:25:58 [INFO]      📍 'gunung di Bolaang Mongondow Utara' → +10 (total: 2538)
+12:26:01 [INFO]      📍 'danau di Bolaang Mongondow Utara' → +1 (total: 2539)
+12:26:07 [INFO]      📍 'wisata alam di Bolaang Mongondow Utara' → +10 (total: 2549)
+12:26:10 [INFO]      📍 'wisata sejarah di Bolaang Mongondow Utara' → +1 (total: 2550)
+12:26:13 [INFO]      📍 'desa wisata di Bolaang Mongondow Utara' → +8 (total: 2558)
+12:26:17 [INFO]      📍 'wisata bahari di Bolaang Mongondow Utara' → +1 (total: 2559)
+12:26:23 [INFO]      📍 Nearby wisata [Bolaang Mongondow Utara] → +2 (total: 2561)
+12:26:28 [INFO] 
+  ── Kab/Kota [11/15]: Bolaang Mongondow Selatan
+12:26:29 [INFO]      📍 'tempat wisata di Bolaang Mongondow Selatan' → +4 (total: 2565)
+12:26:32 [INFO]      📍 'pantai di Bolaang Mongondow Selatan' → +3 (total: 2568)
+12:26:36 [INFO]      📍 'air terjun di Bolaang Mongondow Selatan' → +1 (total: 2569)
+12:26:39 [INFO]      📍 'gunung di Bolaang Mongondow Selatan' → +7 (total: 2576)
+12:26:42 [INFO]      📍 'danau di Bolaang Mongondow Selatan' → +4 (total: 2580)
+12:26:45 [INFO]      📍 'bukit di Bolaang Mongondow Selatan' → +3 (total: 2583)
+12:26:49 [INFO]      📍 'wisata alam di Bolaang Mongondow Selatan' → +2 (total: 2585)
+12:26:52 [INFO]      📍 'wisata sejarah di Bolaang Mongondow Selatan' → +1 (total: 2586)
+12:26:55 [INFO]      📍 'desa wisata di Bolaang Mongondow Selatan' → +3 (total: 2589)
+12:27:02 [INFO]      📍 Nearby [Bolaang Mongondow Selatan] → +16 (total: 2605)
+12:27:05 [INFO]      📍 Nearby wisata [Bolaang Mongondow Selatan] → +5 (total: 2610)
+12:27:10 [INFO] 
+  ── Kab/Kota [12/15]: Bolaang Mongondow Timur
+12:27:11 [INFO]      📍 'tempat wisata di Bolaang Mongondow Timur' → +4 (total: 2614)
+12:27:15 [INFO]      📍 'pantai di Bolaang Mongondow Timur' → +5 (total: 2619)
+12:27:18 [INFO]      📍 'air terjun di Bolaang Mongondow Timur' → +6 (total: 2625)
+12:27:21 [INFO]      📍 'gunung di Bolaang Mongondow Timur' → +5 (total: 2630)
+12:27:28 [INFO]      📍 'bukit di Bolaang Mongondow Timur' → +4 (total: 2634)
+12:27:31 [INFO]      📍 'wisata alam di Bolaang Mongondow Timur' → +1 (total: 2635)
+12:27:37 [INFO]      📍 'desa wisata di Bolaang Mongondow Timur' → +3 (total: 2638)
+12:27:40 [INFO]      📍 'wisata bahari di Bolaang Mongondow Timur' → +1 (total: 2639)
+12:27:43 [INFO]      📍 Nearby [Bolaang Mongondow Timur] → +17 (total: 2656)
+12:27:47 [INFO]      📍 Nearby wisata [Bolaang Mongondow Timur] → +3 (total: 2659)
+12:27:50 [INFO]      📍 Nearby pantai [Bolaang Mongondow Timur] → +1 (total: 2660)
+12:27:52 [INFO] 
+  ── Kab/Kota [13/15]: Kepulauan Sangihe
+12:27:53 [INFO]      📍 'tempat wisata di Kepulauan Sangihe' → +17 (total: 2677)
+12:27:57 [INFO]      📍 'pantai di Kepulauan Sangihe' → +12 (total: 2689)
+12:28:00 [INFO]      📍 'air terjun di Kepulauan Sangihe' → +4 (total: 2693)
+12:28:03 [INFO]      📍 'gunung di Kepulauan Sangihe' → +12 (total: 2705)
+12:28:06 [INFO]      📍 'danau di Kepulauan Sangihe' → +1 (total: 2706)
+12:28:09 [INFO]      📍 'bukit di Kepulauan Sangihe' → +12 (total: 2718)
+12:28:12 [INFO]      📍 'wisata alam di Kepulauan Sangihe' → +9 (total: 2727)
+12:28:16 [INFO]      📍 'wisata sejarah di Kepulauan Sangihe' → +3 (total: 2730)
+12:28:19 [INFO]      📍 'desa wisata di Kepulauan Sangihe' → +4 (total: 2734)
+12:28:25 [INFO]      📍 Nearby [Kepulauan Sangihe] → +15 (total: 2749)
+12:28:28 [INFO]      📍 Nearby wisata [Kepulauan Sangihe] → +9 (total: 2758)
+12:28:32 [INFO]      📍 Nearby pantai [Kepulauan Sangihe] → +8 (total: 2766)
+12:28:34 [INFO] 
+  ── Kab/Kota [14/15]: Kepulauan Sitaro
+12:28:35 [INFO]      📍 'tempat wisata di Kepulauan Sitaro' → +1 (total: 2767)
+12:28:38 [INFO]      📍 'pantai di Kepulauan Sitaro' → +1 (total: 2768)
+12:28:58 [INFO]      📍 'desa wisata di Kepulauan Sitaro' → +1 (total: 2769)
+12:29:04 [INFO]      📍 Nearby [Kepulauan Sitaro] → +17 (total: 2786)
+12:29:07 [INFO]      📍 Nearby wisata [Kepulauan Sitaro] → +5 (total: 2791)
+12:29:10 [INFO]      📍 Nearby pantai [Kepulauan Sitaro] → +1 (total: 2792)
+12:29:12 [INFO] 
+  ── Kab/Kota [15/15]: Kepulauan Talaud
+12:29:13 [INFO]      📍 'tempat wisata di Kepulauan Talaud' → +17 (total: 2809)
+12:29:16 [INFO]      📍 'pantai di Kepulauan Talaud' → +15 (total: 2824)
+12:29:18 [INFO]      📍 'air terjun di Kepulauan Talaud' → +1 (total: 2825)
+12:29:21 [INFO]      📍 'gunung di Kepulauan Talaud' → +12 (total: 2837)
+12:29:24 [INFO]      📍 'danau di Kepulauan Talaud' → +2 (total: 2839)
+12:29:27 [INFO]      📍 'bukit di Kepulauan Talaud' → +2 (total: 2841)
+12:29:29 [INFO]      📍 'wisata alam di Kepulauan Talaud' → +2 (total: 2843)
+12:29:32 [INFO]      📍 'wisata sejarah di Kepulauan Talaud' → +3 (total: 2846)
+12:29:35 [INFO]      📍 'desa wisata di Kepulauan Talaud' → +5 (total: 2851)
+12:29:40 [INFO]      📍 Nearby [Kepulauan Talaud] → +14 (total: 2865)
+12:29:43 [INFO]      📍 Nearby wisata [Kepulauan Talaud] → +3 (total: 2868)
+12:29:46 [INFO]      📍 Nearby pantai [Kepulauan Talaud] → +1 (total: 2869)
+12:29:48 [INFO] 
+  ✓ Selesai Sulawesi Utara | Total sementara: 2869 data
+12:29:48 [INFO] 
+═════════════════════════════════════════════════════════════════
+12:29:48 [INFO]   PROVINSI [3/6]: Sulawesi Tengah (13 kab/kota)
+12:29:48 [INFO] ═════════════════════════════════════════════════════════════════
+12:29:48 [INFO] 
+  ── Kab/Kota [1/13]: Palu
+12:29:49 [INFO]      📍 'tempat wisata di Palu' → +19 (total: 2888)
+12:29:52 [INFO]      📍 'pantai di Palu' → +16 (total: 2904)
+12:29:57 [INFO]      📍 'air terjun di Palu' → +6 (total: 2910)
+12:30:00 [INFO]      📍 'gunung di Palu' → +6 (total: 2916)
+12:30:04 [INFO]      📍 'danau di Palu' → +1 (total: 2917)
+12:30:07 [INFO]      📍 'bukit di Palu' → +9 (total: 2926)
+12:30:14 [WARNING]       ✗ API Status: INTERNAL
+12:30:21 [INFO]      📍 'wisata sejarah di Palu' → +4 (total: 2930)
+12:30:24 [INFO]      📍 'desa wisata di Palu' → +7 (total: 2937)
+12:30:29 [INFO]      📍 'wisata bahari di Palu' → +2 (total: 2939)
+12:30:32 [INFO]      📍 Nearby [Palu] → +13 (total: 2952)
+12:30:36 [INFO]      📍 Nearby wisata [Palu] → +12 (total: 2964)
+12:30:39 [INFO]      📍 Nearby pantai [Palu] → +2 (total: 2966)
+12:30:41 [INFO] 
+  ── Kab/Kota [2/13]: Donggala
+12:30:43 [INFO]      📍 'tempat wisata di Donggala' → +14 (total: 2980)
+12:30:46 [INFO]      📍 'pantai di Donggala' → +7 (total: 2987)
+12:30:49 [INFO]      📍 'air terjun di Donggala' → +15 (total: 3002)
+12:30:59 [INFO]      📍 'bukit di Donggala' → +6 (total: 3008)
+12:31:02 [INFO]      📍 'wisata alam di Donggala' → +7 (total: 3015)
+12:31:05 [INFO]      📍 'wisata sejarah di Donggala' → +4 (total: 3019)
+12:31:08 [INFO]      📍 'desa wisata di Donggala' → +13 (total: 3032)
+12:31:12 [INFO]      📍 'wisata bahari di Donggala' → +5 (total: 3037)
+12:31:15 [INFO]      📍 Nearby [Donggala] → +11 (total: 3048)
+12:31:18 [INFO]      📍 Nearby wisata [Donggala] → +8 (total: 3056)
+12:31:21 [INFO]      📍 Nearby pantai [Donggala] → +1 (total: 3057)
+12:31:23 [INFO] 
+  ── Kab/Kota [3/13]: Sigi
+12:31:24 [INFO]      📍 'tempat wisata di Sigi' → +7 (total: 3064)
+12:31:28 [INFO]      📍 'pantai di Sigi' → +10 (total: 3074)
+12:31:31 [INFO]      📍 'air terjun di Sigi' → +6 (total: 3080)
+12:31:34 [INFO]      📍 'gunung di Sigi' → +12 (total: 3092)
+12:31:40 [INFO]      📍 'bukit di Sigi' → +4 (total: 3096)
+12:31:43 [INFO]      📍 'wisata alam di Sigi' → +8 (total: 3104)
+12:31:46 [INFO]      📍 'wisata sejarah di Sigi' → +5 (total: 3109)
+12:31:50 [INFO]      📍 'desa wisata di Sigi' → +13 (total: 3122)
+12:31:53 [INFO]      📍 'wisata bahari di Sigi' → +4 (total: 3126)
+12:31:56 [INFO]      📍 Nearby [Sigi] → +16 (total: 3142)
+12:31:59 [INFO]      📍 Nearby wisata [Sigi] → +5 (total: 3147)
+12:32:05 [INFO] 
+  ── Kab/Kota [4/13]: Parigi Moutong
+12:32:06 [INFO]      📍 'tempat wisata di Parigi Moutong' → +19 (total: 3166)
+12:32:09 [INFO]      📍 'pantai di Parigi Moutong' → +7 (total: 3173)
+12:32:12 [INFO]      📍 'air terjun di Parigi Moutong' → +8 (total: 3181)
+12:32:16 [INFO]      📍 'gunung di Parigi Moutong' → +10 (total: 3191)
+12:32:19 [INFO]      📍 'danau di Parigi Moutong' → +9 (total: 3200)
+12:32:22 [INFO]      📍 'bukit di Parigi Moutong' → +4 (total: 3204)
+12:32:25 [INFO]      📍 'wisata alam di Parigi Moutong' → +5 (total: 3209)
+12:32:28 [INFO]      📍 'wisata sejarah di Parigi Moutong' → +3 (total: 3212)
+12:32:31 [INFO]      📍 'desa wisata di Parigi Moutong' → +9 (total: 3221)
+12:32:34 [INFO]      📍 'wisata bahari di Parigi Moutong' → +1 (total: 3222)
+12:32:37 [INFO]      📍 Nearby [Parigi Moutong] → +14 (total: 3236)
+12:32:41 [INFO]      📍 Nearby wisata [Parigi Moutong] → +1 (total: 3237)
+12:32:46 [INFO] 
+  ── Kab/Kota [5/13]: Poso
+12:32:47 [INFO]      📍 'tempat wisata di Poso' → +5 (total: 3242)
+12:32:50 [INFO]      📍 'pantai di Poso' → +3 (total: 3245)
+12:32:56 [INFO]      📍 'gunung di Poso' → +3 (total: 3248)
+12:33:02 [INFO]      📍 'bukit di Poso' → +2 (total: 3250)
+12:33:06 [INFO]      📍 'wisata alam di Poso' → +3 (total: 3253)
+12:33:09 [INFO]      📍 'wisata sejarah di Poso' → +2 (total: 3255)
+12:33:12 [INFO]      📍 'desa wisata di Poso' → +1 (total: 3256)
+12:33:18 [INFO]      📍 Nearby [Poso] → +17 (total: 3273)
+12:33:21 [INFO]      📍 Nearby wisata [Poso] → +9 (total: 3282)
+12:33:25 [INFO]      📍 Nearby pantai [Poso] → +4 (total: 3286)
+12:33:27 [INFO] 
+  ── Kab/Kota [6/13]: Tojo Una-Una
+12:33:28 [INFO]      📍 'tempat wisata di Tojo Una-Una' → +18 (total: 3304)
+12:33:32 [INFO]      📍 'pantai di Tojo Una-Una' → +13 (total: 3317)
+12:33:35 [INFO]      📍 'air terjun di Tojo Una-Una' → +6 (total: 3323)
+12:33:38 [INFO]      📍 'gunung di Tojo Una-Una' → +9 (total: 3332)
+12:33:41 [INFO]      📍 'danau di Tojo Una-Una' → +2 (total: 3334)
+12:33:45 [INFO]      📍 'bukit di Tojo Una-Una' → +7 (total: 3341)
+12:33:48 [INFO]      📍 'wisata alam di Tojo Una-Una' → +3 (total: 3344)
+12:33:51 [INFO]      📍 'wisata sejarah di Tojo Una-Una' → +3 (total: 3347)
+12:33:54 [INFO]      📍 'desa wisata di Tojo Una-Una' → +3 (total: 3350)
+12:33:57 [INFO]      📍 'wisata bahari di Tojo Una-Una' → +2 (total: 3352)
+12:34:00 [INFO]      📍 Nearby [Tojo Una-Una] → +2 (total: 3354)
+12:34:08 [INFO] 
+  ── Kab/Kota [7/13]: Morowali
+12:34:10 [INFO]      📍 'tempat wisata di Morowali' → +20 (total: 3374)
+12:34:13 [INFO]      📍 'pantai di Morowali' → +18 (total: 3392)
+12:34:16 [INFO]      📍 'air terjun di Morowali' → +12 (total: 3404)
+12:34:19 [INFO]      📍 'gunung di Morowali' → +1 (total: 3405)
+12:34:22 [INFO]      📍 'danau di Morowali' → +10 (total: 3415)
+12:34:25 [INFO]      📍 'bukit di Morowali' → +6 (total: 3421)
+12:34:28 [INFO]      📍 'wisata alam di Morowali' → +5 (total: 3426)
+12:34:32 [INFO]      📍 'wisata sejarah di Morowali' → +4 (total: 3430)
+12:34:35 [INFO]      📍 'desa wisata di Morowali' → +7 (total: 3437)
+12:34:38 [INFO]      📍 'wisata bahari di Morowali' → +2 (total: 3439)
+12:34:41 [INFO]      📍 Nearby [Morowali] → +10 (total: 3449)
+12:34:45 [INFO]      📍 Nearby wisata [Morowali] → +6 (total: 3455)
+12:34:48 [INFO]      📍 Nearby pantai [Morowali] → +2 (total: 3457)
+12:34:50 [INFO] 
+  ── Kab/Kota [8/13]: Morowali Utara
+12:34:51 [INFO]      📍 'tempat wisata di Morowali Utara' → +12 (total: 3469)
+12:34:54 [INFO]      📍 'pantai di Morowali Utara' → +8 (total: 3477)
+12:34:57 [INFO]      📍 'air terjun di Morowali Utara' → +2 (total: 3479)
+12:35:01 [INFO]      📍 'gunung di Morowali Utara' → +12 (total: 3491)
+12:35:04 [INFO]      📍 'danau di Morowali Utara' → +2 (total: 3493)
+12:35:07 [INFO]      📍 'bukit di Morowali Utara' → +11 (total: 3504)
+12:35:10 [INFO]      📍 'wisata alam di Morowali Utara' → +4 (total: 3508)
+12:35:17 [INFO]      📍 'desa wisata di Morowali Utara' → +6 (total: 3514)
+12:35:20 [INFO]      📍 'wisata bahari di Morowali Utara' → +1 (total: 3515)
+12:35:23 [INFO]      📍 Nearby [Morowali Utara] → +3 (total: 3518)
+12:35:26 [INFO]      📍 Nearby wisata [Morowali Utara] → +4 (total: 3522)
+12:35:32 [INFO] 
+  ── Kab/Kota [9/13]: Banggai
+12:35:33 [INFO]      📍 'tempat wisata di Banggai' → +20 (total: 3542)
+12:35:36 [INFO]      📍 'pantai di Banggai' → +15 (total: 3557)
+12:35:39 [INFO]      📍 'air terjun di Banggai' → +15 (total: 3572)
+12:35:42 [INFO]      📍 'gunung di Banggai' → +9 (total: 3581)
+12:35:45 [INFO]      📍 'danau di Banggai' → +2 (total: 3583)
+12:35:48 [INFO]      📍 'bukit di Banggai' → +7 (total: 3590)
+12:35:52 [INFO]      📍 'wisata alam di Banggai' → +6 (total: 3596)
+12:35:55 [INFO]      📍 'wisata sejarah di Banggai' → +5 (total: 3601)
+12:35:58 [INFO]      📍 'desa wisata di Banggai' → +12 (total: 3613)
+12:36:02 [INFO]      📍 'wisata bahari di Banggai' → +3 (total: 3616)
+12:36:05 [INFO]      📍 Nearby [Banggai] → +12 (total: 3628)
+12:36:08 [INFO]      📍 Nearby wisata [Banggai] → +5 (total: 3633)
+12:36:11 [INFO]      📍 Nearby pantai [Banggai] → +2 (total: 3635)
+12:36:13 [INFO] 
+  ── Kab/Kota [10/13]: Banggai Laut
+12:36:15 [INFO]      📍 'tempat wisata di Banggai Laut' → +10 (total: 3645)
+12:36:18 [INFO]      📍 'pantai di Banggai Laut' → +6 (total: 3651)
+12:36:21 [INFO]      📍 'air terjun di Banggai Laut' → +1 (total: 3652)
+12:36:24 [INFO]      📍 'gunung di Banggai Laut' → +7 (total: 3659)
+12:36:27 [INFO]      📍 'danau di Banggai Laut' → +8 (total: 3667)
+12:36:34 [INFO]      📍 'wisata alam di Banggai Laut' → +6 (total: 3673)
+12:36:37 [INFO]      📍 'wisata sejarah di Banggai Laut' → +5 (total: 3678)
+12:36:40 [INFO]      📍 'desa wisata di Banggai Laut' → +8 (total: 3686)
+12:36:46 [INFO]      📍 Nearby [Banggai Laut] → +12 (total: 3698)
+12:36:49 [INFO]      📍 Nearby wisata [Banggai Laut] → +2 (total: 3700)
+12:36:52 [INFO]      📍 Nearby pantai [Banggai Laut] → +2 (total: 3702)
+12:36:54 [INFO] 
+  ── Kab/Kota [11/13]: Banggai Kepulauan
+12:36:56 [INFO]      📍 'tempat wisata di Banggai Kepulauan' → +4 (total: 3706)
+12:36:59 [INFO]      📍 'pantai di Banggai Kepulauan' → +4 (total: 3710)
+12:37:02 [INFO]      📍 'air terjun di Banggai Kepulauan' → +6 (total: 3716)
+12:37:05 [INFO]      📍 'gunung di Banggai Kepulauan' → +4 (total: 3720)
+12:37:12 [INFO]      📍 'bukit di Banggai Kepulauan' → +7 (total: 3727)
+12:37:15 [INFO]      📍 'wisata alam di Banggai Kepulauan' → +6 (total: 3733)
+12:37:18 [INFO]      📍 'wisata sejarah di Banggai Kepulauan' → +3 (total: 3736)
+12:37:21 [INFO]      📍 'desa wisata di Banggai Kepulauan' → +10 (total: 3746)
+12:37:25 [INFO]      📍 'wisata bahari di Banggai Kepulauan' → +4 (total: 3750)
+12:37:28 [INFO]      📍 Nearby [Banggai Kepulauan] → +2 (total: 3752)
+12:37:31 [INFO]      📍 Nearby wisata [Banggai Kepulauan] → +3 (total: 3755)
+12:37:34 [INFO]      📍 Nearby pantai [Banggai Kepulauan] → +5 (total: 3760)
+12:37:36 [INFO] 
+  ── Kab/Kota [12/13]: Buol
+12:37:38 [INFO]      📍 'tempat wisata di Buol' → +18 (total: 3778)
+12:37:41 [INFO]      📍 'pantai di Buol' → +2 (total: 3780)
+12:37:44 [INFO]      📍 'air terjun di Buol' → +4 (total: 3784)
+12:37:47 [INFO]      📍 'gunung di Buol' → +12 (total: 3796)
+12:37:56 [INFO]      📍 'wisata alam di Buol' → +3 (total: 3799)
+12:38:00 [INFO]      📍 'wisata sejarah di Buol' → +2 (total: 3801)
+12:38:03 [INFO]      📍 'desa wisata di Buol' → +2 (total: 3803)
+12:38:09 [INFO]      📍 Nearby [Buol] → +12 (total: 3815)
+12:38:12 [INFO]      📍 Nearby wisata [Buol] → +1 (total: 3816)
+12:38:17 [INFO] 
+  ── Kab/Kota [13/13]: Tolitoli
+12:38:18 [INFO]      📍 'tempat wisata di Tolitoli' → +1 (total: 3817)
+12:38:22 [INFO]      📍 'pantai di Tolitoli' → +1 (total: 3818)
+12:38:25 [INFO]      📍 'air terjun di Tolitoli' → +1 (total: 3819)
+12:38:34 [INFO]      📍 'bukit di Tolitoli' → +1 (total: 3820)
+12:38:37 [INFO]      📍 'wisata alam di Tolitoli' → +1 (total: 3821)
+12:38:49 [INFO]      📍 Nearby [Tolitoli] → +20 (total: 3841)
+12:38:52 [INFO]      📍 Nearby wisata [Tolitoli] → +12 (total: 3853)
+12:38:56 [INFO]      📍 Nearby pantai [Tolitoli] → +2 (total: 3855)
+12:38:58 [INFO] 
+  ✓ Selesai Sulawesi Tengah | Total sementara: 3855 data
+12:38:58 [INFO] 
+═════════════════════════════════════════════════════════════════
+12:38:58 [INFO]   PROVINSI [4/6]: Sulawesi Tenggara (17 kab/kota)
+12:38:58 [INFO] ═════════════════════════════════════════════════════════════════
+12:38:58 [INFO] 
+  ── Kab/Kota [1/17]: Kendari
+12:38:59 [INFO]      📍 'tempat wisata di Kendari' → +20 (total: 3875)
+12:39:02 [INFO]      📍 'pantai di Kendari' → +11 (total: 3886)
+12:39:05 [INFO]      📍 'air terjun di Kendari' → +2 (total: 3888)
+12:39:08 [INFO]      📍 'gunung di Kendari' → +3 (total: 3891)
+12:39:11 [INFO]      📍 'danau di Kendari' → +5 (total: 3896)
+12:39:15 [INFO]      📍 'bukit di Kendari' → +1 (total: 3897)
+12:39:18 [INFO]      📍 'wisata alam di Kendari' → +3 (total: 3900)
+12:39:21 [INFO]      📍 'wisata sejarah di Kendari' → +7 (total: 3907)
+12:39:24 [INFO]      📍 'desa wisata di Kendari' → +11 (total: 3918)
+12:39:27 [INFO]      📍 'wisata bahari di Kendari' → +2 (total: 3920)
+12:39:30 [INFO]      📍 Nearby [Kendari] → +14 (total: 3934)
+12:39:34 [INFO]      📍 Nearby wisata [Kendari] → +8 (total: 3942)
+12:39:37 [INFO]      📍 Nearby pantai [Kendari] → +2 (total: 3944)
+12:39:39 [INFO] 
+  ── Kab/Kota [2/17]: Baubau
+12:39:40 [INFO]      📍 'tempat wisata di Baubau' → +9 (total: 3953)
+12:39:43 [INFO]      📍 'pantai di Baubau' → +1 (total: 3954)
+12:39:46 [INFO]      📍 'air terjun di Baubau' → +1 (total: 3955)
+12:39:49 [INFO]      📍 'gunung di Baubau' → +2 (total: 3957)
+12:39:53 [INFO]      📍 'danau di Baubau' → +5 (total: 3962)
+12:39:56 [INFO]      📍 'bukit di Baubau' → +2 (total: 3964)
+12:39:59 [INFO]      📍 'wisata alam di Baubau' → +2 (total: 3966)
+12:40:02 [INFO]      📍 'wisata sejarah di Baubau' → +1 (total: 3967)
+12:40:05 [INFO]      📍 'desa wisata di Baubau' → +3 (total: 3970)
+12:40:08 [INFO]      📍 'wisata bahari di Baubau' → +2 (total: 3972)
+12:40:11 [INFO]      📍 Nearby [Baubau] → +15 (total: 3987)
+12:40:15 [INFO]      📍 Nearby wisata [Baubau] → +10 (total: 3997)
+12:40:18 [INFO]      📍 Nearby pantai [Baubau] → +4 (total: 4001)
+12:40:20 [INFO] 
+  ── Kab/Kota [3/17]: Konawe
+12:40:25 [WARNING]       ✗ API Status: DEADLINE_EXCEEDED
+12:40:32 [WARNING]       ✗ API Status: DEADLINE_EXCEEDED
+12:40:38 [INFO]      📍 'air terjun di Konawe' → +18 (total: 4019)
+12:40:42 [INFO]      📍 'gunung di Konawe' → +12 (total: 4031)
+12:40:45 [INFO]      📍 'danau di Konawe' → +9 (total: 4040)
+12:40:48 [INFO]      📍 'bukit di Konawe' → +6 (total: 4046)
+12:40:51 [INFO]      📍 'wisata alam di Konawe' → +13 (total: 4059)
+12:40:54 [INFO]      📍 'wisata sejarah di Konawe' → +7 (total: 4066)
+12:40:57 [INFO]      📍 'desa wisata di Konawe' → +10 (total: 4076)
+12:41:01 [INFO]      📍 'wisata bahari di Konawe' → +8 (total: 4084)
+12:41:04 [INFO]      📍 Nearby [Konawe] → +12 (total: 4096)
+12:41:07 [INFO]      📍 Nearby wisata [Konawe] → +4 (total: 4100)
+12:41:11 [INFO]      📍 Nearby pantai [Konawe] → +7 (total: 4107)
+12:41:13 [INFO] 
+  ── Kab/Kota [4/17]: Konawe Selatan
+12:41:14 [INFO]      📍 'tempat wisata di Konawe Selatan' → +12 (total: 4119)
+12:41:17 [INFO]      📍 'pantai di Konawe Selatan' → +9 (total: 4128)
+12:41:21 [INFO]      📍 'air terjun di Konawe Selatan' → +7 (total: 4135)
+12:41:24 [INFO]      📍 'gunung di Konawe Selatan' → +6 (total: 4141)
+12:41:27 [INFO]      📍 'danau di Konawe Selatan' → +3 (total: 4144)
+12:41:30 [INFO]      📍 'bukit di Konawe Selatan' → +7 (total: 4151)
+12:41:34 [INFO]      📍 'wisata alam di Konawe Selatan' → +6 (total: 4157)
+12:41:37 [INFO]      📍 'wisata sejarah di Konawe Selatan' → +3 (total: 4160)
+12:41:40 [INFO]      📍 'desa wisata di Konawe Selatan' → +9 (total: 4169)
+12:41:46 [INFO]      📍 Nearby [Konawe Selatan] → +14 (total: 4183)
+12:41:55 [INFO] 
+  ── Kab/Kota [5/17]: Konawe Utara
+12:41:56 [INFO]      📍 'tempat wisata di Konawe Utara' → +7 (total: 4190)
+12:42:00 [INFO]      📍 'pantai di Konawe Utara' → +10 (total: 4200)
+12:42:03 [INFO]      📍 'air terjun di Konawe Utara' → +9 (total: 4209)
+12:42:06 [INFO]      📍 'gunung di Konawe Utara' → +6 (total: 4215)
+12:42:10 [INFO]      📍 'danau di Konawe Utara' → +3 (total: 4218)
+12:42:16 [INFO]      📍 'wisata alam di Konawe Utara' → +5 (total: 4223)
+12:42:22 [INFO]      📍 'desa wisata di Konawe Utara' → +6 (total: 4229)
+12:42:28 [INFO]      📍 Nearby [Konawe Utara] → +12 (total: 4241)
+12:42:31 [INFO]      📍 Nearby wisata [Konawe Utara] → +5 (total: 4246)
+12:42:34 [INFO]      📍 Nearby pantai [Konawe Utara] → +2 (total: 4248)
+12:42:36 [INFO] 
+  ── Kab/Kota [6/17]: Konawe Kepulauan
+12:42:37 [INFO]      📍 'tempat wisata di Konawe Kepulauan' → +7 (total: 4255)
+12:42:41 [INFO]      📍 'pantai di Konawe Kepulauan' → +12 (total: 4267)
+12:42:47 [INFO]      📍 'gunung di Konawe Kepulauan' → +7 (total: 4274)
+12:42:50 [INFO]      📍 'danau di Konawe Kepulauan' → +1 (total: 4275)
+12:42:56 [INFO]      📍 'wisata alam di Konawe Kepulauan' → +2 (total: 4277)
+12:43:02 [INFO]      📍 'desa wisata di Konawe Kepulauan' → +2 (total: 4279)
+12:43:08 [INFO]      📍 Nearby [Konawe Kepulauan] → +3 (total: 4282)
+12:43:11 [INFO]      📍 Nearby wisata [Konawe Kepulauan] → +3 (total: 4285)
+12:43:17 [INFO] 
+  ── Kab/Kota [7/17]: Kolaka
+12:43:18 [INFO]      📍 'tempat wisata di Kolaka' → +14 (total: 4299)
+12:43:21 [INFO]      📍 'pantai di Kolaka' → +7 (total: 4306)
+12:43:24 [INFO]      📍 'air terjun di Kolaka' → +2 (total: 4308)
+12:43:27 [INFO]      📍 'gunung di Kolaka' → +1 (total: 4309)
+12:43:33 [INFO]      📍 'bukit di Kolaka' → +4 (total: 4313)
+12:43:36 [INFO]      📍 'wisata alam di Kolaka' → +3 (total: 4316)
+12:43:40 [INFO]      📍 'wisata sejarah di Kolaka' → +2 (total: 4318)
+12:43:43 [INFO]      📍 'desa wisata di Kolaka' → +2 (total: 4320)
+12:43:46 [INFO]      📍 'wisata bahari di Kolaka' → +2 (total: 4322)
+12:43:49 [INFO]      📍 Nearby [Kolaka] → +12 (total: 4334)
+12:43:52 [INFO]      📍 Nearby wisata [Kolaka] → +9 (total: 4343)
+12:43:58 [INFO] 
+  ── Kab/Kota [8/17]: Kolaka Utara
+12:43:59 [INFO]      📍 'tempat wisata di Kolaka Utara' → +11 (total: 4354)
+12:44:05 [INFO]      📍 'air terjun di Kolaka Utara' → +10 (total: 4364)
+12:44:13 [INFO]      📍 'bukit di Kolaka Utara' → +4 (total: 4368)
+12:44:16 [INFO]      📍 'wisata alam di Kolaka Utara' → +5 (total: 4373)
+12:44:19 [INFO]      📍 'wisata sejarah di Kolaka Utara' → +2 (total: 4375)
+12:44:22 [INFO]      📍 'desa wisata di Kolaka Utara' → +5 (total: 4380)
+12:44:37 [INFO] 
+  ── Kab/Kota [9/17]: Kolaka Timur
+12:44:38 [INFO]      📍 'tempat wisata di Kolaka Timur' → +4 (total: 4384)
+12:44:42 [INFO]      📍 'pantai di Kolaka Timur' → +7 (total: 4391)
+12:44:45 [INFO]      📍 'air terjun di Kolaka Timur' → +1 (total: 4392)
+12:44:48 [INFO]      📍 'gunung di Kolaka Timur' → +2 (total: 4394)
+12:44:51 [INFO]      📍 'danau di Kolaka Timur' → +2 (total: 4396)
+12:44:54 [INFO]      📍 'bukit di Kolaka Timur' → +4 (total: 4400)
+12:44:57 [INFO]      📍 'wisata alam di Kolaka Timur' → +3 (total: 4403)
+12:45:01 [INFO]      📍 'wisata sejarah di Kolaka Timur' → +1 (total: 4404)
+12:45:04 [INFO]      📍 'desa wisata di Kolaka Timur' → +1 (total: 4405)
+12:45:10 [INFO]      📍 Nearby [Kolaka Timur] → +3 (total: 4408)
+12:45:13 [INFO]      📍 Nearby wisata [Kolaka Timur] → +2 (total: 4410)
+12:45:18 [INFO] 
+  ── Kab/Kota [10/17]: Bombana
+12:45:19 [INFO]      📍 'tempat wisata di Bombana' → +17 (total: 4427)
+12:45:23 [INFO]      📍 'pantai di Bombana' → +13 (total: 4440)
+12:45:26 [INFO]      📍 'air terjun di Bombana' → +5 (total: 4445)
+12:45:29 [INFO]      📍 'gunung di Bombana' → +14 (total: 4459)
+12:45:32 [INFO]      📍 'danau di Bombana' → +2 (total: 4461)
+12:45:35 [INFO]      📍 'bukit di Bombana' → +6 (total: 4467)
+12:45:39 [INFO]      📍 'wisata alam di Bombana' → +6 (total: 4473)
+12:45:42 [INFO]      📍 'wisata sejarah di Bombana' → +3 (total: 4476)
+12:45:45 [INFO]      📍 'desa wisata di Bombana' → +6 (total: 4482)
+12:45:51 [INFO]      📍 Nearby [Bombana] → +10 (total: 4492)
+12:45:54 [INFO]      📍 Nearby wisata [Bombana] → +2 (total: 4494)
+12:46:00 [INFO] 
+  ── Kab/Kota [11/17]: Muna
+12:46:01 [INFO]      📍 'tempat wisata di Muna' → +17 (total: 4511)
+12:46:04 [INFO]      📍 'pantai di Muna' → +15 (total: 4526)
+12:46:07 [INFO]      📍 'air terjun di Muna' → +2 (total: 4528)
+12:46:11 [INFO]      📍 'gunung di Muna' → +6 (total: 4534)
+12:46:14 [INFO]      📍 'danau di Muna' → +9 (total: 4543)
+12:46:17 [INFO]      📍 'bukit di Muna' → +6 (total: 4549)
+12:46:21 [INFO]      📍 'wisata alam di Muna' → +8 (total: 4557)
+12:46:24 [INFO]      📍 'wisata sejarah di Muna' → +8 (total: 4565)
+12:46:27 [INFO]      📍 'desa wisata di Muna' → +6 (total: 4571)
+12:46:30 [INFO]      📍 'wisata bahari di Muna' → +2 (total: 4573)
+12:46:33 [INFO]      📍 Nearby [Muna] → +16 (total: 4589)
+12:46:37 [INFO]      📍 Nearby wisata [Muna] → +8 (total: 4597)
+12:46:42 [INFO] 
+  ── Kab/Kota [12/17]: Muna Barat
+12:46:56 [INFO]      📍 'danau di Muna Barat' → +1 (total: 4598)
+12:47:15 [INFO]      📍 Nearby [Muna Barat] → +15 (total: 4613)
+12:47:18 [INFO]      📍 Nearby wisata [Muna Barat] → +6 (total: 4619)
+12:47:24 [INFO] 
+  ── Kab/Kota [13/17]: Buton
+12:47:26 [INFO]      📍 'tempat wisata di Buton' → +16 (total: 4635)
+12:47:29 [INFO]      📍 'pantai di Buton' → +14 (total: 4649)
+12:47:33 [INFO]      📍 'air terjun di Buton' → +18 (total: 4667)
+12:47:36 [INFO]      📍 'gunung di Buton' → +11 (total: 4678)
+12:47:39 [INFO]      📍 'danau di Buton' → +8 (total: 4686)
+12:47:42 [INFO]      📍 'bukit di Buton' → +2 (total: 4688)
+12:47:45 [INFO]      📍 'wisata alam di Buton' → +3 (total: 4691)
+12:47:48 [INFO]      📍 'wisata sejarah di Buton' → +3 (total: 4694)
+12:47:52 [INFO]      📍 'desa wisata di Buton' → +12 (total: 4706)
+12:47:58 [INFO]      📍 Nearby [Buton] → +9 (total: 4715)
+12:48:01 [INFO]      📍 Nearby wisata [Buton] → +7 (total: 4722)
+12:48:04 [INFO]      📍 Nearby pantai [Buton] → +8 (total: 4730)
+12:48:06 [INFO] 
+  ── Kab/Kota [14/17]: Buton Selatan
+12:48:08 [INFO]      📍 'tempat wisata di Buton Selatan' → +1 (total: 4731)
+12:48:11 [INFO]      📍 'pantai di Buton Selatan' → +6 (total: 4737)
+12:48:14 [INFO]      📍 'air terjun di Buton Selatan' → +1 (total: 4738)
+12:48:18 [INFO]      📍 'gunung di Buton Selatan' → +3 (total: 4741)
+12:48:21 [INFO]      📍 'danau di Buton Selatan' → +2 (total: 4743)
+12:48:24 [INFO]      📍 'bukit di Buton Selatan' → +3 (total: 4746)
+12:48:28 [INFO]      📍 'wisata alam di Buton Selatan' → +2 (total: 4748)
+12:48:31 [INFO]      📍 'wisata sejarah di Buton Selatan' → +1 (total: 4749)
+12:48:40 [INFO]      📍 Nearby [Buton Selatan] → +16 (total: 4765)
+12:48:43 [INFO]      📍 Nearby wisata [Buton Selatan] → +4 (total: 4769)
+12:48:47 [INFO]      📍 Nearby pantai [Buton Selatan] → +1 (total: 4770)
+12:48:49 [INFO] 
+  ── Kab/Kota [15/17]: Buton Tengah
+12:48:50 [INFO]      📍 'tempat wisata di Buton Tengah' → +1 (total: 4771)
+12:48:53 [INFO]      📍 'pantai di Buton Tengah' → +8 (total: 4779)
+12:48:57 [INFO]      📍 'air terjun di Buton Tengah' → +2 (total: 4781)
+12:49:00 [INFO]      📍 'gunung di Buton Tengah' → +1 (total: 4782)
+12:49:06 [INFO]      📍 'bukit di Buton Tengah' → +1 (total: 4783)
+12:49:10 [INFO]      📍 'wisata alam di Buton Tengah' → +3 (total: 4786)
+12:49:13 [INFO]      📍 'wisata sejarah di Buton Tengah' → +1 (total: 4787)
+12:49:16 [INFO]      📍 'desa wisata di Buton Tengah' → +6 (total: 4793)
+12:49:19 [INFO]      📍 'wisata bahari di Buton Tengah' → +1 (total: 4794)
+12:49:22 [INFO]      📍 Nearby [Buton Tengah] → +11 (total: 4805)
+12:49:25 [INFO]      📍 Nearby wisata [Buton Tengah] → +2 (total: 4807)
+12:49:30 [INFO] 
+  ── Kab/Kota [16/17]: Buton Utara
+12:49:32 [INFO]      📍 'tempat wisata di Buton Utara' → +8 (total: 4815)
+12:49:35 [INFO]      📍 'pantai di Buton Utara' → +11 (total: 4826)
+12:49:38 [INFO]      📍 'air terjun di Buton Utara' → +4 (total: 4830)
+12:49:41 [INFO]      📍 'gunung di Buton Utara' → +7 (total: 4837)
+12:49:45 [INFO]      📍 'danau di Buton Utara' → +2 (total: 4839)
+12:49:48 [INFO]      📍 'bukit di Buton Utara' → +2 (total: 4841)
+12:49:51 [INFO]      📍 'wisata alam di Buton Utara' → +2 (total: 4843)
+12:49:54 [INFO]      📍 'wisata sejarah di Buton Utara' → +3 (total: 4846)
+12:49:58 [INFO]      📍 'desa wisata di Buton Utara' → +6 (total: 4852)
+12:50:04 [INFO]      📍 Nearby [Buton Utara] → +4 (total: 4856)
+12:50:07 [INFO]      📍 Nearby wisata [Buton Utara] → +1 (total: 4857)
+12:50:12 [INFO] 
+  ── Kab/Kota [17/17]: Wakatobi
+12:50:13 [INFO]      📍 'tempat wisata di Wakatobi' → +1 (total: 4858)
+12:50:17 [INFO]      📍 'pantai di Wakatobi' → +12 (total: 4870)
+12:50:23 [INFO]      📍 'gunung di Wakatobi' → +1 (total: 4871)
+12:50:32 [INFO]      📍 'wisata alam di Wakatobi' → +7 (total: 4878)
+12:50:35 [INFO]      📍 'wisata sejarah di Wakatobi' → +3 (total: 4881)
+12:50:42 [INFO]      📍 'wisata bahari di Wakatobi' → +2 (total: 4883)
+12:50:45 [INFO]      📍 Nearby [Wakatobi] → +1 (total: 4884)
+12:50:53 [INFO] 
+  ✓ Selesai Sulawesi Tenggara | Total sementara: 4884 data
+12:50:53 [INFO] 
+═════════════════════════════════════════════════════════════════
+12:50:53 [INFO]   PROVINSI [5/6]: Sulawesi Barat (6 kab/kota)
+12:50:53 [INFO] ═════════════════════════════════════════════════════════════════
+12:50:53 [INFO] 
+  ── Kab/Kota [1/6]: Mamuju
+12:50:55 [INFO]      📍 'tempat wisata di Mamuju' → +20 (total: 4904)
+12:50:58 [INFO]      📍 'pantai di Mamuju' → +10 (total: 4914)
+12:51:01 [INFO]      📍 'air terjun di Mamuju' → +7 (total: 4921)
+12:51:04 [INFO]      📍 'gunung di Mamuju' → +9 (total: 4930)
+12:51:08 [INFO]      📍 'danau di Mamuju' → +1 (total: 4931)
+12:51:11 [INFO]      📍 'bukit di Mamuju' → +5 (total: 4936)
+12:51:14 [INFO]      📍 'wisata alam di Mamuju' → +8 (total: 4944)
+12:51:17 [INFO]      📍 'wisata sejarah di Mamuju' → +1 (total: 4945)
+12:51:21 [INFO]      📍 'desa wisata di Mamuju' → +5 (total: 4950)
+12:51:27 [INFO]      📍 Nearby [Mamuju] → +14 (total: 4964)
+12:51:30 [INFO]      📍 Nearby wisata [Mamuju] → +7 (total: 4971)
+12:51:33 [INFO]      📍 Nearby pantai [Mamuju] → +2 (total: 4973)
+12:51:35 [INFO] 
+  ── Kab/Kota [2/6]: Mamuju Tengah
+12:51:37 [INFO]      📍 'tempat wisata di Mamuju Tengah' → +10 (total: 4983)
+12:51:40 [INFO]      📍 'pantai di Mamuju Tengah' → +9 (total: 4992)
+12:51:43 [INFO]      📍 'air terjun di Mamuju Tengah' → +7 (total: 4999)
+12:51:46 [INFO]      📍 'gunung di Mamuju Tengah' → +10 (total: 5009)
+12:51:50 [INFO]      📍 'danau di Mamuju Tengah' → +1 (total: 5010)
+12:51:53 [INFO]      📍 'bukit di Mamuju Tengah' → +2 (total: 5012)
+12:51:56 [INFO]      📍 'wisata alam di Mamuju Tengah' → +5 (total: 5017)
+12:52:02 [INFO]      📍 'desa wisata di Mamuju Tengah' → +4 (total: 5021)
+12:52:08 [INFO]      📍 Nearby [Mamuju Tengah] → +16 (total: 5037)
+12:52:12 [INFO]      📍 Nearby wisata [Mamuju Tengah] → +5 (total: 5042)
+12:52:17 [INFO] 
+  ── Kab/Kota [3/6]: Mamuju Utara
+12:52:19 [INFO]      📍 'tempat wisata di Mamuju Utara' → +9 (total: 5051)
+12:52:25 [INFO]      📍 'air terjun di Mamuju Utara' → +4 (total: 5055)
+12:52:28 [INFO]      📍 'gunung di Mamuju Utara' → +3 (total: 5058)
+12:52:31 [INFO]      📍 'danau di Mamuju Utara' → +4 (total: 5062)
+12:52:34 [INFO]      📍 'bukit di Mamuju Utara' → +1 (total: 5063)
+12:52:37 [INFO]      📍 'wisata alam di Mamuju Utara' → +7 (total: 5070)
+12:52:44 [INFO]      📍 'desa wisata di Mamuju Utara' → +5 (total: 5075)
+12:52:47 [INFO]      📍 'wisata bahari di Mamuju Utara' → +3 (total: 5078)
+12:52:50 [INFO]      📍 Nearby [Mamuju Utara] → +7 (total: 5085)
+12:52:58 [INFO] 
+  ── Kab/Kota [4/6]: Majene
+12:53:00 [INFO]      📍 'tempat wisata di Majene' → +1 (total: 5086)
+12:53:06 [INFO]      📍 'air terjun di Majene' → +3 (total: 5089)
+12:53:09 [INFO]      📍 'gunung di Majene' → +16 (total: 5105)
+12:53:12 [INFO]      📍 'danau di Majene' → +1 (total: 5106)
+12:53:16 [INFO]      📍 'bukit di Majene' → +6 (total: 5112)
+12:53:19 [INFO]      📍 'wisata alam di Majene' → +7 (total: 5119)
+12:53:22 [INFO]      📍 'wisata sejarah di Majene' → +7 (total: 5126)
+12:53:25 [INFO]      📍 'desa wisata di Majene' → +7 (total: 5133)
+12:53:28 [INFO]      📍 'wisata bahari di Majene' → +1 (total: 5134)
+12:53:32 [INFO]      📍 Nearby [Majene] → +13 (total: 5147)
+12:53:35 [INFO]      📍 Nearby wisata [Majene] → +8 (total: 5155)
+12:53:38 [INFO]      📍 Nearby pantai [Majene] → +4 (total: 5159)
+12:53:40 [INFO] 
+  ── Kab/Kota [5/6]: Polewali Mandar
+12:53:42 [INFO]      📍 'tempat wisata di Polewali Mandar' → +19 (total: 5178)
+12:53:45 [INFO]      📍 'pantai di Polewali Mandar' → +14 (total: 5192)
+12:53:48 [INFO]      📍 'air terjun di Polewali Mandar' → +14 (total: 5206)
+12:53:52 [INFO]      📍 'gunung di Polewali Mandar' → +13 (total: 5219)
+12:53:58 [INFO]      📍 'danau di Polewali Mandar' → +4 (total: 5223)
+12:54:01 [INFO]      📍 'bukit di Polewali Mandar' → +11 (total: 5234)
+12:54:04 [INFO]      📍 'wisata alam di Polewali Mandar' → +5 (total: 5239)
+12:54:08 [INFO]      📍 'wisata sejarah di Polewali Mandar' → +5 (total: 5244)
+12:54:11 [INFO]      📍 'desa wisata di Polewali Mandar' → +6 (total: 5250)
+12:54:17 [INFO]      📍 Nearby [Polewali Mandar] → +11 (total: 5261)
+12:54:21 [INFO]      📍 Nearby wisata [Polewali Mandar] → +3 (total: 5264)
+12:54:26 [INFO] 
+  ── Kab/Kota [6/6]: Mamasa
+12:54:27 [INFO]      📍 'tempat wisata di Mamasa' → +13 (total: 5277)
+12:54:34 [INFO]      📍 'air terjun di Mamasa' → +2 (total: 5279)
+12:54:43 [INFO]      📍 'bukit di Mamasa' → +1 (total: 5280)
+12:54:46 [INFO]      📍 'wisata alam di Mamasa' → +2 (total: 5282)
+12:54:52 [INFO]      📍 'wisata sejarah di Mamasa' → +1 (total: 5283)
+12:54:55 [INFO]      📍 'desa wisata di Mamasa' → +2 (total: 5285)
+12:54:58 [INFO]      📍 'wisata bahari di Mamasa' → +1 (total: 5286)
+12:55:02 [INFO]      📍 Nearby [Mamasa] → +20 (total: 5306)
+12:55:05 [INFO]      📍 Nearby wisata [Mamasa] → +10 (total: 5316)
+12:55:10 [INFO] 
+  ✓ Selesai Sulawesi Barat | Total sementara: 5316 data
+12:55:10 [INFO] 
+═════════════════════════════════════════════════════════════════
+12:55:10 [INFO]   PROVINSI [6/6]: Gorontalo (6 kab/kota)
+12:55:10 [INFO] ═════════════════════════════════════════════════════════════════
+12:55:10 [INFO] 
+  ── Kab/Kota [1/6]: Gorontalo Kota
+12:55:11 [INFO]      📍 'tempat wisata di Gorontalo Kota' → +18 (total: 5334)
+12:55:15 [INFO]      📍 'pantai di Gorontalo Kota' → +7 (total: 5341)
+12:55:18 [INFO]      📍 'air terjun di Gorontalo Kota' → +4 (total: 5345)
+12:55:21 [INFO]      📍 'gunung di Gorontalo Kota' → +4 (total: 5349)
+12:55:24 [INFO]      📍 'danau di Gorontalo Kota' → +1 (total: 5350)
+12:55:28 [INFO]      📍 'bukit di Gorontalo Kota' → +4 (total: 5354)
+12:55:31 [INFO]      📍 'wisata alam di Gorontalo Kota' → +3 (total: 5357)
+12:55:34 [INFO]      📍 'wisata sejarah di Gorontalo Kota' → +1 (total: 5358)
+12:55:40 [INFO]      📍 'wisata bahari di Gorontalo Kota' → +1 (total: 5359)
+12:55:44 [INFO]      📍 Nearby [Gorontalo Kota] → +16 (total: 5375)
+12:55:47 [INFO]      📍 Nearby wisata [Gorontalo Kota] → +12 (total: 5387)
+12:55:50 [INFO]      📍 Nearby pantai [Gorontalo Kota] → +6 (total: 5393)
+12:55:52 [INFO] 
+  ── Kab/Kota [2/6]: Gorontalo Kabupaten
+12:55:54 [INFO]      📍 'tempat wisata di Gorontalo Kabupaten' → +5 (total: 5398)
+12:55:57 [INFO]      📍 'pantai di Gorontalo Kabupaten' → +5 (total: 5403)
+12:56:00 [INFO]      📍 'air terjun di Gorontalo Kabupaten' → +12 (total: 5415)
+12:56:03 [INFO]      📍 'gunung di Gorontalo Kabupaten' → +6 (total: 5421)
+12:56:07 [INFO]      📍 'danau di Gorontalo Kabupaten' → +1 (total: 5422)
+12:56:10 [INFO]      📍 'bukit di Gorontalo Kabupaten' → +9 (total: 5431)
+12:56:14 [INFO]      📍 'wisata alam di Gorontalo Kabupaten' → +6 (total: 5437)
+12:56:17 [INFO]      📍 'wisata sejarah di Gorontalo Kabupaten' → +2 (total: 5439)
+12:56:20 [INFO]      📍 'desa wisata di Gorontalo Kabupaten' → +9 (total: 5448)
+12:56:23 [INFO]      📍 'wisata bahari di Gorontalo Kabupaten' → +1 (total: 5449)
+12:56:27 [INFO]      📍 Nearby [Gorontalo Kabupaten] → +18 (total: 5467)
+12:56:30 [INFO]      📍 Nearby wisata [Gorontalo Kabupaten] → +8 (total: 5475)
+12:56:36 [INFO] 
+  ── Kab/Kota [3/6]: Bone Bolango
+12:56:37 [INFO]      📍 'tempat wisata di Bone Bolango' → +4 (total: 5479)
+12:56:41 [INFO]      📍 'pantai di Bone Bolango' → +9 (total: 5488)
+12:56:44 [INFO]      📍 'air terjun di Bone Bolango' → +2 (total: 5490)
+12:56:47 [INFO]      📍 'gunung di Bone Bolango' → +9 (total: 5499)
+12:56:50 [INFO]      📍 'danau di Bone Bolango' → +6 (total: 5505)
+12:56:53 [INFO]      📍 'bukit di Bone Bolango' → +3 (total: 5508)
+12:56:57 [INFO]      📍 'wisata alam di Bone Bolango' → +2 (total: 5510)
+12:57:00 [INFO]      📍 'wisata sejarah di Bone Bolango' → +3 (total: 5513)
+12:57:03 [INFO]      📍 'desa wisata di Bone Bolango' → +5 (total: 5518)
+12:57:07 [INFO]      📍 'wisata bahari di Bone Bolango' → +3 (total: 5521)
+12:57:10 [INFO]      📍 Nearby [Bone Bolango] → +10 (total: 5531)
+12:57:14 [INFO]      📍 Nearby wisata [Bone Bolango] → +2 (total: 5533)
+12:57:19 [INFO] 
+  ── Kab/Kota [4/6]: Pohuwato
+12:57:20 [INFO]      📍 'tempat wisata di Pohuwato' → +18 (total: 5551)
+12:57:23 [INFO]      📍 'pantai di Pohuwato' → +1 (total: 5552)
+12:57:27 [INFO]      📍 'air terjun di Pohuwato' → +5 (total: 5557)
+12:57:30 [INFO]      📍 'gunung di Pohuwato' → +12 (total: 5569)
+12:57:33 [INFO]      📍 'danau di Pohuwato' → +3 (total: 5572)
+12:57:36 [INFO]      📍 'bukit di Pohuwato' → +5 (total: 5577)
+12:57:40 [INFO]      📍 'wisata alam di Pohuwato' → +1 (total: 5578)
+12:57:43 [INFO]      📍 'wisata sejarah di Pohuwato' → +1 (total: 5579)
+12:57:46 [INFO]      📍 'desa wisata di Pohuwato' → +8 (total: 5587)
+12:57:49 [INFO]      📍 'wisata bahari di Pohuwato' → +3 (total: 5590)
+12:57:52 [INFO]      📍 Nearby [Pohuwato] → +2 (total: 5592)
+12:58:01 [INFO] 
+  ── Kab/Kota [5/6]: Boalemo
+12:58:03 [INFO]      📍 'tempat wisata di Boalemo' → +12 (total: 5604)
+12:58:09 [INFO]      📍 'air terjun di Boalemo' → +4 (total: 5608)
+12:58:12 [INFO]      📍 'gunung di Boalemo' → +9 (total: 5617)
+12:58:15 [INFO]      📍 'danau di Boalemo' → +3 (total: 5620)
+12:58:19 [INFO]      📍 'bukit di Boalemo' → +4 (total: 5624)
+12:58:22 [INFO]      📍 'wisata alam di Boalemo' → +4 (total: 5628)
+12:58:25 [INFO]      📍 'wisata sejarah di Boalemo' → +3 (total: 5631)
+12:58:28 [INFO]      📍 'desa wisata di Boalemo' → +5 (total: 5636)
+12:58:34 [INFO]      📍 Nearby [Boalemo] → +6 (total: 5642)
+12:58:38 [INFO]      📍 Nearby wisata [Boalemo] → +1 (total: 5643)
+12:58:43 [INFO] 
+  ── Kab/Kota [6/6]: Gorontalo Utara
+12:58:45 [INFO]      📍 'tempat wisata di Gorontalo Utara' → +3 (total: 5646)
+12:58:48 [INFO]      📍 'pantai di Gorontalo Utara' → +18 (total: 5664)
+12:58:52 [INFO]      📍 'air terjun di Gorontalo Utara' → +4 (total: 5668)
+12:58:55 [INFO]      📍 'gunung di Gorontalo Utara' → +8 (total: 5676)
+12:58:58 [INFO]      📍 'danau di Gorontalo Utara' → +3 (total: 5679)
+12:59:01 [INFO]      📍 'bukit di Gorontalo Utara' → +3 (total: 5682)
+12:59:05 [INFO]      📍 'wisata alam di Gorontalo Utara' → +3 (total: 5685)
+12:59:11 [INFO]      📍 'desa wisata di Gorontalo Utara' → +3 (total: 5688)
+12:59:18 [INFO]      📍 Nearby [Gorontalo Utara] → +12 (total: 5700)
+12:59:24 [INFO]      📍 Nearby pantai [Gorontalo Utara] → +1 (total: 5701)
+12:59:26 [INFO] 
+  ✓ Selesai Gorontalo | Total sementara: 5701 data
+12:59:26 [INFO] 
+═════════════════════════════════════════════════════════════════
+12:59:26 [INFO]   Total data mentah unik terkumpul: 5701
+12:59:26 [INFO]   Memulai parsing & cleaning ...
+12:59:27 [INFO]   [CLEAN] Sebelum : 5701 baris
+12:59:27 [INFO]   [CLEAN] Sesudah : 5701 baris
+12:59:27 [INFO] 
+═════════════════════════════════════════════════════════════════
+12:59:27 [INFO]   ✅ File disimpan : wisata_sulawesi_20260418_120209.csv
+12:59:27 [INFO]   📊 Total data   : 5701 baris
+12:59:27 [INFO]   📑 Distribusi Kategori:
+12:59:27 [INFO]      Wisata Alam                          3388  ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+12:59:27 [INFO]      Wisata Kota / Landmark               2077  ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+12:59:27 [INFO]      Wisata Budaya & Sejarah               175  █████████████████
+12:59:27 [INFO]      Wisata Religi                          48  ████
+12:59:27 [INFO]      Wisata Hiburan                         13  █
+12:59:27 [INFO] 
+  Rating tersedia : 4407 data
+12:59:27 [INFO]   Foto tersedia   : 4255 data
+12:59:27 [INFO] 
+  🎉 Target 1000 data TERCAPAI! (5701 baris)
+12:59:27 [INFO] 
+  Selesai : 2026-04-18 12:59:27
+12:59:27 [INFO] =================================================================

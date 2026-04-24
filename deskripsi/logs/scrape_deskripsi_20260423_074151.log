@@ -1,0 +1,231 @@
+07:41:51 | INFO    | ============================================================
+07:41:51 | INFO    | Memulai Scraper Deskripsi Wisata (L1: Wikipedia, L2: BS4, L3: Playwright)
+07:41:52 | INFO    | ============================================================
+07:41:52 | INFO    | Membaca data dari: D:\semester6\mc_learning\scrapt_wisata\deskripsi\scrap_deskripsi_wisata.csv
+07:41:52 | INFO    | Total baris dataset: 2708
+07:42:15 | INFO    | [Resume] Baris [100/2708] terlewati (sudah ada data).
+07:42:15 | INFO    | [169/2708] Mencari: Air Terjun Pialaa
+07:42:15 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:42:15 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:42:26 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:42:41 | INFO    |       => Gagal mencari deskripsi.
+07:42:43 | INFO    | [Resume] Baris [201/2708] terlewati (sudah ada data).
+07:42:43 | INFO    | [231/2708] Mencari: Taman Pantai mahaas
+07:42:43 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:42:43 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:43:00 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:43:15 | INFO    |       => Gagal mencari deskripsi.
+07:43:17 | INFO    | [281/2708] Mencari: Pantai Panrangluhu
+07:43:17 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:43:17 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:43:29 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:43:36 | INFO    |       => Gagal mencari deskripsi.
+07:43:37 | INFO    | [Resume] Baris [303/2708] terlewati (sudah ada data).
+07:43:37 | INFO    | [387/2708] Mencari: Air Terjun Loli Tasiburi
+07:43:37 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:43:37 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:43:42 | INFO    |       => Sukses dari: https://rri.co.id/wisata/2134970/loli-tasiburi-oase-sunyi-di-balik-rimba-donggala [L2]
+07:43:44 | INFO    | [Resume] Baris [404/2708] terlewati (sudah ada data).
+07:43:44 | INFO    | [484/2708] Mencari: Ombro
+07:43:44 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:43:44 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:43:54 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:44:01 | INFO    |       => Gagal mencari deskripsi.
+07:44:02 | INFO    | [Resume] Baris [505/2708] terlewati (sudah ada data).
+07:44:02 | INFO    | [Resume] Baris [605/2708] terlewati (sudah ada data).
+07:44:02 | INFO    | [689/2708] Mencari: Pantai Kambahu
+07:44:02 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:44:02 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:44:11 | DEBUG   | [DDGS] Error: ConnectError: ConnectError('error sending request for url (https://html.duckduckgo.com/html/)', 'https://html.duckduckgo.com/html/')
+07:44:11 | INFO    |       => Gagal mencari deskripsi.
+07:44:13 | INFO    | [Resume] Baris [706/2708] terlewati (sudah ada data).
+07:44:13 | INFO    | [749/2708] Mencari: Pantai BBC
+07:44:13 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:44:13 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:44:22 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:44:23 | DEBUG   | [L3 PW] Gagal ekstraksi url https://www.tokopedia.com/blog/travel-tempat-wisata-talaud-terindah/ -> Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.tokopedia.com/blog/travel-tempat-wisata-talaud-terindah/
+Call log:
+  - navigating to "https://www.tokopedia.com/blog/travel-tempat-wisata-talaud-terindah/", waiting until "domcontentloaded"
+
+07:44:23 | DEBUG   | [L3 PW] Gagal ekstraksi url https://travel.kompas.com/read/2017/06/14/161100727/pulau.sara.jadi.ikon.wisata.talaud -> Page.goto: Navigation to "https://travel.kompas.com/read/2017/06/14/161100727/pulau.sara.jadi.ikon.wisata.talaud" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://travel.kompas.com/read/2017/06/14/161100727/pulau.sara.jadi.ikon.wisata.talaud", waiting until "domcontentloaded"
+
+07:44:23 | INFO    |       => Gagal mencari deskripsi.
+07:44:25 | INFO    | [764/2708] Mencari: Pantai Kanaan
+07:44:25 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:44:25 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:44:41 | INFO    |       => Sukses dari: https://rsudrondahaim.com/ekspolrasi-wisata-pantai-kalongan-surga-tersembunyi-minahasa/ [L2]
+07:44:43 | INFO    | [Resume] Baris [808/2708] terlewati (sudah ada data).
+07:44:43 | INFO    | [813/2708] Mencari: Ikha cell
+07:44:43 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:44:43 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:44:52 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:44:53 | DEBUG   | [L3 PW] Gagal ekstraksi url https://liburanplus.com/wisata/sulawesi/tempat-wisata-kotamobagu/ -> Page.goto: net::ERR_ABORTED at https://liburanplus.com/wisata/sulawesi/tempat-wisata-kotamobagu/
+Call log:
+  - navigating to "https://liburanplus.com/wisata/sulawesi/tempat-wisata-kotamobagu/", waiting until "domcontentloaded"
+
+07:44:55 | INFO    |       => Gagal mencari deskripsi.
+07:44:56 | INFO    | [865/2708] Mencari: Pantai Marboro
+07:44:56 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:44:56 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:45:06 | DEBUG   | [DDGS] Error: RequestError: RequestError('error sending request for url (https://search.yahoo.com/search;_ylt=t9EzGW8rmWYRJtKYTHoKb85m;_ylu=XKujYG_cpGx15bhQb7gBWYJFVBw7EY3-F1a9LdOPnNPs0BY?p=Pantai+Marboro+Kabupaten+Buton+wisata)', 'https://search.yahoo.com/search;_ylt=t9EzGW8rmWYRJtKYTHoKb85m;_ylu=XKujYG_cpGx15bhQb7gBWYJFVBw7EY3-F1a9LdOPnNPs0BY?p=Pantai+Marboro+Kabupaten+Buton+wisata')
+07:45:06 | INFO    |       => Gagal mencari deskripsi.
+07:45:08 | INFO    | [879/2708] Mencari: Air Terjun Depa'
+07:45:08 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:45:08 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:45:17 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:45:25 | INFO    |       => Gagal mencari deskripsi.
+07:45:26 | INFO    | [883/2708] Mencari: Pantai Salokaili
+07:45:26 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:45:26 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:45:46 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:46:03 | INFO    |       => Gagal mencari deskripsi.
+07:46:05 | INFO    | [Resume] Baris [912/2708] terlewati (sudah ada data).
+07:46:05 | INFO    | [939/2708] Mencari: Monas
+07:46:05 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:46:05 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:46:19 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:46:24 | INFO    |       => Gagal mencari deskripsi.
+07:46:25 | INFO    | [958/2708] Mencari: pantai Bara' UjungLero
+07:46:25 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:46:25 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:46:37 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:46:47 | INFO    |       => Sukses dari: https://id.top10place.com/pantai-bara-ujunglero-1440385335.html [Snippet]
+07:46:48 | INFO    | [960/2708] Mencari: Taman Uebone
+07:46:48 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:46:48 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:47:05 | DEBUG   | [L2 BS4] Gagal ekstraksi url https://sisparnas.kemenparekraf.go.id/p/1747 -> HTTPSConnectionPool(host='sisparnas.kemenparekraf.go.id', port=443): Max retries exceeded with url: /p/1747 (Caused by NameResolutionError("HTTPSConnection(host='sisparnas.kemenparekraf.go.id', port=443): Failed to resolve 'sisparnas.kemenparekraf.go.id' ([Errno 11002] getaddrinfo failed)"))
+07:47:05 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:47:19 | DEBUG   | [L3 PW] Gagal ekstraksi url https://sisparnas.kemenparekraf.go.id/p/1747 -> Page.goto: net::ERR_NAME_NOT_RESOLVED at https://sisparnas.kemenparekraf.go.id/p/1747
+Call log:
+  - navigating to "https://sisparnas.kemenparekraf.go.id/p/1747", waiting until "domcontentloaded"
+
+07:47:19 | DEBUG   | [L3 PW] Gagal ekstraksi url https://sisparnas.com/p/122948 -> Page.goto: Navigation to "https://sisparnas.com/p/122948" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://sisparnas.com/p/122948", waiting until "domcontentloaded"
+
+07:47:19 | INFO    |       => Sukses dari: https://sisparnas.kemenpar.go.id/p/122948 [Snippet]
+07:47:21 | INFO    | [968/2708] Mencari: Bukit Sarassang
+07:47:21 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:47:21 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:47:30 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:47:40 | INFO    |       => Gagal mencari deskripsi.
+07:47:42 | INFO    | [989/2708] Mencari: Pantai Sunrise
+07:47:42 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:47:42 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:48:01 | DEBUG   | [DDGS] Error: ConnectError: ConnectError('error sending request for url (https://html.duckduckgo.com/html/)', 'https://html.duckduckgo.com/html/')
+07:48:01 | INFO    |       => Gagal mencari deskripsi.
+07:48:03 | INFO    | [Resume] Baris [1017/2708] terlewati (sudah ada data).
+07:48:03 | INFO    | [1053/2708] Mencari: Pantai Mato
+07:48:03 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:48:03 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:48:28 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:48:39 | DEBUG   | [L3 PW] Gagal ekstraksi url https://www.tokopedia.com/blog/travel-tempat-wisata-di-nias/ -> Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.tokopedia.com/blog/travel-tempat-wisata-di-nias/
+Call log:
+  - navigating to "https://www.tokopedia.com/blog/travel-tempat-wisata-di-nias/", waiting until "domcontentloaded"
+
+07:48:43 | DEBUG   | [L3 PW] Gagal ekstraksi url https://www.pesonaindo.com/tours/paket-wisata-kepulauan-kei/ -> Page.goto: Navigation to "https://www.pesonaindo.com/tours/paket-wisata-kepulauan-kei/" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://www.pesonaindo.com/tours/paket-wisata-kepulauan-kei/", waiting until "domcontentloaded"
+
+07:48:43 | INFO    |       => Gagal mencari deskripsi.
+07:48:45 | INFO    | [1063/2708] Mencari: Pantai Anita
+07:48:45 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:48:45 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:49:09 | DEBUG   | [L2 BS4] Gagal ekstraksi url https://www.denianggoleta.com/2019/10/wisata-pantai-batu-gong-kendari-yang.html -> HTTPSConnectionPool(host='www.denianggoleta.com', port=443): Max retries exceeded with url: /2019/10/wisata-pantai-batu-gong-kendari-yang.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.denianggoleta.com', port=443) at 0x242af29bc50>, 'Connection to www.denianggoleta.com timed out. (connect timeout=8)'))
+07:49:11 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:49:26 | DEBUG   | [L3 PW] Gagal ekstraksi url https://travel.tribunnews.com/2025/05/20/liburan-ke-pantai-ratatotok-timur-minahasa-tenggara-berikut-panduan-rute-menuju-ke-sana -> Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://travel.tribunnews.com/2025/05/20/liburan-ke-pantai-ratatotok-timur-minahasa-tenggara-berikut-panduan-rute-menuju-ke-sana", waiting until "domcontentloaded"
+
+07:49:33 | INFO    |       => Gagal mencari deskripsi.
+07:49:34 | INFO    | [Resume] Baris [1119/2708] terlewati (sudah ada data).
+07:49:34 | INFO    | [1137/2708] Mencari: Pantai puluty
+07:49:34 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:49:34 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:49:48 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:49:56 | INFO    |       => Gagal mencari deskripsi.
+07:49:58 | INFO    | *** Auto-saving 20 baris diproses...
+07:49:58 | INFO    | [1147/2708] Mencari: Pantai Arjuna
+07:49:58 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:49:58 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:50:26 | DEBUG   | [L2 BS4] Gagal ekstraksi url https://kutora.id/daerah/beberapa-rekomendasi-wisata-yang-ada-di-parigi-moutong/3297/ -> HTTPSConnectionPool(host='kutora.id', port=443): Read timed out.
+07:50:39 | DEBUG   | [L2 BS4] Gagal ekstraksi url https://eloratour.wordpress.com/tag/tempat-wisata-di-kabupaten-parigi-moutong/ -> HTTPSConnectionPool(host='eloratour.wordpress.com', port=443): Read timed out. (read timeout=8)
+07:50:39 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:50:52 | INFO    |       => Gagal mencari deskripsi.
+07:50:54 | INFO    | [Resume] Baris [1221/2708] terlewati (sudah ada data).
+07:50:54 | INFO    | [1275/2708] Mencari: Taman Reformasi
+07:50:54 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:50:54 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:51:09 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:51:20 | INFO    |       => Gagal mencari deskripsi.
+07:51:21 | INFO    | [Resume] Baris [1322/2708] terlewati (sudah ada data).
+07:51:21 | INFO    | [1366/2708] Mencari: Pantai Wakarumende
+07:51:21 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:51:21 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:51:48 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:52:03 | DEBUG   | [L3 PW] Gagal ekstraksi url https://www.joglowisata.com/tour/paket-wisata-wakatobi-3-hari-2-malam -> Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://www.joglowisata.com/tour/paket-wisata-wakatobi-3-hari-2-malam", waiting until "domcontentloaded"
+
+07:52:18 | DEBUG   | [L3 PW] Gagal ekstraksi url https://www.wonderverseindonesia.com/id/article/travel/daya-tarik-wisata-wakatobi-keindahan-alam-kelas-mendunia -> Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://www.wonderverseindonesia.com/id/article/travel/daya-tarik-wisata-wakatobi-keindahan-alam-kelas-mendunia", waiting until "domcontentloaded"
+
+07:52:23 | INFO    |       => Gagal mencari deskripsi.
+07:52:24 | INFO    | [1368/2708] Mencari: Pantai Baurung
+07:52:24 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:52:24 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:52:44 | INFO    |       => Sukses dari: https://pasirpantai.com/sulawesi/sulawesi-barat/pantai-baurung-sulawesi-barat/attachment/bebatun-berbentuk-burung-pantai-baurung/ [L2]
+07:52:46 | INFO    | [1416/2708] Mencari: Air Terjun Tu'nan
+07:52:46 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:52:46 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:53:08 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:53:23 | DEBUG   | [L3 PW] Gagal ekstraksi url https://jadesta.kemenpar.go.id/desa/air_terjun_tunan_talawaan -> Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://jadesta.kemenpar.go.id/desa/air_terjun_tunan_talawaan", waiting until "domcontentloaded"
+
+07:53:31 | INFO    |       => Gagal mencari deskripsi.
+07:53:32 | INFO    | [Resume] Baris [1425/2708] terlewati (sudah ada data).
+07:53:32 | INFO    | [1454/2708] Mencari: Air terjun Rouda
+07:53:32 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:53:32 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:53:58 | DEBUG   | [DDGS] Error: ('error sending request for url (https://yandex.com/search/site/?text=Air+terjun+Rouda+Kabupaten+Kolaka+Utara+wisata&web=1&searchid=8606575)', 'https://yandex.com/search/site/?text=Air+terjun+Rouda+Kabupaten+Kolaka+Utara+wisata&web=1&searchid=8606575')
+07:53:58 | INFO    |       => Gagal mencari deskripsi.
+07:53:59 | INFO    | [1478/2708] Mencari: Pantai tupa
+07:53:59 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:53:59 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:54:21 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:54:28 | INFO    |       => Gagal mencari deskripsi.
+07:54:29 | INFO    | [1506/2708] Mencari: Senja Beloka
+07:54:29 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:54:29 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:54:51 | DEBUG   | [DDGS] Error: DecodeError: DecodeError('Body collection error: error decoding response body')
+07:54:51 | INFO    |       => Gagal mencari deskripsi.
+07:54:52 | INFO    | [1508/2708] Mencari: Air Terjun Bobaa
+07:54:52 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:54:52 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:55:06 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:55:11 | INFO    |       => Gagal mencari deskripsi.
+07:55:13 | INFO    | [1512/2708] Mencari: Parkiran Air Terjun (Kali)
+07:55:13 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:55:13 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:55:39 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:55:57 | INFO    |       => Gagal mencari deskripsi.
+07:55:58 | INFO    | [1517/2708] Mencari: air terjun wambalamba
+07:55:58 | DEBUG   | [L1 Wiki] Error: Expecting value: line 1 column 1 (char 0)
+07:55:58 | DEBUG   |       L1 Gagal, mencoba L2/L3 DDGS/BS4/Playwright...
+07:56:23 | DEBUG   |       L2 Gagal. Mencoba L3 Playwright...
+07:56:35 | DEBUG   | [L3 PW] Gagal ekstraksi url https://www.kompas.com/tag/wisata-buton -> Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.kompas.com/tag/wisata-buton", waiting until "domcontentloaded"
+
+07:56:35 | DEBUG   | [L3 PW] Gagal ekstraksi url https://jejaktravelind.blogspot.com/2025/07/info-wisata-buton-surga-tersembunyi.html -> Page.goto: Target page, context or browser has been closed
+07:56:35 | DEBUG   | [L3 PW] Gagal ekstraksi url https://wisatasulawesi.wordpress.com/ -> Page.goto: Target page, context or browser has been closed
+07:56:35 | DEBUG   | [L3 PW] Gagal ekstraksi url https://tarsiusadventour.blogspot.com/2017/08/bendungan-mataompana-icon-wisata.html -> Page.goto: Target page, context or browser has been closed
+07:56:35 | INFO    |       => Gagal mencari deskripsi.
+07:56:37 | INFO    | 
+Menyimpan file final...
+07:56:37 | INFO    | Berhasil disimpan: D:\semester6\mc_learning\scrapt_wisata\deskripsi\scrap_deskripsi_wisata.csv
+07:56:37 | INFO    | Selesai dikerjakan!
