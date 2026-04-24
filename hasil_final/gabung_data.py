@@ -10,8 +10,15 @@ FILE_BASE = os.path.join(BASE_DIR, "hasil_scrap", "wisata_sulawesi_kategori_ai.c
 FILE_HARGA = os.path.join(BASE_DIR, "harga", "scrap_harga_wisata.csv")
 FILE_DESK = os.path.join(BASE_DIR, "deskripsi", "scrap_deskripsi_wisata.csv")
 FILE_IMAGE = os.path.join(BASE_DIR, "image", "scrap_image.csv")
+FILE_FIXED = os.path.join(SCRIPT_DIR, "wisata_sulawesi_fixed.csv")
 
 OUT_FILE = os.path.join(SCRIPT_DIR, "wisata_sulawesi_lengkap.csv")
+
+# Provinsi yang valid di Sulawesi
+VALID_PROVINSI = [
+    'Sulawesi Selatan', 'Sulawesi Barat', 'Sulawesi Tengah',
+    'Sulawesi Utara', 'Sulawesi Tenggara', 'Gorontalo'
+]
 
 def main():
     print("=" * 50)
@@ -32,7 +39,7 @@ def main():
         df_harga = pd.read_csv(FILE_HARGA)
         df_harga = df_harga.rename(columns={'nama wisata': 'nama_wisata'})
     except FileNotFoundError:
-        print(f"[Error] File harga rtidak ditemukan: {FILE_HARGA}")
+        print(f"[Error] File harga tidak ditemukan: {FILE_HARGA}")
         return
         
     # 3. Load Data Deskripsi
@@ -101,7 +108,48 @@ def main():
         ] if col in df_base.columns
     ]
     
-    df_final = df_base[cols_order]
+    df_final = df_base[cols_order].copy()
+    
+    # ── KOREKSI LOKASI DARI FILE FIXED ──────────────────────
+    # Terapkan koreksi alamat, kabupaten, dan provinsi dari wisata_sulawesi_fixed.csv
+    # File ini berisi data yang sudah di-scrape ulang via Playwright dan diverifikasi
+    print(f"\nMenerapkan koreksi lokasi dari: {os.path.basename(FILE_FIXED)}")
+    try:
+        df_fixed = pd.read_csv(FILE_FIXED)
+        # Buat lookup dari place_id -> (alamat, kabupaten, provinsi)
+        fix_lookup = {}
+        for _, row in df_fixed.iterrows():
+            fix_lookup[row['place_id']] = {
+                'alamat': row['alamat'],
+                'kabupaten': row['kabupaten'],
+                'provinsi': row['provinsi']
+            }
+        
+        fix_count = 0
+        for idx, row in df_final.iterrows():
+            pid = row['place_id']
+            if pid in fix_lookup:
+                fixed = fix_lookup[pid]
+                if (str(row['kabupaten']) != str(fixed['kabupaten']) or
+                    str(row['provinsi']) != str(fixed['provinsi'])):
+                    df_final.at[idx, 'alamat'] = fixed['alamat']
+                    df_final.at[idx, 'kabupaten'] = fixed['kabupaten']
+                    df_final.at[idx, 'provinsi'] = fixed['provinsi']
+                    fix_count += 1
+        
+        print(f"Koreksi lokasi diterapkan: {fix_count} baris diperbarui.")
+    except FileNotFoundError:
+        print(f"[Warning] File koreksi tidak ditemukan: {FILE_FIXED}")
+        print("  Melewati tahap koreksi lokasi. Jalankan rescrape_alamat_playwright.py terlebih dahulu.")
+    except Exception as e:
+        print(f"[Warning] Gagal menerapkan koreksi: {e}")
+    
+    # ── FILTER: HAPUS DATA DI LUAR SULAWESI ──────────────────
+    len_before = len(df_final)
+    df_final = df_final[df_final['provinsi'].isin(VALID_PROVINSI)]
+    removed = len_before - len(df_final)
+    if removed > 0:
+        print(f"Menghapus {removed} data di luar Sulawesi.")
     
     print(f"\nMenyimpan file csv hasil akhir ke: {OUT_FILE}")
     df_final.to_csv(OUT_FILE, index=False, encoding="utf-8-sig")
@@ -109,3 +157,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
