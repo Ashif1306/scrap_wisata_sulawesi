@@ -64,10 +64,10 @@ KAB_BBOX = {
     "Kabupaten Minahasa Utara":             ( 1.50,  1.90, 124.85, 125.25),
     "Kabupaten Minahasa Selatan":           ( 0.75,  1.20, 124.40, 124.90),
     "Kabupaten Minahasa Tenggara":          ( 0.55,  1.10, 124.55, 125.05),
-    "Kabupaten Bolaang Mongondow":          ( 0.30,  0.90, 123.95, 124.80),
-    "Kabupaten Bolaang Mongondow Utara":    ( 0.95,  1.65, 123.40, 124.45),
-    "Kabupaten Bolaang Mongondow Selatan":  (-0.10,  0.55, 123.80, 124.50),
-    "Kabupaten Bolaang Mongondow Timur":    ( 0.55,  1.05, 124.45, 125.05),
+    "Kabupaten Bolaang Mongondow":          ( 0.50,  1.10, 123.80, 124.80),
+    "Kabupaten Bolaang Mongondow Utara":    ( 0.75,  1.10, 123.17, 123.75),
+    "Kabupaten Bolaang Mongondow Selatan":  ( 0.30,  0.65, 123.65, 124.50),
+    "Kabupaten Bolaang Mongondow Timur":    ( 0.55,  1.05, 124.30, 124.75),
     "Kabupaten Kepulauan Sangihe":          ( 2.70,  4.10, 125.30, 125.80),
     "Kabupaten Kepulauan Talaud":           ( 3.80,  4.80, 126.60, 127.20),
     "Kabupaten Kepulauan Siau Tagulandang Biaro": (2.40, 2.80, 125.30, 125.60),
@@ -90,12 +90,12 @@ KAB_BBOX = {
     "Kabupaten Muna Barat":                 (-5.20, -4.60, 121.70, 122.30),
     "Kabupaten Wakatobi":                   (-6.25, -5.30, 123.40, 124.20),
 
-    "Kota Gorontalo":                       ( 0.53,  0.62, 122.98, 123.10),
-    "Kabupaten Gorontalo":                  ( 0.35,  0.75, 122.60, 123.20),
-    "Kabupaten Gorontalo Utara":            ( 0.65,  1.00, 122.20, 122.85),
-    "Kabupaten Bone Bolango":               ( 0.40,  0.90, 122.90, 123.50),
-    "Kabupaten Boalemo":                    ( 0.30,  0.80, 121.90, 122.55),
-    "Kabupaten Pohuwato":                   ( 0.30,  0.85, 121.20, 122.10),
+    "Kota Gorontalo":                       ( 0.53,  0.62, 123.00, 123.10),
+    "Kabupaten Gorontalo":                  ( 0.40,  0.80, 122.20, 123.15),
+    "Kabupaten Gorontalo Utara":            ( 0.65,  1.00, 122.20, 123.17),
+    "Kabupaten Bone Bolango":               ( 0.35,  0.75, 123.00, 123.45),
+    "Kabupaten Boalemo":                    ( 0.40,  0.85, 122.00, 122.60),
+    "Kabupaten Pohuwato":                   ( 0.40,  0.90, 121.20, 122.10),
 }
 
 KAB_TO_PROV = {
