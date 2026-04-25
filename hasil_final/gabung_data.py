@@ -160,7 +160,10 @@ def main():
         # Buat lookup dari place_id -> kabupaten (hanya kabupaten, provinsi dari mapping)
         kab_lookup = {}
         for _, row in df_koreksi.iterrows():
-            kab_lookup[row['place_id']] = str(row['kabupaten']).strip()
+            if 'kabupaten_original' in row and pd.notna(row['kabupaten_original']):
+                kab_lookup[row['place_id']] = str(row['kabupaten_original']).strip()
+            else:
+                kab_lookup[row['place_id']] = str(row['kabupaten']).strip()
         
         lokasi_fixed = 0
         for idx, row in df_final.iterrows():
