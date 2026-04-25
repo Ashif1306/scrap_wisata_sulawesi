@@ -10,7 +10,7 @@ FILE_BASE = os.path.join(BASE_DIR, "hasil_scrap", "wisata_sulawesi_kategori_ai.c
 FILE_HARGA = os.path.join(BASE_DIR, "harga", "scrap_harga_wisata.csv")
 FILE_DESK = os.path.join(BASE_DIR, "deskripsi", "scrap_deskripsi_wisata.csv")
 FILE_IMAGE = os.path.join(BASE_DIR, "image", "scrap_image.csv")
-FILE_KAB_PROV = os.path.join(BASE_DIR, "hasil_scrap", "kabupaten_provinsi.csv")
+FILE_KAB_PROV = os.path.join(SCRIPT_DIR, "kabupaten_provinsi.csv")
 
 OUT_FILE = os.path.join(SCRIPT_DIR, "wisata_sulawesi_lengkap.csv")
 
@@ -151,51 +151,49 @@ def main():
     
     df_final = df_base[cols_order].copy()
     
-    # ── KOREKSI LOKASI DARI FILE KABUPATEN_PROVINSI ─────────────
-    # Terapkan koreksi alamat, kabupaten, dan provinsi dari hasil_scrap/kabupaten_provinsi.csv
-    print(f"\nMenerapkan koreksi lokasi dari: {os.path.basename(FILE_KAB_PROV)}")
+    # ── KOREKSI KABUPATEN DARI FILE KABUPATEN_PROVINSI ─────────────
+    # Ambil kabupaten yang sudah diperbaiki dari hasil_final/kabupaten_provinsi.csv
+    # Provinsi TIDAK diambil dari CSV — selalu diturunkan dari mapping 81 kab/kota
+    print(f"\nMenerapkan koreksi kabupaten dari: {os.path.basename(FILE_KAB_PROV)}")
     try:
         df_kab_prov = pd.read_csv(FILE_KAB_PROV)
-        # Buat lookup dari place_id -> (alamat, kabupaten, provinsi, lat, long)
-        fix_lookup = {}
+        # Buat lookup dari place_id -> kabupaten (hanya kabupaten, provinsi dari mapping)
+        kab_lookup = {}
         for _, row in df_kab_prov.iterrows():
-            fix_lookup[row['place_id']] = {
-                'alamat': row['alamat'],
-                'kabupaten': row['kabupaten'],
-                'provinsi': row['provinsi'],
-                'lat': row['lat'],
-                'long': row['long']
-            }
+            kab_lookup[row['place_id']] = str(row['kabupaten']).strip()
         
         lokasi_fixed = 0
         for idx, row in df_final.iterrows():
             pid = row['place_id']
-            if pid in fix_lookup:
-                # Update kolom lokasi
-                df_final.at[idx, 'alamat'] = fix_lookup[pid]['alamat']
-                df_final.at[idx, 'kabupaten'] = fix_lookup[pid]['kabupaten']
-                df_final.at[idx, 'provinsi'] = fix_lookup[pid]['provinsi']
-                df_final.at[idx, 'lat'] = fix_lookup[pid]['lat']
-                df_final.at[idx, 'long'] = fix_lookup[pid]['long']
-                lokasi_fixed += 1
+            if pid in kab_lookup:
+                new_kab = kab_lookup[pid]
+                old_kab = str(row['kabupaten']).strip()
+                if new_kab and new_kab != old_kab:
+                    df_final.at[idx, 'kabupaten'] = new_kab
+                    lokasi_fixed += 1
                 
-        print(f"Koreksi lokasi diterapkan: {lokasi_fixed} baris diperbarui.")
+        print(f"Koreksi kabupaten diterapkan: {lokasi_fixed} baris diperbarui.")
     except FileNotFoundError:
-        print(f"[Warning] File koreksi tidak ditemukan: {FILE_KAB_PROV}. Melanjutkan tanpa koreksi tambahan.")
+        print(f"[Warning] File koreksi tidak ditemukan: {FILE_KAB_PROV}. Melanjutkan tanpa koreksi.")
     except Exception as e:
         print(f"[Warning] Gagal menerapkan koreksi: {e}")
     
-    # ── NORMALISASI PROVINSI (WAJIB — berdasarkan mapping statis resmi) ──────────
-    # Ini menjamin provinsi SELALU benar sesuai kabupaten, apapun data sumbernya.
+    # ── NORMALISASI PROVINSI (WAJIB — berdasarkan mapping statis 81 kab/kota) ──────────
+    # Provinsi SELALU diturunkan dari KAB_TO_PROVINSI, bukan dari sumber data manapun.
     prov_fixed = 0
+    prov_unknown = 0
     for idx, row in df_final.iterrows():
         kab = str(row['kabupaten']).strip()
         correct_prov = KAB_TO_PROVINSI.get(kab)
-        if correct_prov and correct_prov != str(row['provinsi']).strip():
-            df_final.at[idx, 'provinsi'] = correct_prov
-            prov_fixed += 1
-    if prov_fixed > 0:
-        print(f"Normalisasi provinsi: {prov_fixed} baris dikoreksi otomatis.")
+        if correct_prov:
+            if correct_prov != str(row['provinsi']).strip():
+                df_final.at[idx, 'provinsi'] = correct_prov
+                prov_fixed += 1
+        else:
+            prov_unknown += 1
+    print(f"Normalisasi provinsi: {prov_fixed} baris dikoreksi dari mapping 81 kab/kota.")
+    if prov_unknown > 0:
+        print(f"[Warning] {prov_unknown} baris memiliki kabupaten yang tidak terdaftar di mapping.")
 
     # ── FILTER: HAPUS DATA DI LUAR SULAWESI ──────────────────
     len_before = len(df_final)
