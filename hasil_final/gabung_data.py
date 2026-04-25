@@ -10,7 +10,7 @@ FILE_BASE = os.path.join(BASE_DIR, "hasil_scrap", "wisata_sulawesi_kategori_ai.c
 FILE_HARGA = os.path.join(BASE_DIR, "harga", "scrap_harga_wisata.csv")
 FILE_DESK = os.path.join(BASE_DIR, "deskripsi", "scrap_deskripsi_wisata.csv")
 FILE_IMAGE = os.path.join(BASE_DIR, "image", "scrap_image.csv")
-FILE_FIXED = os.path.join(SCRIPT_DIR, "wisata_sulawesi_fixed.csv")
+FILE_KAB_PROV = os.path.join(BASE_DIR, "hasil_scrap", "kabupaten_provinsi.csv")
 
 OUT_FILE = os.path.join(SCRIPT_DIR, "wisata_sulawesi_lengkap.csv")
 
@@ -151,37 +151,37 @@ def main():
     
     df_final = df_base[cols_order].copy()
     
-    # ── KOREKSI LOKASI DARI FILE FIXED ──────────────────────
-    # Terapkan koreksi alamat, kabupaten, dan provinsi dari wisata_sulawesi_fixed.csv
-    # File ini berisi data yang sudah di-scrape ulang via Playwright dan diverifikasi
-    print(f"\nMenerapkan koreksi lokasi dari: {os.path.basename(FILE_FIXED)}")
+    # ── KOREKSI LOKASI DARI FILE KABUPATEN_PROVINSI ─────────────
+    # Terapkan koreksi alamat, kabupaten, dan provinsi dari hasil_scrap/kabupaten_provinsi.csv
+    print(f"\nMenerapkan koreksi lokasi dari: {os.path.basename(FILE_KAB_PROV)}")
     try:
-        df_fixed = pd.read_csv(FILE_FIXED)
-        # Buat lookup dari place_id -> (alamat, kabupaten, provinsi)
+        df_kab_prov = pd.read_csv(FILE_KAB_PROV)
+        # Buat lookup dari place_id -> (alamat, kabupaten, provinsi, lat, long)
         fix_lookup = {}
-        for _, row in df_fixed.iterrows():
+        for _, row in df_kab_prov.iterrows():
             fix_lookup[row['place_id']] = {
                 'alamat': row['alamat'],
                 'kabupaten': row['kabupaten'],
-                'provinsi': row['provinsi']
+                'provinsi': row['provinsi'],
+                'lat': row['lat'],
+                'long': row['long']
             }
         
-        fix_count = 0
+        lokasi_fixed = 0
         for idx, row in df_final.iterrows():
             pid = row['place_id']
             if pid in fix_lookup:
-                fixed = fix_lookup[pid]
-                if (str(row['kabupaten']) != str(fixed['kabupaten']) or
-                    str(row['provinsi']) != str(fixed['provinsi'])):
-                    df_final.at[idx, 'alamat'] = fixed['alamat']
-                    df_final.at[idx, 'kabupaten'] = fixed['kabupaten']
-                    df_final.at[idx, 'provinsi'] = fixed['provinsi']
-                    fix_count += 1
-        
-        print(f"Koreksi lokasi diterapkan: {fix_count} baris diperbarui.")
+                # Update kolom lokasi
+                df_final.at[idx, 'alamat'] = fix_lookup[pid]['alamat']
+                df_final.at[idx, 'kabupaten'] = fix_lookup[pid]['kabupaten']
+                df_final.at[idx, 'provinsi'] = fix_lookup[pid]['provinsi']
+                df_final.at[idx, 'lat'] = fix_lookup[pid]['lat']
+                df_final.at[idx, 'long'] = fix_lookup[pid]['long']
+                lokasi_fixed += 1
+                
+        print(f"Koreksi lokasi diterapkan: {lokasi_fixed} baris diperbarui.")
     except FileNotFoundError:
-        print(f"[Warning] File koreksi tidak ditemukan: {FILE_FIXED}")
-        print("  Melewati tahap koreksi lokasi. Jalankan rescrape_alamat_playwright.py terlebih dahulu.")
+        print(f"[Warning] File koreksi tidak ditemukan: {FILE_KAB_PROV}. Melanjutkan tanpa koreksi tambahan.")
     except Exception as e:
         print(f"[Warning] Gagal menerapkan koreksi: {e}")
     
