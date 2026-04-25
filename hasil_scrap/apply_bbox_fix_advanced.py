@@ -6,7 +6,7 @@ import os
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 SCRIPT_DIR  = os.path.dirname(os.path.abspath(__file__))
-INPUT_FILE  = os.path.join(SCRIPT_DIR, 'kabupaten_provinsi.csv')
+INPUT_FILE  = os.path.join(SCRIPT_DIR, '..', 'hasil_final', 'wisata_sulawesi_lengkap.csv')
 
 from apply_bbox_fix import KAB_BBOX, KAB_TO_PROV
 
