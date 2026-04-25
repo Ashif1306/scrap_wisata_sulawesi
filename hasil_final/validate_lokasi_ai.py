@@ -1,9 +1,9 @@
 """
 =================================================================
-VALIDASI KABUPATEN WISATA SULAWESI MENGGUNAKAN GEMINI AI
+VALIDASI KABUPATEN WISATA SULAWESI MENGGUNAKAN OPENAI GPT-4o-mini
 =================================================================
-- Model    : gemini-2.0-flash (terbaru & paling akurat untuk ini)
-- API Keys : 3 key dengan auto-rotate saat rate limit
+- Model    : gpt-4o-mini (hemat & cepat)
+- API Key  : OpenAI API Key
 - Aturan   : HANYA update kabupaten jika salah, JANGAN tambah
              data baru, JANGAN ubah alamat
 - Output   : wisata_sulawesi_fixed.csv (overwrite)
@@ -19,34 +19,23 @@ import json
 import time
 import os
 import signal
-import google.generativeai as genai
+from openai import OpenAI
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 INPUT_FILE  = os.path.join(SCRIPT_DIR, "wisata_sulawesi_fixed.csv")
 OUTPUT_FILE = os.path.join(SCRIPT_DIR, "wisata_sulawesi_fixed.csv")
 PROGRESS_FILE = os.path.join(SCRIPT_DIR, "_ai_validation_progress.json")
 
-# ── API KEYS (auto-rotate saat limit) ──────────────
-API_KEYS = [
-    "AIzaSyA1hJBvslDmQfQeJp7pkr8zUevsfN0c6DU", # Key Baru (Fresh)
-    "AIzaSyDABMnmqILkzPQ_1o1jfexw-XGp2o2GdJM",
-    "AIzaSyD041vz668DIZ0bulbq_NJmb9c6ApEyI3U",
-    "AIzaSyD23r7ATLNTth9A1sPumE8i75AgAZl6qkI",
-]
-current_key_idx = 0
+# ── OPENAI API KEY (Gunakan Environment Variable) ────────
+# Set di terminal: $env:OPENAI_API_KEY="sk-..."
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+MODEL_NAME = "gpt-4o-mini"
 
-def get_model():
-    """Kembalikan model Gemini dengan API key aktif."""
-    genai.configure(api_key=API_KEYS[current_key_idx])
-    # Pakai 2.0-flash karena terbaru dan paling akurat sesuai deskripsi
-    return genai.GenerativeModel("gemini-2.0-flash")
+if not OPENAI_API_KEY:
+    print("Error: API Key tidak ditemukan! Set environment variable 'OPENAI_API_KEY'.")
+    sys.exit(1)
 
-def rotate_key(reason=""):
-    """Pindah ke API key berikutnya."""
-    global current_key_idx
-    current_key_idx = (current_key_idx + 1) % len(API_KEYS)
-    print(f"  [KEY ROTATE] Pindah ke key #{current_key_idx + 1} ({reason})")
-    time.sleep(5)
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 # ... (VALID_KAB_KOTA tetap)
 VALID_KAB_KOTA = [
@@ -152,11 +141,9 @@ Balas HANYA dengan JSON berikut (tanpa penjelasan, tanpa markdown):
 
 def ask_ai(nama, alamat, kabupaten, provinsi):
     """
-    Tanya Gemini apakah kabupaten sudah benar.
+    Tanya OpenAI GPT-4o-mini apakah kabupaten sudah benar.
     Return: string nama kabupaten yang benar, atau None jika gagal.
     """
-    global current_key_idx
-
     prompt = PROMPT_TEMPLATE.format(
         nama=nama,
         alamat=alamat,
@@ -165,18 +152,21 @@ def ask_ai(nama, alamat, kabupaten, provinsi):
         valid_list=VALID_KAB_LIST
     )
 
-    # Coba setiap key maksimal 1x putaran
-    for attempt in range(len(API_KEYS) * 2):
+    for attempt in range(3):
         try:
-            model = get_model()
-            resp = model.generate_content(
-                prompt,
-                generation_config=genai.GenerationConfig(
-                    response_mime_type="application/json",
-                    temperature=0.0,       # Harus deterministik
-                )
+            response = client.chat.completions.create(
+                model=MODEL_NAME,
+                messages=[
+                    {"role": "system", "content": "Kamu adalah validator data geografis Indonesia. Balas hanya dalam format JSON."},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.0,
+                max_tokens=200,
+                response_format={"type": "json_object"},
             )
-            result = json.loads(resp.text)
+
+            result_text = response.choices[0].message.content.strip()
+            result = json.loads(result_text)
             new_kab = result.get('kabupaten', '').strip()
             alasan  = result.get('alasan', '')
 
@@ -189,16 +179,21 @@ def ask_ai(nama, alamat, kabupaten, provinsi):
 
         except Exception as e:
             err = str(e)
-            print(f"    [DEBUG ERROR] {err}") # Tambahkan ini untuk diagnosa
-            if '429' in err or 'quota' in err.lower() or 'rate' in err.lower():
-                print(f"    [LIMIT] Key #{current_key_idx+1} limit!")
-                rotate_key("rate limit")
-                time.sleep(10) # Jeda lebih lama
+            print(f"    [DEBUG ERROR] {err}")
+            if '429' in err or 'rate' in err.lower():
+                print(f"    [LIMIT] Rate limit! Menunggu 30 detik...")
+                time.sleep(30)
+            elif '401' in err or 'auth' in err.lower():
+                print(f"    [AUTH ERROR] API key tidak valid!")
+                return None, None
             else:
                 print(f"    [ERR] {e}")
-                return None, None
+                if attempt < 2:
+                    time.sleep(5)
+                else:
+                    return None, None
 
-    print("    [FAIL] Semua key limit. Skip entry ini.")
+    print("    [FAIL] Gagal setelah 3 percobaan. Skip entry ini.")
     return None, None
 
 # ── MAIN ─────────────────────────────────────────────
@@ -206,9 +201,9 @@ def main():
     global shutdown_flag
 
     print("=" * 60)
-    print("VALIDASI KABUPATEN DENGAN GEMINI AI")
-    print(f"Model  : gemini-2.0-flash")
-    print(f"API Key: {len(API_KEYS)} key (auto-rotate)")
+    print("VALIDASI KABUPATEN DENGAN OPENAI GPT-4o-mini")
+    print(f"Model  : {MODEL_NAME}")
+    print(f"API Key: ***{OPENAI_API_KEY[-8:]}")
     print("=" * 60)
 
     df = pd.read_csv(INPUT_FILE)
@@ -270,7 +265,7 @@ def main():
             save_progress(done_idx, fixes)
             print(f"  [SAVE] {count+1}/{len(remaining)} | fixes: {len(fixes)}")
 
-        time.sleep(5.0)  # Jeda diperlama jadi 5 detik biar aman
+        time.sleep(1.0)  # Jeda 1 detik (gpt-4o-mini cukup cepat)
 
     save_progress(done_idx, fixes)
 
