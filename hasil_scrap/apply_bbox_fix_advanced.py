@@ -10,6 +10,15 @@ INPUT_FILE  = os.path.join(SCRIPT_DIR, 'kabupaten_provinsi.csv')
 
 from apply_bbox_fix import KAB_BBOX, KAB_TO_PROV
 
+def get_bbox_center(lat_min, lat_max, lon_min, lon_max):
+    return (lat_min + lat_max) / 2.0, (lon_min + lon_max) / 2.0
+
+def point_to_center_distance(lat, lon, lat_min, lat_max, lon_min, lon_max):
+    c_lat, c_lon = get_bbox_center(lat_min, lat_max, lon_min, lon_max)
+    dx = c_lon - lon
+    dy = c_lat - lat
+    return math.sqrt(dx*dx + dy*dy)
+
 def point_to_bbox_distance(lat, lon, lat_min, lat_max, lon_min, lon_max):
     # Jarak terdekat dari titik ke persegi panjang (bbox)
     dx = max(lon_min - lon, 0, lon - lon_max)
@@ -39,29 +48,44 @@ def main():
         if pd.isna(lat) or pd.isna(lon): continue
         if kab not in KAB_BBOX: continue
         
-        lat_min, lat_max, lon_min, lon_max = KAB_BBOX[kab]
+        # Cari semua BBox yang mencakup titik ini
+        correct_candidates = []
+        for k, (lmin, lmax, lnmin, lnmax) in KAB_BBOX.items():
+            if lmin <= lat <= lmax and lnmin <= lon <= lnmax:
+                correct_candidates.append(k)
         
-        # Jika di luar BBox kabupatennya saat ini
-        if not (lat_min <= lat <= lat_max and lon_min <= lon <= lon_max):
-            
-            # Cari kabupaten yang BBox-nya mencakup titik ini
-            correct_candidates = []
-            for k, (lmin, lmax, lnmin, lnmax) in KAB_BBOX.items():
-                if lmin <= lat <= lmax and lnmin <= lon <= lnmax:
-                    correct_candidates.append(k)
-            
-            if correct_candidates:
-                new_kab = correct_candidates[0]
-            else:
-                # Jika titik di laut/di luar semua BBox, cari BBox terdekat!
-                new_kab, dist = find_nearest_kab(lat, lon)
+        new_kab = kab
+        
+        if len(correct_candidates) == 0:
+            # Di luar semua BBox -> snap ke yang terdekat
+            new_kab, _ = find_nearest_kab(lat, lon)
+        elif len(correct_candidates) == 1:
+            # Hanya ada 1 kandidat pasti
+            new_kab = correct_candidates[0]
+        else:
+            # Titik ini ada di area overlap (jatuh di >1 BBox)!
+            # Kita harus memilih BBox mana yang pusatnya paling dekat dengan titik ini
+            best_match = None
+            min_center_dist = float('inf')
+            for cand in correct_candidates:
+                c_lat_min, c_lat_max, c_lon_min, c_lon_max = KAB_BBOX[cand]
+                dist = point_to_center_distance(lat, lon, c_lat_min, c_lat_max, c_lon_min, c_lon_max)
+                # Berikan "bonus" jika kandidat tersebut sama dengan kabupaten asli dari AI/alamat
+                # untuk menghindari pemindahan yang tidak perlu jika jaraknya mirip
+                if cand == kab:
+                    dist = dist * 0.9 
                 
-            if new_kab != kab:
-                new_prov = KAB_TO_PROV.get(new_kab)
-                print(f"[FIX] {row['nama_wisata']} ({lat:.4f}, {lon:.4f}): {kab} -> {new_kab} ({new_prov})")
-                df.at[idx, 'kabupaten'] = new_kab
-                df.at[idx, 'provinsi'] = new_prov
-                fixes += 1
+                if dist < min_center_dist:
+                    min_center_dist = dist
+                    best_match = cand
+            new_kab = best_match
+            
+        if new_kab != kab:
+            new_prov = KAB_TO_PROV.get(new_kab)
+            print(f"[FIX] {row['nama_wisata']} ({lat:.4f}, {lon:.4f}): {kab} -> {new_kab} ({new_prov})")
+            df.at[idx, 'kabupaten'] = new_kab
+            df.at[idx, 'provinsi'] = new_prov
+            fixes += 1
 
     print(f"\nTotal fix: {fixes}")
 
