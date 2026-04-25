@@ -10,7 +10,7 @@ FILE_BASE = os.path.join(BASE_DIR, "hasil_scrap", "wisata_sulawesi_kategori_ai.c
 FILE_HARGA = os.path.join(BASE_DIR, "harga", "scrap_harga_wisata.csv")
 FILE_DESK = os.path.join(BASE_DIR, "deskripsi", "scrap_deskripsi_wisata.csv")
 FILE_IMAGE = os.path.join(BASE_DIR, "image", "scrap_image.csv")
-FILE_KAB_PROV = os.path.join(SCRIPT_DIR, "kabupaten_provinsi.csv")
+FILE_KOREKSI = os.path.join(SCRIPT_DIR, "wisata_terkoreksi_geo.csv")
 
 OUT_FILE = os.path.join(SCRIPT_DIR, "wisata_sulawesi_lengkap.csv")
 
@@ -151,15 +151,15 @@ def main():
     
     df_final = df_base[cols_order].copy()
     
-    # ── KOREKSI KABUPATEN DARI FILE KABUPATEN_PROVINSI ─────────────
-    # Ambil kabupaten yang sudah diperbaiki dari hasil_final/kabupaten_provinsi.csv
+    # ── KOREKSI KABUPATEN DARI FILE WISATA TERKOREKSI GEO ─────────────
+    # Ambil kabupaten yang sudah diperbaiki dari hasil_final/wisata_terkoreksi_geo.csv
     # Provinsi TIDAK diambil dari CSV — selalu diturunkan dari mapping 81 kab/kota
-    print(f"\nMenerapkan koreksi kabupaten dari: {os.path.basename(FILE_KAB_PROV)}")
+    print(f"\nMenerapkan koreksi kabupaten dari: {os.path.basename(FILE_KOREKSI)}")
     try:
-        df_kab_prov = pd.read_csv(FILE_KAB_PROV)
+        df_koreksi = pd.read_csv(FILE_KOREKSI)
         # Buat lookup dari place_id -> kabupaten (hanya kabupaten, provinsi dari mapping)
         kab_lookup = {}
-        for _, row in df_kab_prov.iterrows():
+        for _, row in df_koreksi.iterrows():
             kab_lookup[row['place_id']] = str(row['kabupaten']).strip()
         
         lokasi_fixed = 0
@@ -174,7 +174,7 @@ def main():
                 
         print(f"Koreksi kabupaten diterapkan: {lokasi_fixed} baris diperbarui.")
     except FileNotFoundError:
-        print(f"[Warning] File koreksi tidak ditemukan: {FILE_KAB_PROV}. Melanjutkan tanpa koreksi.")
+        print(f"[Warning] File koreksi tidak ditemukan: {FILE_KOREKSI}. Melanjutkan tanpa koreksi.")
     except Exception as e:
         print(f"[Warning] Gagal menerapkan koreksi: {e}")
     
