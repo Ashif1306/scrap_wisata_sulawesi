@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap');
+
+:root {
+  --bg-dark: #0f172a;
+  --bg-card: rgba(30, 41, 59, 0.4);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --accent-teal: #14b8a6;
+  --accent-blue: #3b82f6;
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --blur-amount: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-height;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(20, 184, 166, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(59, 130, 246, 0.15) 0%, transparent 50%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  background: linear-gradient(to right, var(--accent-teal), var(--accent-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  background: var(--bg-card);
+  backdrop-filter: blur(var(--blur-amount));
+  -webkit-backdrop-filter: blur(var(--blur-amount));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 16px;
+}
+
+/* Base App Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header */
+header {
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.table-row-hover:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+table, .modal-container {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Pengaturan Responsif untuk HP (Layar < 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  header {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  th, td {
+    padding: 0.75rem 1rem !important;
+    font-size: 0.85rem;
+  }
+  
+  td span {
+    font-size: 0.7rem !important;
+  }
+  
+  /* Modal Responsif HP */
+  .modal-container {
+    padding: 0.5rem !important;
+    align-items: flex-end !important;
+  }
+  
+  .modal-box {
+    border-radius: 20px 20px 0 0 !important;
+    max-height: 90vh !important;
+  }
+  
+  .modal-banner {
+    height: 220px !important;
+  }
+  
+  .modal-body {
+    padding: 1.5rem !important;
+    margin-top: -20px !important;
+  }
+  
+  .modal-title {
+    font-size: 1.6rem !important;
+  }
+  
+  .modal-stats {
+    align-items: flex-start !important;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
