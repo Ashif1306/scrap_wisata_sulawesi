@@ -40,6 +40,11 @@ export default function DataTable({ data, start }) {
     } else {
       document.body.style.overflow = 'unset';
     }
+    
+    // Cleanup on unmount to prevent scroll lock on other pages
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
   }, [selectedItem]);
 
   return (

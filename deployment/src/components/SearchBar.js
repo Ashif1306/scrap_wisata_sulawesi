@@ -1,8 +1,8 @@
 "use client";
 
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
-import { Search } from 'lucide-react';
-import { useState, useRef } from 'react';
+import { Search, Loader2 } from 'lucide-react';
+import { useState, useRef, useTransition } from 'react';
 
 export default function SearchBar({ initialQuery }) {
   const router = useRouter();
@@ -11,6 +11,7 @@ export default function SearchBar({ initialQuery }) {
   const [query, setQuery] = useState(initialQuery);
   const [isFocused, setIsFocused] = useState(false);
   const debounceRef = useRef(null);
+  const [isPending, startTransition] = useTransition();
 
   const handleSearch = (value) => {
     setQuery(value);
@@ -30,7 +31,9 @@ export default function SearchBar({ initialQuery }) {
       }
       params.set('page', '1'); // Reset ke halaman 1 saat mencari kata baru
       
-      router.replace(`${pathname}?${params.toString()}`);
+      startTransition(() => {
+        router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+      });
     }, 400); 
   };
 
@@ -50,11 +53,20 @@ export default function SearchBar({ initialQuery }) {
         transform: isFocused ? 'scale(1.03)' : 'scale(1)'
       }}
     >
-      <Search 
-        size={22} 
-        color={isFocused ? "var(--accent-teal)" : "var(--text-secondary)"} 
-        style={{ marginRight: '12px', transition: 'all 0.3s ease' }} 
-      />
+      {isPending ? (
+        <Loader2 
+          size={22} 
+          color="var(--accent-teal)" 
+          className="animate-spin"
+          style={{ marginRight: '12px' }} 
+        />
+      ) : (
+        <Search 
+          size={22} 
+          color={isFocused ? "var(--accent-teal)" : "var(--text-secondary)"} 
+          style={{ marginRight: '12px', transition: 'all 0.3s ease' }} 
+        />
+      )}
       <input 
         type="text" 
         value={query}

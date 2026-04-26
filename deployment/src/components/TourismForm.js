@@ -95,7 +95,7 @@ export default function TourismForm({ initialData = {}, mode = 'add' }) {
       if (name === 'harga') {
         const h = Number(value);
         if (value === '') {
-          newData.kategori_harga = '';
+          newData.kategori_harga = '-';
         } else if (h === 0) {
           newData.kategori_harga = 'Gratis';
         } else if (h >= 1 && h <= 9999) {
@@ -262,7 +262,7 @@ export default function TourismForm({ initialData = {}, mode = 'add' }) {
           <div>
             <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>Harga (Rp)</label>
             <input 
-              type="number" name="harga" value={formData.harga} onChange={handleChange} min="0" required
+              type="number" name="harga" value={formData.harga} onChange={handleChange} min="0" placeholder="Kosongkan jika tidak ada"
               style={{ width: '100%', padding: '0.8rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'rgba(255,255,255,0.05)', color: 'white' }}
             />
           </div>
