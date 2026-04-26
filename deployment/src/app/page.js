@@ -20,7 +20,7 @@ export default async function Home({ searchParams }) {
   let error = null;
 
   try {
-    const allData = getTourismData();
+    const allData = await getTourismData();
     let filteredData = allData;
     
     if (query) {

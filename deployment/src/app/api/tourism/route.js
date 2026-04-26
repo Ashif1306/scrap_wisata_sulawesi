@@ -17,7 +17,7 @@ export async function POST(request) {
       status_scrape: 'MANUAL_ENTRY'
     };
     
-    const success = addTourismData(newItem);
+    const success = await addTourismData(newItem);
     
     if (success) {
       return NextResponse.json({ message: 'Data added successfully', data: newItem });

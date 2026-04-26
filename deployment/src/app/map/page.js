@@ -9,8 +9,8 @@ export const metadata = {
   description: 'Eksplorasi destinasi wisata Sulawesi melalui peta interaktif',
 };
 
-export default function MapPage() {
-  const data = getTourismData();
+export default async function MapPage() {
+  const data = await getTourismData();
 
   return (
     <main style={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>

@@ -7,7 +7,7 @@ export default async function EditTourismPage({ params }) {
   const { id } = await params;
   
   // Fetch existing data
-  const allData = getTourismData();
+  const allData = await getTourismData();
   const dataToEdit = allData.find(item => item.place_id === id);
 
   if (!dataToEdit) {

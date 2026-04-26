@@ -90,6 +90,22 @@ export default function TourismForm({ initialData = {}, mode = 'add' }) {
       if (name === 'provinsi') {
         newData.kabupaten = '';
       }
+
+      // Auto-kalkulasi kategori_harga jika harga diubah
+      if (name === 'harga') {
+        const h = Number(value);
+        if (value === '') {
+          newData.kategori_harga = '';
+        } else if (h === 0) {
+          newData.kategori_harga = 'Gratis';
+        } else if (h >= 1 && h <= 9999) {
+          newData.kategori_harga = 'Murah';
+        } else if (h >= 10000 && h <= 19999) {
+          newData.kategori_harga = 'Sedang';
+        } else if (h >= 20000) {
+          newData.kategori_harga = 'Mahal';
+        }
+      }
       
       return newData;
     });
@@ -244,10 +260,18 @@ export default function TourismForm({ initialData = {}, mode = 'add' }) {
 
 
           <div>
-            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>Harga (Angka)</label>
+            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>Harga (Rp)</label>
             <input 
-              type="number" name="harga" value={formData.harga} onChange={handleChange}
+              type="number" name="harga" value={formData.harga} onChange={handleChange} min="0" required
               style={{ width: '100%', padding: '0.8rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'rgba(255,255,255,0.05)', color: 'white' }}
+            />
+          </div>
+
+          <div>
+            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>Kategori Harga (Otomatis)</label>
+            <input 
+              type="text" name="kategori_harga" value={formData.kategori_harga} readOnly
+              style={{ width: '100%', padding: '0.8rem', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(0,0,0,0.2)', color: 'var(--accent-teal)', fontWeight: 'bold', outline: 'none', cursor: 'not-allowed' }}
             />
           </div>
 

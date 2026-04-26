@@ -13,7 +13,7 @@ export async function PUT(request, { params }) {
     const body = await request.json();
     
     // Attempt update
-    const success = updateTourismData(id, body);
+    const success = await updateTourismData(id, body);
     
     if (success) {
       return NextResponse.json({ message: 'Data updated successfully', id });
@@ -29,7 +29,7 @@ export async function PUT(request, { params }) {
 export async function GET(request, { params }) {
   try {
     const { id } = await params;
-    const allData = getTourismData();
+    const allData = await getTourismData();
     const item = allData.find(d => d.place_id === id);
     
     if (item) {
