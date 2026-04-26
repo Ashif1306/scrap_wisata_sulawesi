@@ -1,0 +1,1033 @@
+=================================================================
+  SCRAPE LOKASI WISATA DARI GOOGLE MAPS
+=================================================================
+[INPUT]  D:\semester6\mc_learning\scrapt_wisata\lokasi_gmaps\..\hasil_final\wisata_sulawesi_lengkap.csv (2707 baris)
+[OUTPUT] D:\semester6\mc_learning\scrapt_wisata\lokasi_gmaps\lokasi_scraped.csv
+[    1] Losari Beach Platform → OK_GEO  → Kota Makassar
+[    2] Benteng Rotterdam → OK_GEO  → Kota Makassar
+[    3] Taman Nasional Bantimurung Bulusaraung → NO_MATCH
+[    4] Pantai Tak Berombak, PTB Maros → OK_GEO  → Kabupaten Maros
+[    5] Tongkonan Ke'te' Kesu' → OK_GEO  → Kabupaten Toraja Utara
+[    6] Menara Keagungan Limboto → OK_GEO  → Kabupaten Gorontalo
+[    7] Taman Pakui Sayang → OK_GEO  → Kota Makassar
+[    8] Masjid Raya Makassar → OK_GEO  → Kota Makassar
+[    9] Taman Vatulemo → OK_TEXT  → Kota Palu
+[   10] Monumen Cinta Sejati Habibie-Ainun → OK_GEO  → Kota Parepare
+[   11] Pantai Losari → OK_GEO  → Kota Makassar
+[   12] Tribun Pantai Seruni → OK_GEO  → Kabupaten Bantaeng
+[   13] Bugis Waterpark Adventure → OK_GEO  → Kota Makassar
+[   14] Taman Kalong Watansoppeng → OK_GEO  → Kabupaten Soppeng
+[   15] Patung Tuhan Yesus Memberkati → OK_TEXT  → Kabupaten Tana Toraja
+[   16] Pantai Losari → OK_GEO  → Kota Makassar
+[   17] Tugu Zero Point → OK_GEO  → Kota Manado
+[   18] Cinta Souvenir Bantimurung → GEO_WIN   → Kabupaten Maros (teks bilang: Kota Makassar)
+[   19] Lolai - To' Tombi, Negeri di atas awan → OK_GEO  → Kabupaten Toraja Utara
+[   20] Pantai Bira Pasir Putih → OK_GEO  → Kabupaten Bulukumba
+[   21] Taman Gor → OK_GEO  → Kota Palu
+[   22] Lolai Tongkonan Lempe → OK_GEO  → Kabupaten Toraja Utara
+[   23] Monumen Yesus Memberkati → OK_GEO  → Kota Manado
+[   24] Wisata Kebun Gowa → OK_GEO  → Kabupaten Gowa
+[   25] Taman Nasional Bunaken → OK_GEO  → Kota Manado
+    [SAVE] auto-save (25 diproses, 24 OK)
+[   26] Taman Kota Kendari → OK_GEO  → Kota Kendari
+[   27] Malino highlands → OK_GEO  → Kabupaten Gowa
+[   28] Pantai Akkarena → OK_GEO  → Kota Makassar
+[   29] Taman Macan → OK_GEO  → Kota Makassar
+[   30] Kampoeng Karst Rammang Rammang → TEXT_WIN  → Kabupaten Maros (geo bilang: Kabupaten Pangkajene Dan Kepulauan)
+[   31] Lasinrang Park → OK_GEO  → Kabupaten Pinrang
+[   32] Tebing Apparalang → OK_GEO  → Kabupaten Bulukumba
+[   33] Taman Nasional Bantimurung Bulusaraung → OK_GEO  → Kabupaten Maros
+[   34] Masjid Kubah 99 → OK_GEO  → Kota Makassar
+[   35] Taman Musafir → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[   36] Taman Arkeologi Leang Leang → OK_GEO  → Kabupaten Maros
+[   37] Tonrangeng Riverside → OK_GEO  → Kota Parepare
+[   38] Taman Wisata Alam Lejja → OK_GEO  → Kabupaten Soppeng
+[   39] Space iklan 5x10. Anjungan Pantai Manakarra → OK_TEXT  → Kabupaten Mamuju
+[   40] Pantai Paal → OK_GEO  → Kabupaten Minahasa Utara
+[   41] Masjid Al Markaz Al Islami Maros → OK_GEO  → Kabupaten Maros
+[   42] Museum Balla Lompoa → OK_GEO  → Kabupaten Gowa
+[   43] Londa Ancient Graveyard → OK_GEO  → Kabupaten Toraja Utara
+[   44] Taman Nasional Wakatobi → NO_MATCH
+[   45] Pelabuhan Paotere → OK_GEO  → Kota Makassar
+[   46] Pantai Tanjung Bira → OK_GEO  → Kabupaten Bulukumba
+[   47] Air Terjun Takapala → OK_GEO  → Kabupaten Gowa
+[   48] Benteng Otanaha → TEXT_WIN  → Kota Gorontalo (geo bilang: Kabupaten Gorontalo)
+[   49] Taman Mattirotasi → OK_GEO  → Kota Parepare
+[   50] Wisata Bahari Seafood Restaurant → OK_GEO  → Kota Manado
+    [SAVE] auto-save (50 diproses, 48 OK)
+[   51] Rumah Alam Manado Adventure Park → OK_GEO  → Kabupaten Minahasa Utara
+[   52] Alun Alun Kota Polewali → OK_GEO  → Kabupaten Polewali Mandar
+[   53] Wisata Pantai Topejawa → OK_GEO  → Kabupaten Takalar
+[   54] Masjid Agung Baiturrahim Gorontalo → TEXT_WIN  → Kota Gorontalo (geo bilang: Kabupaten Gorontalo)
+[   55] Titik Nol KM Sulsel → OK_GEO  → Kabupaten Bulukumba
+[   56] Pantai Pohon Cinta → OK_GEO  → Kabupaten Pohuwato
+[   57] Benteng Keraton Kesultanan Buton (Negeri Khalifatul Kha → OK_GEO  → Kota Baubau
+[   58] Taman Berkat (GODBLESS PARK) Manado → OK_GEO  → Kota Manado
+[   59] Pantai Kilo 5 → OK_TEXT  → Kabupaten Banggai
+[   60] Wisata Pantai Bintang Galesong → OK_GEO  → Kabupaten Takalar
+[   61] Bukit Kasih Kanonang → OK_TEXT  → Kabupaten Minahasa
+[   62] Kurenai Beach Resort → OK_GEO  → Kabupaten Bone Bolango
+[   63] Paputo Beach → OK_GEO  → Kota Parepare
+[   64] Danau Perintis → OK_GEO  → Kabupaten Bone Bolango
+[   65] Pantai Malalayang → OK_GEO  → Kota Manado
+[   66] Kendari Beach → OK_GEO  → Kota Kendari
+[   67] Makatete Hills → TEXT_WIN  → Kabupaten Minahasa (geo bilang: Kota Manado)
+[   68] Pantai Kilo Lima → OK_TEXT  → Kabupaten Banggai
+[   69] Dermaga I Rammang-Rammang → OK_GEO  → Kabupaten Maros
+[   70] Taman Wisata Puncak Bila Sidrap → OK_GEO  → Kabupaten Sidenreng Rappang
+[   71] Pantai Tanjung Karang → OK_GEO  → Kabupaten Donggala
+[   72] Dermaga Dua Rammang Rammang → OK_GEO  → Kabupaten Maros
+[   73] pantai kamali → OK_GEO  → Kota Baubau
+[   74] Taman Hutan Kota Palu → OK_TEXT  → Kota Palu
+[   75] Sierra Sky View → OK_GEO  → Kabupaten Gowa
+    [SAVE] auto-save (75 diproses, 73 OK)
+[   76] Wisata Hiu Paus Botubarani Gorontalo → OK_GEO  → Kabupaten Bone Bolango
+[   77] Pulau Wisata Bokori → OK_GEO  → Kabupaten Konawe
+[   78] Pantai Ide → OK_GEO  → Kabupaten Luwu Timur
+[   79] Pantai Biru → OK_GEO  → Kota Makassar
+[   80] Taman dan Pantai Bahari Polewali → OK_GEO  → Kabupaten Polewali Mandar
+[   81] Samalona island → OK_TEXT  → Kota Makassar
+[   82] Kebun Raya Kendari → OK_GEO  → Kota Kendari
+[   83] Kebun Denassa (Denassa Botanical Garden) → OK_GEO  → Kabupaten Gowa
+[   84] Pantai Nirwana → OK_GEO  → Kota Baubau
+[   85] Danau Biru Kolaka Utara → OK_GEO  → Kabupaten Kolaka Utara
+[   86] Objek Wisata Rante Kalimbuang Bori' → OK_GEO  → Kabupaten Toraja Utara
+[   87] Pantai Tanjung Bira → OK_GEO  → Kabupaten Bulukumba
+[   88] Masjid Jami Tua Palopo → OK_GEO  → Kota Palopo
+[   89] Tuur Ma'asering Kumelembuai Tomohon → OK_GEO  → Kota Tomohon
+[   90] Benteng Ulanta → OK_GEO  → Kabupaten Bone Bolango
+[   91] Gong Perdamaian → OK_TEXT  → Kota Palu
+[   92] Taman Bambu Runcing → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[   93] Pantai Tamborasi → OK_GEO  → Kabupaten Kolaka
+[   94] Pantai Dato Majene → OK_TEXT  → Kabupaten Majene
+[   95] Hutan Mangrove Tongke-tongke → OK_GEO  → Kabupaten Sinjai
+[   96] GPI Waterpark → OK_GEO  → Kota Manado
+[   97] Kebun Raya Jompie Kota Parepare → OK_GEO  → Kota Parepare
+[   98] Taman Wisata Tangga 2000 → OK_GEO  → Kabupaten Gorontalo
+[   99] Wisata Kuliner Kab.Kolaka → OK_GEO  → Kabupaten Kolaka
+[  100] Menara Alfa Omega → OK_GEO  → Kota Tomohon
+    [SAVE] auto-save (100 diproses, 98 OK)
+[  101] Pantai Harapan Ammani → OK_GEO  → Kabupaten Pinrang
+[  102] CitraLand WaterPark Manado → OK_GEO  → Kota Manado
+[  103] Pango-Pango Makale → OK_TEXT  → Kabupaten Tana Toraja
+[  104] Dante Pine → OK_GEO  → Kabupaten Enrekang
+[  105] Bukit Keles → OK_TEXT  → Kabupaten Banggai
+[  106] CitraLand Waterpark → OK_GEO  → Kota Kendari
+[  107] Bukit Doa Mahawu → OK_GEO  → Kota Tomohon
+[  108] Tugu Adipura → OK_GEO  → Kabupaten Konawe
+[  109] Tanjung Pallette → OK_GEO  → Kabupaten Bone
+[  110] Benteng Somba Opu → TEXT_WIN  → Kota Makassar (geo bilang: Kabupaten Gowa)
+[  111] Monumen Patung Lakipadada → OK_TEXT  → Kabupaten Tana Toraja
+[  112] Pantai Kampung Nelayan → OK_TEXT  → Kota Palu
+[  113] Monumen B.J. Habibie → OK_GEO  → Kabupaten Gorontalo
+[  114] Monumen Mandala Pembebasan Irian Barat → OK_GEO  → Kota Makassar
+[  115] Lappa Laona → OK_GEO  → Kabupaten Barru
+[  116] Danau Linow → OK_GEO  → Kota Tomohon
+[  117] Pantai Topejawa Takalar → OK_GEO  → Kabupaten Takalar
+[  118] Wisata Bahari Kawasan Megamas → OK_GEO  → Kota Manado
+[  119] Pantai Lumpue → OK_GEO  → Kota Parepare
+[  120] Taman Laut Olele → OK_GEO  → Kabupaten Bone Bolango
+[  121] WISATA TAMENDAO BEACH → TEXT_WIN  → Kota Gorontalo (geo bilang: Kabupaten Gorontalo)
+[  122] Permandian Lereng Hijau Bulu Dua → OK_GEO  → Kabupaten Soppeng
+[  123] Danau Paisu Pok Luk Panenteng → OK_TEXT  → Kabupaten Banggai Kepulauan
+[  124] Puncak Tetetana Suluan → TEXT_WIN  → Kabupaten Minahasa (geo bilang: Kota Tomohon)
+[  125] Pantai Toronipa → OK_GEO  → Kabupaten Konawe
+    [SAVE] auto-save (125 diproses, 123 OK)
+[  126] Taman Purbakala Sumpang Bita → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[  127] Air Terjun Saluopa → OK_TEXT  → Kabupaten Poso
+[  128] Taman Teratai → OK_GEO  → Kota Kendari
+[  129] RM Bahari → OK_GEO  → Kota Makassar
+[  130] Pantai Indah Bosowa → OK_GEO  → Kota Makassar
+[  131] Pantai Botutonuo → OK_GEO  → Kabupaten Bone Bolango
+[  132] Wisata Malino → OK_GEO  → Kabupaten Gowa
+[  133] Permandian Alam Ompo → OK_GEO  → Kabupaten Soppeng
+[  134] Tokong Ban Hin Kiong → OK_GEO  → Kota Manado
+[  135] Danau Tambing → OK_TEXT  → Kabupaten Sigi
+[  136] Taman Wisata Puncak Rurukan Tomohon → OK_GEO  → Kota Tomohon
+[  137] Apparallang → OK_GEO  → Kabupaten Bulukumba
+[  138] Pantai Mandra Kolaka → OK_GEO  → Kabupaten Kolaka
+[  139] Permandian Eremerasa Ermes bantaeng → OK_GEO  → Kabupaten Bantaeng
+[  140] Air Terjun Moramo → OK_GEO  → Kabupaten Konawe Selatan
+[  141] Pantai Marina Bantaeng → OK_GEO  → Kabupaten Bantaeng
+[  142] Taman Kota Tomohon → OK_GEO  → Kota Tomohon
+[  143] Masjid Tua Al-Hilal Katangka → TEXT_WIN  → Kabupaten Gowa (geo bilang: Kota Makassar)
+[  144] Benteng Balangnipa → OK_GEO  → Kabupaten Sinjai
+[  145] Bukit Samata → OK_GEO  → Kabupaten Gowa
+[  146] Rumah Hijau Denassa → OK_GEO  → Kabupaten Gowa
+[  147] Pantai Pulisan Sulawesi Utara → OK_GEO  → Kabupaten Minahasa Utara
+[  148] Planet Waterboom → TEXT_WIN  → Kota Gorontalo (geo bilang: Kabupaten Gorontalo)
+[  149] Pantai Labombo → OK_GEO  → Kota Palopo
+[  150] Anjungan Cempae → OK_GEO  → Kota Parepare
+    [SAVE] auto-save (150 diproses, 148 OK)
+[  151] Air Terjun Salodik → OK_TEXT  → Kabupaten Banggai
+[  152] Pantai Jiko / Patokan → OK_GEO  → Kabupaten Bolaang Mongondow Timur
+[  153] Permandian Malotong → OK_GEO  → Kabupaten Tojo Una-Una
+[  154] Pinrang Waterboom → OK_GEO  → Kabupaten Pinrang
+[  155] Pantai Laguna → OK_GEO  → Kabupaten Barru
+[  156] Hutan Kota Bulukumba → OK_GEO  → Kabupaten Bulukumba
+[  157] Goa Air Kontamale → OK_GEO  → Kabupaten Wakatobi
+[  158] Pantai Bonebula → OK_GEO  → Kabupaten Donggala
+[  159] Pantai Bambahano → OK_GEO  → Kabupaten Donggala
+[  160] Wisata Kali Biru → OK_GEO  → Kabupaten Buton
+[  161] Wisata Mangrove Lantebung → OK_GEO  → Kota Makassar
+[  162] Anjungan Pantai Losari → OK_GEO  → Kota Makassar
+[  163] Kai'santi Garden → OK_GEO  → Kota Tomohon
+[  164] Benteng Moraya → OK_TEXT  → Kabupaten Minahasa
+[  165] Museum Ne' Gandeng → OK_GEO  → Kabupaten Toraja Utara
+[  166] Bendung Benteng → OK_GEO  → Kabupaten Pinrang
+[  167] Monumen Korban 40.000 Jiwa → OK_GEO  → Kota Makassar
+[  168] Maros Highland → OK_GEO  → Kabupaten Maros
+[  169] Air Terjun Pialaa → OK_TEXT  → Kabupaten Banggai
+[  170] Narwastu Hills Resort → OK_GEO  → Kota Tomohon
+[  171] Pantai Bara, Bulukumba → OK_GEO  → Kabupaten Bulukumba
+[  172] Pusat Laut Donggala → OK_GEO  → Kabupaten Donggala
+[  173] Pulau Sangihe → OK_TEXT  → Kabupaten Kepulauan Sangihe
+[  174] Wisata Hutan Pinus Dan Pemandian Air Panas → OK_GEO  → Kota Tomohon
+[  175] Pongtorra - Puncak Tertinggi Lolai → OK_GEO  → Kabupaten Toraja Utara
+    [SAVE] auto-save (175 diproses, 173 OK)
+[  176] Taman JH Ampana → OK_GEO  → Kabupaten Tojo Una-Una
+[  177] Rumah Adat Sao Mario → OK_GEO  → Kabupaten Soppeng
+[  178] Hutan Taman kota → OK_TEXT  → Kota Palu
+[  179] Air Terjun Bantimurung Gallang → OK_GEO  → Kabupaten Gowa
+[  180] Lapangan Pancasila palopo → OK_GEO  → Kota Palopo
+[  181] Taman Usman Isa → OK_GEO  → Kabupaten Sidenreng Rappang
+[  182] Wisata Alam Salu Pajaan → OK_GEO  → Kabupaten Polewali Mandar
+[  183] Museum Kota Makassar → OK_GEO  → Kota Makassar
+[  184] Patung Cakalang Bitung → OK_GEO  → Kota Bitung
+[  185] Wisata Anjungan Teluk Kendari → OK_TEXT  → Kota Kendari
+[  186] Kebun Binatang Tandurusa → OK_GEO  → Kota Bitung
+[  187] Masjid Arqam Baburahman → OK_TEXT  → Kota Palu
+[  188] Menralo Beach & Resort → OK_GEO  → Kabupaten Pinrang
+[  189] Permandian Taman Wisata Rita → OK_GEO  → Kabupaten Takalar
+[  190] Sou Raja Cagar Budaya Banua Oge → OK_TEXT  → Kota Palu
+[  191] Taman Nasional Kepulauan Togean → OK_GEO  → Kabupaten Tojo Una-Una
+[  192] Pantai Tanjung Layar Putih → OK_GEO  → Kota Makassar
+[  193] Desa Wisata Budo → OK_GEO  → Kabupaten Minahasa Utara
+[  194] Gunung Latimojong → TEXT_WIN  → Kabupaten Luwu (geo bilang: Kabupaten Enrekang)
+[  195] Donggala Tanjung Karang Beach → OK_GEO  → Kabupaten Donggala
+[  196] Kuburan Batu Lemo → OK_TEXT  → Kabupaten Tana Toraja
+[  197] Kebun Raya Massenrempulu → OK_GEO  → Kabupaten Enrekang
+[  198] Pantai Marumasa → OK_GEO  → Kabupaten Bulukumba
+[  199] Patung Bogani → OK_GEO  → Kota Kotamobagu
+[  200] Pantai Bolihutuo → TEXT_WIN  → Kabupaten Gorontalo (geo bilang: Kabupaten Boalemo)
+    [SAVE] auto-save (200 diproses, 198 OK)
+[  201] Taman Cekkeng Bulukumba → OK_GEO  → Kabupaten Bulukumba
+[  202] Tanjung Bira → OK_GEO  → Kabupaten Bulukumba
+[  203] Pantai Ujung Batu → OK_GEO  → Kabupaten Barru
+[  204] Taman Cinta Palleko → OK_GEO  → Kabupaten Takalar
+[  205] Parangloe Waterfall → OK_GEO  → Kabupaten Gowa
+[  206] Celebes Canyon → OK_GEO  → Kabupaten Barru
+[  207] Monumen Bambu Runcing Rappang → OK_GEO  → Kabupaten Sidenreng Rappang
+[  208] Pantai Nambo → OK_GEO  → Kota Kendari
+[  209] Pantai Batuangus → OK_TEXT  → Kota Bitung
+[  210] Taman Purbakala Batu Pake Gojeng → OK_GEO  → Kabupaten Sinjai
+[  211] Pantai Lumintang Bentenan Ratahan → OK_GEO  → Kabupaten Minahasa Tenggara
+[  212] Taman Budaya Hasan Bahasyuan Masigi → OK_GEO  → Kabupaten Parigi Moutong
+[  213] Pantai Molino Tapuondau → OK_GEO  → Kabupaten Luwu Timur
+[  214] Taipa Beach → OK_GEO  → Kota Palu
+[  215] Museum Negeri Provinsi Sulawesi Tengah - Palu → OK_TEXT  → Kota Palu
+[  216] Pantai Lemo → OK_GEO  → Kabupaten Luwu Timur
+[  217] Pantai Cemara → OK_GEO  → Kabupaten Wakatobi
+[  218] Dulanga Beach → OK_GEO  → Kabupaten Gorontalo
+[  219] Wisata Pantai Lowita → OK_GEO  → Kabupaten Pinrang
+[  220] Air Terjun Pung Bunga Bonto Manurung → OK_GEO  → Kabupaten Maros
+[  221] Pantai Mutiara → TEXT_WIN  → Kabupaten Buton (geo bilang: Kabupaten Buton Tengah)
+[  222] Whale Shark Gorontalo → OK_GEO  → Kabupaten Bone Bolango
+[  223] Cekkeng Nursery → OK_GEO  → Kabupaten Bulukumba
+[  224] Wisata Batu Sori → OK_GEO  → Kota Baubau
+[  225] Taman Batu Rammang-Rammang → OK_GEO  → Kabupaten Maros
+    [SAVE] auto-save (225 diproses, 223 OK)
+[  226] Wisata Alam Wai Tiddo → OK_GEO  → Kabupaten Luwu
+[  227] Pantai Lakban Ratatotok → OK_GEO  → Kabupaten Minahasa Tenggara
+[  228] Alun Alun Tilamuta → OK_GEO  → Kabupaten Boalemo
+[  229] Lembah Hijau Rumbia Resort → OK_GEO  → Kabupaten Jeneponto
+[  230] Tanggul Bantaran Sungai Malili → OK_GEO  → Kabupaten Luwu Timur
+[  231] Taman Pantai mahaas → OK_TEXT  → Kabupaten Banggai
+[  232] Air Terjun Kali → OK_GEO  → Kota Tomohon
+[  233] Tugu Adibahasa → OK_GEO  → Kota Kendari
+[  234] Malalayang Beach Walk → OK_GEO  → Kota Manado
+[  235] Tonasa Park → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[  236] Taman Segitiga Binturu Palopo (I Love Palopo) → OK_GEO  → Kota Palopo
+[  237] BENDUNGAN KUWIL KAWANGKOAN → OK_GEO  → Kabupaten Minahasa Utara
+[  238] Pantai Barugaya Punaga → OK_GEO  → Kabupaten Takalar
+[  239] Pantai Mangatasik → OK_TEXT  → Kabupaten Minahasa Selatan
+[  240] Parkiran Sederhana (POS 1 menuju Puncak Victo & Air Ter → OK_GEO  → Kota Kendari
+[  241] Puncak Temboan Rurukan → TEXT_WIN  → Kabupaten Minahasa (geo bilang: Kota Tomohon)
+[  242] Monumen Kaki Dian Minahasa Utara → OK_GEO  → Kabupaten Minahasa Utara
+[  243] Vihara Girinaga → OK_GEO  → Kota Makassar
+[  244] Wisata Dolli Bungaeja → OK_GEO  → Kabupaten Maros
+[  245] Pantai Ratu → OK_GEO  → Kabupaten Boalemo
+[  246] Air Terjun Ketemu Jodoh → OK_GEO  → Kabupaten Gowa
+[  247] Rainbow Garden Gowa → OK_GEO  → Kabupaten Gowa
+[  248] Danau Tondano → OK_TEXT  → Kabupaten Minahasa
+[  249] Ekowisata Butta Gowa Resort - Wisata Alam Bili-Bili → OK_GEO  → Kabupaten Gowa
+[  250] Pantai Al Fath Stira Paradise → OK_GEO  → Kabupaten Pinrang
+    [SAVE] auto-save (250 diproses, 248 OK)
+[  251] Takae Highland → OK_GEO  → Kabupaten Soppeng
+[  252] Taman Wisata Pelangi → OK_GEO  → Kota Tomohon
+[  253] Polman Waterboom → OK_GEO  → Kabupaten Polewali Mandar
+[  254] Tugu Khatulistiwa Sulawesi Tengah → OK_GEO  → Kabupaten Parigi Moutong
+[  255] Taman Kota Fonuasingko → OK_GEO  → Kabupaten Morowali
+[  256] Pantai Lemo-Lemo → OK_GEO  → Kabupaten Bulukumba
+[  257] Puncak Mamuju(Kelapa Tujuh) → OK_TEXT  → Kabupaten Mamuju
+[  258] Taman Nasional Rawa Aopa Watumohai → TEXT_WIN  → Kabupaten Konawe Selatan (geo bilang: Kabupaten Bombana)
+[  259] Jeneponto Waterpark → OK_GEO  → Kabupaten Jeneponto
+[  260] Rumah Makan Tepi Pantai → OK_GEO  → Kota Manado
+[  261] Kilapong hills → OK_GEO  → Kota Tomohon
+[  262] Pantai Enu → OK_GEO  → Kabupaten Donggala
+[  263] Taman Hutan Raya Gunung Tumpa H. V. Worang → OK_GEO  → Kota Manado
+[  264] Taman Wisata Toar Lumimuut → OK_TEXT  → Kabupaten Minahasa
+[  265] Taman Malahasa Kota Tahuna → OK_TEXT  → Kabupaten Kepulauan Sangihe
+[  266] Pantai Tete → OK_GEO  → Kabupaten Bone
+[  267] Taman Andi Benni Belopa → OK_GEO  → Kabupaten Luwu
+[  268] Lembah Ramma → OK_GEO  → Kabupaten Gowa
+[  269] Mantara Waterpark Kendari → OK_GEO  → Kota Kendari
+[  270] Ketama Adventure Park → OK_TEXT  → Kabupaten Minahasa
+[  271] RTH Bombana → OK_GEO  → Kabupaten Bombana
+[  272] Taman Wisata Religius Bubohu → OK_GEO  → Kabupaten Gorontalo
+[  273] Air Terjun Bissappu → OK_GEO  → Kabupaten Bantaeng
+[  274] Danau Hijau Balocci → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[  275] Pantai Ponnori → OK_GEO  → Kabupaten Luwu
+    [SAVE] auto-save (275 diproses, 273 OK)
+[  276] Masjid Terapung B.J. Habibie → OK_GEO  → Kota Parepare
+[  277] Tugu Trikora → OK_GEO  → Kota Bitung
+[  278] Pantai Imbo → OK_GEO  → Kabupaten Poso
+[  279] Kolam Renang Alam Tilanga → OK_TEXT  → Kabupaten Tana Toraja
+[  280] Pantai Libuo → OK_GEO  → Kabupaten Pohuwato
+[  281] Pantai Panrangluhu → OK_GEO  → Kabupaten Bulukumba
+[  282] Pantai Ujung Suso → OK_GEO  → Kabupaten Luwu Timur
+[  283] Mah'watu → OK_TEXT  → Kota Tomohon
+[  284] Hutan Pinus Samparona → OK_GEO  → Kota Baubau
+[  285] Air Panas Wawolesea → OK_GEO  → Kabupaten Konawe Utara
+[  286] Kompleks Makam Raja-Raja Tallo → OK_GEO  → Kota Makassar
+[  287] Taman Pelangi → OK_GEO  → Kabupaten Kepulauan Selayar
+[  288] Pantai Wisata Pangi Masaingi → OK_GEO  → Kabupaten Donggala
+[  289] Takalar Beach Waterboom → OK_GEO  → Kabupaten Takalar
+[  290] Kawasan Adat Kajang Ammatoa → OK_GEO  → Kabupaten Bulukumba
+[  291] Kura-kura beach → OK_GEO  → Kabupaten Donggala
+[  292] Permandian Alam Limbua → OK_GEO  → Kabupaten Bulukumba
+[  293] Museum La Galigo → OK_GEO  → Kota Makassar
+[  294] Kawasan ekowisata eduwisata mangrove GONENGATI JAYA kab → OK_GEO  → Kabupaten Donggala
+[  295] Taman Lahilote → TEXT_WIN  → Kota Gorontalo (geo bilang: Kabupaten Gorontalo)
+[  296] Taman Jet Tempur → OK_GEO  → Kabupaten Wajo
+[  297] Danau Limbong → OK_GEO  → Kabupaten Toraja Utara
+[  298] Objek Wisata Ollon Toraja → OK_TEXT  → Kabupaten Tana Toraja
+[  299] Pantai Mandala Ria → OK_GEO  → Kabupaten Bulukumba
+[  300] Air Terjun Wera → OK_TEXT  → Kabupaten Sigi
+    [SAVE] auto-save (300 diproses, 298 OK)
+[  301] Hutan Pinus Bulu Tanah → OK_GEO  → Kabupaten Bone
+[  302] Pantai Minahaki → OK_TEXT  → Kabupaten Banggai
+[  303] Pantai Bulo → OK_TEXT  → Kabupaten Minahasa
+[  304] Pantai Barane Majene → OK_TEXT  → Kabupaten Majene
+[  305] Parigi Toraranga Park → OK_GEO  → Kabupaten Parigi Moutong
+[  306] Masjid Agung Ummul Quraa → OK_GEO  → Kabupaten Wajo
+[  307] Masjid Agung Kolaka Utara → OK_GEO  → Kabupaten Kolaka Utara
+[  308] Wisata Leang Lonrong → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[  309] Ranowangko Beach Resort → OK_TEXT  → Kabupaten Minahasa
+[  310] Kawasan Wisata Pantai Surabaya → OK_GEO  → Kabupaten Minahasa Utara
+[  311] Tapandullu Beach → OK_TEXT  → Kabupaten Mamuju
+[  312] Puncak Dipomelo Pindan → OK_GEO  → Kabupaten Toraja Utara
+[  313] Taman Syariah → OK_GEO  → Kota Parepare
+[  314] Saoraja La Tenri Bali → OK_GEO  → Kabupaten Wajo
+[  315] Mangrove Eco Resort → OK_GEO  → Kabupaten Pohuwato
+[  316] Museum Balla Lompoa Bantaeng → OK_GEO  → Kabupaten Bantaeng
+[  317] Amphitheater Woloan → OK_GEO  → Kota Tomohon
+[  318] Pantai Wisata Botutonuo → OK_GEO  → Kabupaten Bone Bolango
+[  319] Kawasan Wisata Tahura Kapopo Ngatabaru → OK_TEXT  → Kabupaten Sigi
+[  320] Pantai Lombang Lombang → OK_GEO  → Kabupaten Mamuju
+[  321] Pantai Samboang → OK_GEO  → Kabupaten Bulukumba
+[  322] Permandian alam citta → OK_GEO  → Kabupaten Soppeng
+[  323] Istana Langkanae Luwu → OK_GEO  → Kota Palopo
+[  324] Danau Matano → OK_GEO  → Kabupaten Luwu Timur
+[  325] Air Terjun Tumimperas → OK_GEO  → Kota Tomohon
+    [SAVE] auto-save (325 diproses, 323 OK)
+[  326] Puncak Salena → OK_GEO  → Kota Palu
+[  327] Air Terjun Lacolla → OK_GEO  → Kabupaten Maros
+[  328] Pantai seruni → OK_GEO  → Kabupaten Bantaeng
+[  329] Adilah Garden → OK_TEXT  → Kota Palu
+[  330] Taman Literasi dan Adipura Kolaka Utara → OK_GEO  → Kabupaten Kolaka Utara
+[  331] Gunung Klabat → OK_GEO  → Kabupaten Minahasa Utara
+[  332] Pantai Mahembang → OK_TEXT  → Kabupaten Minahasa
+[  333] Taman Turatea → OK_GEO  → Kabupaten Jeneponto
+[  334] Raja Ampat Bollangi Gowa → OK_GEO  → Kabupaten Gowa
+[  335] Air Terjun Lembanna → OK_GEO  → Kabupaten Gowa
+[  336] Kebun Raya UHO → OK_GEO  → Kota Kendari
+[  337] TAMAN CALLACCU → OK_GEO  → Kabupaten Wajo
+[  338] Aer Konde Ratahan → OK_GEO  → Kabupaten Minahasa Tenggara
+[  339] Pantai Tanjung Barat Barombong → OK_GEO  → Kota Makassar
+[  340] Mini Showfarm Bantaeng → OK_GEO  → Kabupaten Bantaeng
+[  341] Wisata Tanjung Cemara Batu Buaya → OK_GEO  → Kabupaten Bolaang Mongondow Timur
+[  342] TAMAN KOTA → OK_GEO  → Kota Kotamobagu
+[  343] Festival Sungai Mandar → OK_GEO  → Kabupaten Polewali Mandar
+[  344] Diana Waterpark → OK_GEO  → Kabupaten Barru
+[  345] Batu Goro'e (Sumpang Labbu) → OK_GEO  → Kabupaten Bone
+[  346] TAHURA Abdul Latief → OK_GEO  → Kabupaten Sinjai
+[  347] Danau Tanralili → OK_GEO  → Kabupaten Gowa
+[  348] Manado Skyline Tetempangan Hill → OK_TEXT  → Kabupaten Minahasa
+[  349] Tunan Waterfalls → OK_GEO  → Kabupaten Minahasa Utara
+[  350] Taman Kota Donggala → OK_GEO  → Kabupaten Donggala
+    [SAVE] auto-save (350 diproses, 348 OK)
+[  351] Monumen Ganggawa → OK_GEO  → Kabupaten Sidenreng Rappang
+[  352] Air Terjun Tunan Talawaan → OK_GEO  → Kabupaten Minahasa Utara
+[  353] Taman Wisata Danau Linow → OK_GEO  → Kota Tomohon
+[  354] Air Terjun Tama'lulua → OK_GEO  → Kabupaten Jeneponto
+[  355] Monumen Trikora Salakan → OK_TEXT  → Kabupaten Banggai Kepulauan
+[  356] Sa'pak Bayobayo Sangalla Tana Toraja → OK_TEXT  → Kabupaten Tana Toraja
+[  357] Tugu Kakao → OK_GEO  → Kabupaten Kolaka
+[  358] Pantai Batu Pinagut → OK_GEO  → Kabupaten Bolaang Mongondow Utara
+[  359] Pemandian Uwelera Porame → OK_TEXT  → Kabupaten Sigi
+[  360] Pantai Minanga → GEO_WIN   → Kabupaten Gorontalo Utara (teks bilang: Kabupaten Gorontalo)
+[  361] Pantai Taipa → OK_GEO  → Kabupaten Konawe Utara
+[  362] Dusun touba → OK_GEO  → Kabupaten Luwu Utara
+[  363] Kolam Renang Lombongo, Bone Bolango → OK_GEO  → Kabupaten Bone Bolango
+[  364] Pantai Kaluku → OK_GEO  → Kabupaten Donggala
+[  365] Objek Wisata Palawa' → OK_GEO  → Kabupaten Toraja Utara
+[  366] Pantai Pulau Liukang Loe → OK_GEO  → Kabupaten Bulukumba
+[  367] Wisata Mangambang → OK_GEO  → Kabupaten Maros
+[  368] LAPANGAN BUA' HONTINIMBANG MANOPPO → OK_GEO  → Kota Kotamobagu
+[  369] Pantai Maesa → OK_GEO  → Kabupaten Parigi Moutong
+[  370] Buttu Macca → OK_GEO  → Kabupaten Enrekang
+[  371] Permandian Topa → OK_GEO  → Kabupaten Muna
+[  372] Wisata Air Panas Bora → OK_TEXT  → Kabupaten Sigi
+[  373] Gunung Lokon → OK_GEO  → Kota Tomohon
+[  374] Wisata Hutan Pinus Rombeng → OK_GEO  → Kabupaten Bantaeng
+[  375] Pantai Ria Kolaka Cocoa City → OK_GEO  → Kabupaten Kolaka
+    [SAVE] auto-save (375 diproses, 373 OK)
+[  376] Taman Wisata Mahoni → OK_GEO  → Kota Tomohon
+[  377] Puncak Amarilis Kota Kendari → TEXT_WIN  → Kota Kendari (geo bilang: Kabupaten Konawe)
+[  378] SAUNG REWAKO → OK_GEO  → Kabupaten Gowa
+[  379] PUNCAK SOROMBIPI → TEXT_WIN  → Kabupaten Kolaka (geo bilang: Kabupaten Kolaka Timur)
+[  380] Tanggul Reklamasi Kolonodale → OK_GEO  → Kabupaten Morowali Utara
+[  381] Lasonrai Beach → OK_GEO  → Kabupaten Barru
+[  382] Monumen Lasinrang → OK_GEO  → Kabupaten Pinrang
+[  383] Pantai Pandan Wangi → OK_TEXT  → Kabupaten Banggai
+[  384] Pulisan Beach → OK_GEO  → Kabupaten Minahasa Utara
+[  385] Gunung Tumpa → OK_GEO  → Kabupaten Minahasa Utara
+[  386] RANOLEWO → OK_TEXT  → Kabupaten Minahasa
+[  387] Air Terjun Loli Tasiburi → OK_GEO  → Kabupaten Donggala
+[  388] Pantai Kuri Maros → OK_GEO  → Kabupaten Maros
+[  389] PPLH Puntondo → OK_GEO  → Kabupaten Takalar
+[  390] Baruga Somba Opu → OK_GEO  → Kabupaten Gowa
+[  391] Pantai Wambuliga → OK_GEO  → Kabupaten Wakatobi
+[  392] Rumah Adat Mamuju → OK_TEXT  → Kabupaten Mamuju
+[  393] Pantai palippis → OK_GEO  → Kabupaten Polewali Mandar
+[  394] Hutan Pinus RITA MALOMPOA BISSOLORO → OK_GEO  → Kabupaten Gowa
+[  395] Lembah Lohe → OK_GEO  → Kabupaten Gowa
+[  396] Pantai Katembe → TEXT_WIN  → Kabupaten Buton (geo bilang: Kabupaten Buton Tengah)
+[  397] Pantai Sabang Toli toli → OK_GEO  → Kabupaten Tolitoli
+[  398] Taman Rekreasi Puncak Mowewe → GEO_WIN   → Kabupaten Kolaka Timur (teks bilang: Kabupaten Kolaka)
+[  399] Mampie → OK_GEO  → Kabupaten Polewali Mandar
+[  400] Air Terjun Vera → OK_GEO  → Kabupaten Morowali
+    [SAVE] auto-save (400 diproses, 398 OK)
+[  401] Danau Napabale → OK_GEO  → Kabupaten Muna
+[  402] Monumen Tuhan Yesus Raja Memberkati → OK_TEXT  → Kabupaten Kepulauan Talaud
+[  403] Wisata Tugu Perdamaian → OK_TEXT  → Kota Palu
+[  404] Pantai Pasangkayu Mamuju Utara → OK_GEO  → Kabupaten Pasangkayu
+[  405] Teluk Lalong → OK_TEXT  → Kabupaten Banggai
+[  406] Taman Wisata Bola Pitue → OK_GEO  → Kabupaten Barru
+[  407] Pantai Salopi → OK_GEO  → Kabupaten Pinrang
+[  408] Pantai Punagaan → OK_GEO  → Kabupaten Kepulauan Selayar
+[  409] Wakatobi Dive Adventure → OK_GEO  → Kabupaten Wakatobi
+[  410] Pantai Boneoge → OK_GEO  → Kabupaten Donggala
+[  411] Pantai Poganda → OK_TEXT  → Kabupaten Banggai Kepulauan
+[  412] Lawere Beach Bonging Ponging → OK_GEO  → Kabupaten Pinrang
+[  413] Pantai INDO BEACH LALUMPE → OK_TEXT  → Kabupaten Minahasa
+[  414] Buntu Pune → OK_GEO  → Kabupaten Toraja Utara
+[  415] Pemandian Air Panas Pincara → OK_GEO  → Kabupaten Luwu Utara
+[  416] Padang Indah Allepperengnge → OK_GEO  → Kabupaten Barru
+[  417] Masjid Besar DARUSSALAM Belawa → OK_GEO  → Kabupaten Wajo
+[  418] BUKIT NATO,Lolai negri diatas awan → OK_GEO  → Kabupaten Toraja Utara
+[  419] Tugu Panua → TEXT_WIN  → Kabupaten Gorontalo (geo bilang: Kabupaten Pohuwato)
+[  420] Pantai Cinta → OK_GEO  → Kabupaten Takalar
+[  421] Masjid Agung Baiturrahim Pohuwato → OK_GEO  → Kabupaten Pohuwato
+[  422] Taman Purbakala Waruga → OK_GEO  → Kabupaten Minahasa Utara
+[  423] Kasuso → OK_GEO  → Kabupaten Bulukumba
+[  424] Taman Bakau Kendari → OK_GEO  → Kota Kendari
+[  425] Kasawari Beach → OK_GEO  → Kota Bitung
+    [SAVE] auto-save (425 diproses, 423 OK)
+[  426] Pantai Wisata Molotabu → OK_GEO  → Kabupaten Bone Bolango
+[  427] Cartens Hills Wawo → OK_GEO  → Kota Tomohon
+[  428] Pantai Kalomang → OK_GEO  → Kabupaten Kolaka
+[  429] Tebing Romantis Ollon → OK_TEXT  → Kabupaten Tana Toraja
+[  430] Watu Pinawetengan → OK_TEXT  → Kabupaten Minahasa
+[  431] Kawah Gunung Lokon → TEXT_WIN  → Kabupaten Minahasa (geo bilang: Kota Tomohon)
+[  432] Monumen Patung Ir. Soekarno → OK_GEO  → Kabupaten Minahasa Utara
+[  433] Wisata Sungai Longalo Botu Motoli'oluwo → OK_GEO  → Kabupaten Bone Bolango
+[  434] PANTAI MANAKARRA → OK_TEXT  → Kabupaten Mamuju
+[  435] Pantai Parangluhu Bira → OK_GEO  → Kabupaten Bulukumba
+[  436] Tuturuga Beach → OK_TEXT  → Kabupaten Minahasa
+[  437] Tracking Mangrove Bungkutoko → OK_GEO  → Kota Kendari
+[  438] Kolam Renang Air Panas "Zanoleos" → OK_GEO  → Kota Tomohon
+[  439] Gua Mampu → OK_GEO  → Kabupaten Bone
+[  440] Air Terjun Kali Dingin → OK_TEXT  → Kabupaten Luwu Timur
+[  441] Taman Air Kelapa Gading → OK_GEO  → Kota Baubau
+[  442] Air Terjun Karawa → OK_GEO  → Kabupaten Pinrang
+[  443] Air Terjun Desa Tincep (Tekaan Rangka Kengkang) → OK_TEXT  → Kabupaten Minahasa
+[  444] Pantai Bahari, Buton Selatan → TEXT_WIN  → Kabupaten Buton (geo bilang: Kabupaten Buton Selatan)
+[  445] Air Terjun Tirta Rimba → OK_GEO  → Kota Baubau
+[  446] Bukit Bossolo → OK_GEO  → Kabupaten Jeneponto
+[  447] Pantai Indah Kalasey → OK_TEXT  → Kabupaten Minahasa
+[  448] Taman Bambu Runcing → OK_GEO  → Kabupaten Polewali Mandar
+[  449] Muntea Camping Ground → OK_GEO  → Kabupaten Bantaeng
+[  450] Pantai Munu → OK_TEXT  → Kabupaten Majene
+    [SAVE] auto-save (450 diproses, 448 OK)
+[  451] Tugu Salib Buntu Singki → OK_GEO  → Kabupaten Toraja Utara
+[  452] Permandian Air Panas Mantikole → OK_TEXT  → Kabupaten Sigi
+[  453] Wisata Pinus Panorama Tentena → OK_TEXT  → Kabupaten Poso
+[  454] Pantai Tanjung Merah → OK_GEO  → Kota Bitung
+[  455] Wisata Alam Kalibiru Kanang → OK_GEO  → Kabupaten Polewali Mandar
+[  456] Dungusan Soputan → TEXT_WIN  → Kabupaten Minahasa (geo bilang: Kabupaten Minahasa Tenggara)
+[  457] Wisata Air Terjun Latuppa → OK_GEO  → Kota Palopo
+[  458] Patung Yesus Penebus → OK_GEO  → Kota Bitung
+[  459] Taman Maccini Sombala → OK_GEO  → Kota Makassar
+[  460] Bukit Maddo → OK_GEO  → Kabupaten Barru
+[  461] Puncak Pua' Janggo' → OK_GEO  → Kabupaten Bulukumba
+[  462] Permandian Kolam Toddang Jompi'e → OK_GEO  → Kabupaten Bone
+[  463] Monumen Nani Wartabone → OK_GEO  → Kabupaten Gorontalo
+[  464] Kolam Renang Alami Water Blessing danowudu → OK_GEO  → Kota Bitung
+[  465] Mangrove Park Bahowo → OK_GEO  → Kota Manado
+[  466] Pohon Kasih → OK_GEO  → Kota Manado
+[  467] Kabesaran Beach → OK_TEXT  → Kabupaten Minahasa
+[  468] Bendungan Misterius → OK_TEXT  → Kabupaten Sigi
+[  469] TEMPAT PERMANDIAN SANDAKAN BIAK → OK_TEXT  → Kabupaten Banggai
+[  470] Puncak Lima Jari → OK_GEO  → Kabupaten Bone
+[  471] Pelabuhan Ulu Siau → NO_MATCH
+[  472] Pantai La Poili → TEXT_WIN  → Kabupaten Buton (geo bilang: Kabupaten Buton Selatan)
+[  473] Lutim Landmark → OK_GEO  → Kabupaten Luwu Timur
+[  474] Pantai Mallenreng → OK_GEO  → Kabupaten Sinjai
+[  475] Pemandian Air Terjun Meranti → OK_GEO  → Kabupaten Bone Bolango
+    [SAVE] auto-save (475 diproses, 472 OK)
+[  476] Pantai Tanjung Babia Pasangkayu → OK_GEO  → Kabupaten Pasangkayu
+[  477] Pulau Wisata Lakkang → OK_GEO  → Kota Makassar
+[  478] Danau Moat → OK_GEO  → Kabupaten Bolaang Mongondow Timur
+[  479] Puncak Pontolo Indah → OK_GEO  → Kabupaten Gorontalo Utara
+[  480] Pantai Lakeba → OK_GEO  → Kota Baubau
+[  481] Permandian Bahoruru → OK_GEO  → Kabupaten Morowali
+[  482] Ujung Lero Beach → OK_GEO  → Kabupaten Pinrang
+[  483] Puncak bollangi → OK_GEO  → Kabupaten Gowa
+[  484] Ombro → OK_GEO  → Kabupaten Kolaka Utara
+[  485] Pantai Abadi → OK_GEO  → Kabupaten Bolaang Mongondow Timur
+[  486] Pantai Talawaan Bajo → OK_GEO  → Kabupaten Minahasa Utara
+[  487] Taman Rekreasi Datae → OK_GEO  → Kabupaten Sidenreng Rappang
+[  488] Forte Português do Século XVI em Amurang , Portugis → OK_GEO  → Kabupaten Minahasa Selatan
+[  489] Wisata Marmer Bulo Tara Leang-Leang → OK_GEO  → Kabupaten Maros
+[  490] Taman Wisata Holyland Malino (Bili Park) → OK_GEO  → Kabupaten Gowa
+[  491] Rante Karassik → OK_GEO  → Kabupaten Toraja Utara
+[  492] Museum La Pawawoi → OK_GEO  → Kabupaten Bone
+[  493] Wisata Sungai So'do → OK_TEXT  → Kabupaten Mamuju
+[  494] Anjungan MARISA CITY → OK_GEO  → Kabupaten Pohuwato
+[  495] Patung Naga Kamali → OK_GEO  → Kota Baubau
+[  496] Pantai Labuana → OK_TEXT  → Kabupaten Donggala
+[  497] Padang Savana Ongkoa Takalar → OK_GEO  → Kabupaten Takalar
+[  498] Pantai Teduang → OK_TEXT  → Kabupaten Banggai Kepulauan
+[  499] Taman Teras Unhas → OK_GEO  → Kota Makassar
+[  500] Danau Tempe → OK_TEXT  → Kabupaten Wajo
+    [SAVE] auto-save (500 diproses, 497 OK)
+[  501] Bulu Saraung → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[  502] Museum Balla Lompoa Bajeng → OK_GEO  → Kabupaten Gowa
+[  503] Goa Pamona → OK_TEXT  → Kabupaten Poso
+[  504] Bukit Larata, Desa Kinunang → OK_GEO  → Kabupaten Minahasa Utara
+[  505] Wisata Pantai Tapandullu → OK_TEXT  → Kabupaten Mamuju
+[  506] Tebing Marumasa Kalibata → OK_GEO  → Kabupaten Bulukumba
+[  507] Pantai Pasir Putih Pitulua → OK_GEO  → Kabupaten Kolaka Utara
+[  508] Taman Wisata Danau Sidenreng → OK_GEO  → Kabupaten Sidenreng Rappang
+[  509] Pemandian Air Panas Makula → OK_TEXT  → Kabupaten Tana Toraja
+[  510] Taipa Beach → OK_GEO  → Kabupaten Konawe Utara
+[  511] Taman Kota I Love Palopo → OK_GEO  → Kota Palopo
+[  512] Vihara Buddhayana → OK_GEO  → Kota Tomohon
+[  513] Pantai Biluhu Timur → OK_GEO  → Kabupaten Gorontalo
+[  514] Air Terjun Parang Bugisi → OK_GEO  → Kabupaten Gowa
+[  515] Wisata Pemancingan & Kuliner AjengMart → OK_GEO  → Kabupaten Konawe Selatan
+[  516] Suaya → OK_TEXT  → Kabupaten Tana Toraja
+[  517] Pantai Walengkabola → OK_GEO  → Kabupaten Muna
+[  518] Pantai Kucing Parigi Moutong → OK_GEO  → Kabupaten Parigi Moutong
+[  519] I Love Minsel → OK_GEO  → Kabupaten Minahasa Selatan
+[  520] BAROS FARM HOUSE → TEXT_WIN  → Kabupaten Kolaka (geo bilang: Kabupaten Kolaka Timur)
+[  521] Air Terjun Salewangang Malino → OK_GEO  → Kabupaten Gowa
+[  522] Pantai Lowita - MUTIARA → OK_GEO  → Kabupaten Pinrang
+[  523] Puncak Melby'Ls → OK_GEO  → Kota Tomohon
+[  524] Pantai Pusahelu → OK_GEO  → Kabupaten Bulukumba
+[  525] Pantai Tanjung Tumpaan → OK_TEXT  → Kabupaten Minahasa
+    [SAVE] auto-save (525 diproses, 522 OK)
+[  526] RTH Papalimba Puday → OK_GEO  → Kota Kendari
+[  527] Rumah Alam Dunggala → OK_GEO  → Kabupaten Bone Bolango
+[  528] Pasangkayu Beach → OK_GEO  → Kabupaten Pasangkayu
+[  529] Kahayya → TEXT_WIN  → Kabupaten Sinjai (geo bilang: Kabupaten Bulukumba)
+[  530] Danau Towuti → OK_GEO  → Kabupaten Luwu Timur
+[  531] Pantai Embuhanga → OK_TEXT  → Kabupaten Kepulauan Sangihe
+[  532] Pananualeng Beach → OK_TEXT  → Kabupaten Kepulauan Sangihe
+[  533] Bukit Raga → OK_GEO  → Kabupaten Gorontalo
+[  534] Alun-alun Kirambu → OK_GEO  → Kabupaten Kolaka Utara
+[  535] Golden Kolam golden jumbo → OK_GEO  → Kota Manado
+[  536] Pagoda Ekayana → OK_GEO  → Kota Tomohon
+[  537] Tugu Ampana → OK_GEO  → Kabupaten Tojo Una-Una
+[  538] Taman Taiganja Kalukubula → OK_TEXT  → Kabupaten Sigi
+[  539] Tilalohe Beach Resort → OK_GEO  → Kabupaten Gorontalo
+[  540] Bukit Sibedi → OK_TEXT  → Kabupaten Sigi
+[  541] Danau Tempe Kab.Wajo → OK_GEO  → Kabupaten Wajo
+[  542] Tracking Mangrove Lahundape → OK_GEO  → Kota Kendari
+[  543] Lembah Ollon → OK_TEXT  → Kabupaten Tana Toraja
+[  544] Desa wisata karangan latimojong ,Sivin camp, kampong ko → OK_GEO  → Kabupaten Enrekang
+[  545] Permandian Air Tawar Desa Kautu → OK_TEXT  → Kabupaten Banggai Kepulauan
+[  546] Koguna Beach → OK_GEO  → Kabupaten Buton
+[  547] Pulau Pasir Putih → OK_GEO  → Kabupaten Polewali Mandar
+[  548] Rumah Adat Sao Raja Sawitto → OK_GEO  → Kabupaten Pinrang
+[  549] Puncak Wakila → TEXT_WIN  → Kabupaten Muna (geo bilang: Kabupaten Buton Tengah)
+[  550] Wisata Pohon Cinta → OK_GEO  → Kabupaten Pohuwato
+    [SAVE] auto-save (550 diproses, 547 OK)
+[  551] Tanah Bangkala Bone 1 → OK_GEO  → Kabupaten Bone
+[  552] Pantai Banano → OK_GEO  → Kabupaten Tojo Una-Una
+[  553] Wisata Puncak Raja Bunga → OK_TEXT  → Kabupaten Majene
+[  554] Pantai Kahona → OK_GEO  → Kota Bitung
+[  555] Wisata Alam Geologi Boro Boro → OK_GEO  → Kabupaten Konawe Selatan
+[  556] Taman Batu Balloci → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[  557] Bukit Teletubbies → OK_TEXT  → Kabupaten Banggai
+[  558] Wisata pemandian Air Panas Bakan → OK_GEO  → Kabupaten Bolaang Mongondow
+[  559] Wisata Gunung Kekewang Desa Tetey → OK_GEO  → Kabupaten Minahasa Utara
+[  560] Padang Pajjongang → OK_GEO  → Kabupaten Bombana
+[  561] Tanggul Batu Cincin → OK_TEXT  → Kabupaten Majene
+[  562] Taman Wisata NewMahoni Tomohon → OK_GEO  → Kota Tomohon
+[  563] Air Terjun Bantimurung Bone-Bone → OK_GEO  → Kabupaten Luwu Utara
+[  564] Pantai Tasik Ria → OK_TEXT  → Kabupaten Minahasa
+[  565] Pantai Wantopi → TEXT_WIN  → Kabupaten Buton (geo bilang: Kabupaten Buton Tengah)
+[  566] Objek Wisata Gunung Tambolang → OK_GEO  → Kabupaten Toraja Utara
+[  567] Hidden gem - taman wisata & camping → OK_GEO  → Kota Tomohon
+[  568] Permandian Bukit Kasih → OK_GEO  → Kabupaten Luwu Timur
+[  569] Danau Tambing → OK_TEXT  → Kabupaten Poso
+[  570] Wisata Alam Pakalolo → OK_GEO  → Kabupaten Luwu
+[  571] Air Terjun Biroro → OK_GEO  → Kabupaten Gowa
+[  572] Tapahan Telu Waterfall → OK_GEO  → Kota Tomohon
+[  573] Tongkonan To'Barana → OK_GEO  → Kabupaten Toraja Utara
+[  574] Air Terjun Lengan → OK_GEO  → Kabupaten Maros
+[  575] Pusentasi → OK_GEO  → Kabupaten Donggala
+    [SAVE] auto-save (575 diproses, 572 OK)
+[  576] Pantai Malauwa → OK_TEXT  → Kabupaten Mamuju
+[  577] Situs Megalitik Pokekea → OK_TEXT  → Kabupaten Poso
+[  578] Uluna Tondano → OK_TEXT  → Kabupaten Minahasa
+[  579] Air Terjun Sarang Burung → OK_GEO  → Kabupaten Barru
+[  580] BUKIT DOA WAREMBUNGAN → TEXT_WIN  → Kabupaten Minahasa (geo bilang: Kota Manado)
+[  581] ZULU PARK → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[  582] Pantai Beringin Cinta → OK_GEO  → Kabupaten Mamuju
+[  583] Pantai Wale → OK_GEO  → Kabupaten Konawe Utara
+[  584] Napabale Beach → OK_TEXT  → Kabupaten Muna
+[  585] Marina Togo Wakatobi → OK_TEXT  → Kabupaten Wakatobi
+[  586] Air Terjun Parom → OK_GEO  → Kota Bitung
+[  587] Bulu Dua → OK_GEO  → Kabupaten Soppeng
+[  588] Pantai Alar Pondang → OK_GEO  → Kabupaten Minahasa Selatan
+[  589] Minanga Beach → OK_GEO  → Kabupaten Gorontalo Utara
+[  590] Taman Wisata Fafaliang → OK_GEO  → Kabupaten Sinjai
+[  591] Pantai Kelapa Ujung → OK_GEO  → Kabupaten Jeneponto
+[  592] HARLAND WISATA KEBUN → OK_GEO  → Kabupaten Gowa
+[  593] Wisata Alam Buhung Tie Lotong-lotong → OK_GEO  → Kabupaten Bulukumba
+[  594] Monumen Juang Lesangi → OK_GEO  → Kabupaten Luwu Utara
+[  595] Wisata Polewali Mandar - Rawa Bangun → OK_GEO  → Kabupaten Polewali Mandar
+[  596] Wisata alam & rekreasi borkal → OK_GEO  → Kabupaten Bulukumba
+[  597] Wale Ne Reideen Rumah Miring Tomohon → OK_GEO  → Kota Tomohon
+[  598] Museum Karaeng Pattingalloang → TEXT_WIN  → Kabupaten Gowa (geo bilang: Kota Makassar)
+[  599] Permandian Alam Waetuwo → OK_GEO  → Kabupaten Bone
+[  600] Klenteng Ibu Agung Bahari → OK_GEO  → Kota Makassar
+    [SAVE] auto-save (600 diproses, 597 OK)
+[  601] Bukit Savana Pulisan → OK_GEO  → Kabupaten Minahasa Utara
+[  602] Masjid Taqwa Tompong → OK_GEO  → Kabupaten Bantaeng
+[  603] Kolam Renang Banua Wisata → OK_GEO  → Kota Palopo
+[  604] Bulu Saukang → OK_TEXT  → Kabupaten Maros
+[  605] Pantai Batu Gong Kendari → OK_GEO  → Kabupaten Konawe
+[  606] Danau Limboto → OK_GEO  → Kabupaten Gorontalo
+[  607] Togeo Beach → OK_GEO  → Kabupaten Bone
+[  608] Rumah Adat Jeneponto → OK_GEO  → Kabupaten Gowa
+[  609] Wisata Rumah Hobbit Bolangi 4 → OK_GEO  → Kabupaten Gowa
+[  610] Permandian Moko → OK_GEO  → Kabupaten Muna
+[  611] PANTAI PUDONGGALA → OK_GEO  → Kabupaten Konawe Utara
+[  612] Bukit Alebo → OK_GEO  → Kabupaten Konawe Selatan
+[  613] Taman Nasional Taka Bonerate → OK_TEXT  → Kabupaten Kepulauan Selayar
+[  614] Rano Kalimpaa → OK_TEXT  → Kabupaten Poso
+[  615] Embung Hutadaa, Talaga Jaya → OK_GEO  → Kabupaten Gorontalo
+[  616] Wisata Pemancingan dan Kuliner Lembah Sigi → OK_TEXT  → Kabupaten Sigi
+[  617] Puncak Pusunge Tahuna → OK_TEXT  → Kabupaten Kepulauan Sangihe
+[  618] Museum Keraton Buton → OK_GEO  → Kabupaten Buton Selatan
+[  619] Pantai Moinit → OK_GEO  → Kabupaten Minahasa Selatan
+[  620] Pantai Tae Manu Belang-Belang → OK_GEO  → Kabupaten Mamuju
+[  621] Bukit Jati Gentungan Mamuju → OK_GEO  → Kabupaten Mamuju
+[  622] Tumbak Island Cottage Ratahan → OK_GEO  → Kabupaten Minahasa Tenggara
+[  623] Bukit Teletubbies → OK_GEO  → Kabupaten Bombana
+[  624] Lambangan Pauno → OK_GEO  → Kabupaten Banggai Laut
+[  625] Mimpi pool club manado → OK_GEO  → Kabupaten Minahasa Utara
+    [SAVE] auto-save (625 diproses, 622 OK)
+[  626] RTH Suwawa → OK_GEO  → Kabupaten Bone Bolango
+[  627] Pantai Tanjung Tabako → OK_GEO  → Kabupaten Bombana
+[  628] Air terjun Timurung → OK_GEO  → Kabupaten Gowa
+[  629] AIR TERJUN TALOKAN → OK_TEXT  → Kabupaten Buol
+[  630] Air Terjun Manuba → OK_GEO  → Kabupaten Barru
+[  631] Sungai Jodoh → OK_GEO  → Kota Palopo
+[  632] Situs To'pao Pusat Sejarah Kondosapata' → OK_GEO  → Kabupaten Mamasa
+[  633] Puncak Botubarani → OK_GEO  → Kabupaten Bone Bolango
+[  634] Mata Air Paisu Batango Desa Luk Panenteng → OK_TEXT  → Kabupaten Banggai Kepulauan
+[  635] Wisata pantai kaisomaru → TEXT_WIN  → Kota Gorontalo (geo bilang: Kabupaten Bone Bolango)
+[  636] Permandian Lambiria → OK_GEO  → Kabupaten Gowa
+[  637] Buntu Burake → OK_TEXT  → Kabupaten Tana Toraja
+[  638] Wisata Air Terjun Mantikole → OK_TEXT  → Kabupaten Sigi
+[  639] Wisata Cekong → OK_GEO  → Kabupaten Enrekang
+[  640] Wale Ti Siri Puncak Rurukan Sulawesi Utara → OK_GEO  → Kota Tomohon
+[  641] Kawasan Benteng Sanrobone → OK_GEO  → Kabupaten Takalar
+[  642] Pantai Hayalan Donggala → OK_GEO  → Kabupaten Donggala
+[  643] Pantai Senja → OK_GEO  → Kabupaten Konawe Selatan
+[  644] Air Terjun Lembah Karaeng → OK_GEO  → Kabupaten Gowa
+[  645] Permandian Alam Air Panas Lemo Susu → OK_GEO  → Kabupaten Pinrang
+[  646] Casa de Lotus → OK_GEO  → Kabupaten Minahasa Utara
+[  647] Taman patung kuda bumi bahari → OK_TEXT  → Kota Palu
+[  648] Telaga Sibili Pantoloan → OK_TEXT  → Kota Palu
+[  649] Penangkaran RUSA Desa Wosu → OK_GEO  → Kabupaten Morowali
+[  650] Desa Wisata Untia → TEXT_WIN  → Kabupaten Maros (geo bilang: Kota Makassar)
+    [SAVE] auto-save (650 diproses, 647 OK)
+[  651] Pulau Binongko → OK_GEO  → Kabupaten Wakatobi
+[  652] Pantai Lolan → OK_GEO  → Kabupaten Bolaang Mongondow
+[  653] Museum - Ziekenhuis - Mandar Majene → OK_TEXT  → Kabupaten Majene
+[  654] Taman Wisata Alam Kota Tomohon → OK_GEO  → Kota Tomohon
+[  655] Gelora Wisata Desa Nepo → OK_GEO  → Kabupaten Wajo
+[  656] Pijar Beach Cottages → OK_GEO  → Kabupaten Tolitoli
+[  657] Wisata Hutan Mangrove Dewi Biringkassi → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[  658] Air Terjun Kima Atas → OK_GEO  → Kota Manado
+[  659] Air Terjun Tumburano → OK_GEO  → Kabupaten Konawe Kepulauan
+[  660] Tanggul Topejawa → OK_GEO  → Kabupaten Takalar
+[  661] Air Terjun Kembar Desa Barambang → OK_GEO  → Kabupaten Sinjai
+[  662] Donggia Kahayya → OK_GEO  → Kabupaten Bulukumba
+[  663] labengki Pasir Panjang → OK_GEO  → Kabupaten Konawe Utara
+[  664] Rangas Beach → OK_TEXT  → Kabupaten Mamuju
+[  665] AGRA Wisata → OK_GEO  → Kabupaten Konawe
+[  666] Puncak Tiriondahi → OK_GEO  → Kabupaten Konawe Selatan
+[  667] Air Terjun Tammasapi → OK_TEXT  → Kabupaten Mamuju
+[  668] Air Terjun To Magelli → OK_GEO  → Kabupaten Barru
+[  669] Danau Tombakar (Ranowangko) → OK_TEXT  → Kabupaten Minahasa
+[  670] Kelapa Tujuh → OK_TEXT  → Kabupaten Mamuju
+[  671] Pantai Exotic → OK_GEO  → Kabupaten Bone Bolango
+[  672] Museum Nekara → OK_GEO  → Kabupaten Kepulauan Selayar
+[  673] Pantai Impian → OK_GEO  → Kabupaten Luwu Timur
+[  674] Tugu Lilin → OK_GEO  → Kota Manado
+[  675] Pesisir Pantai Pamboang → OK_TEXT  → Kabupaten Majene
+    [SAVE] auto-save (675 diproses, 672 OK)
+[  676] Pantai Talise → OK_TEXT  → Kota Palu
+[  677] Wisata Vatu Nonju → OK_TEXT  → Kabupaten Sigi
+[  678] Bumi Perkemahan Ulunggolaka → OK_GEO  → Kabupaten Kolaka
+[  679] Balai Taman Nasional Wakatobi → OK_GEO  → Kabupaten Wakatobi
+[  680] Pantai Mowuru → GEO_WIN   → Kabupaten Buton Utara (teks bilang: Kabupaten Buton)
+[  681] Pantai Nipa Nipa → OK_GEO  → Kabupaten Konawe
+[  682] Pantai Jampue → OK_GEO  → Kabupaten Pinrang
+[  683] Pantai Sarena → TEXT_WIN  → Kota Manado (geo bilang: Kota Bitung)
+[  684] Pantai Negeri Lama (Nelam) → OK_TEXT  → Kabupaten Buol
+[  685] Pangngalleang toppa' → OK_GEO  → Kabupaten Gowa
+[  686] Mendatte Park → OK_GEO  → Kabupaten Enrekang
+[  687] Pantai marana → OK_GEO  → Kabupaten Sinjai
+[  688] Pulau Lahe → OK_GEO  → Kabupaten Pohuwato
+[  689] Pantai Kambahu → OK_GEO  → Kota Bitung
+[  690] Taman Makam Pahlawan → OK_TEXT  → Kabupaten Majene
+[  691] Pantai Sumpang Binangae → OK_GEO  → Kabupaten Barru
+[  692] DESA Wisata Namu → OK_GEO  → Kabupaten Konawe Selatan
+[  693] Taman Marannu → OK_GEO  → Kabupaten Pinrang
+[  694] Pantai Babo Moonow → OK_GEO  → Kabupaten Bolaang Mongondow
+[  695] Pantai Indah Kapu → OK_GEO  → Kabupaten Kolaka
+[  696] Permandian Matakidi → TEXT_WIN  → Kabupaten Muna (geo bilang: Kabupaten Muna Barat)
+[  697] Negeri Seribu Batu (NeBuBa) "Pondok Mahari" → TEXT_WIN  → Kota Palopo (geo bilang: Kabupaten Luwu)
+[  698] Khenjiro Beach → OK_GEO  → Kabupaten Minahasa Utara
+[  699] Mata Air Sangia → OK_GEO  → Kabupaten Muna
+[  700] Maccahaya Waterboom → OK_GEO  → Kabupaten Soppeng
+    [SAVE] auto-save (700 diproses, 697 OK)
+[  701] Obyek Wisata Pantai Vatu Mapida → OK_GEO  → Kabupaten Donggala
+[  702] Pantai Tumbu → TEXT_WIN  → Kabupaten Mamuju (geo bilang: Kabupaten Mamuju Tengah)
+[  703] Gunung Ambang → OK_GEO  → Kabupaten Bolaang Mongondow Timur
+[  704] Rote Park Sawangan → OK_GEO  → Kabupaten Minahasa Utara
+[  705] Puncak Kelor Ta Wanua Tonra → OK_GEO  → Kabupaten Bone
+[  706] Pasir Panjang → OK_GEO  → Kabupaten Morowali
+[  707] Tongkonan Karuaya → OK_TEXT  → Kabupaten Tana Toraja
+[  708] Pantai Ujung Tiro → OK_TEXT  → Kabupaten Bulukumba
+[  709] Permandian Rindu Alam Apala → OK_GEO  → Kabupaten Bone
+[  710] Gunung Mekongga → OK_GEO  → Kabupaten Kolaka Utara
+[  711] Tanete Gandangdewata → OK_GEO  → Kabupaten Mamasa
+[  712] Bira Point Of View(one piece) → OK_TEXT  → Kabupaten Bulukumba
+[  713] Gunung Nona → OK_GEO  → Kabupaten Enrekang
+[  714] Gunung Batuangus → OK_GEO  → Kota Bitung
+[  715] Wisata Jembatan Lingkar → TEXT_WIN  → Kabupaten Buton (geo bilang: Kabupaten Buton Selatan)
+[  716] Pantai tihu → OK_GEO  → Kabupaten Bone Bolango
+[  717] PANTAI WAIKESA → OK_GEO  → Kabupaten Wakatobi
+[  718] Wisata Pemandian Potanga → OK_GEO  → Kabupaten Gorontalo
+[  719] Benteng Oranje → OK_GEO  → Kabupaten Gorontalo Utara
+[  720] Danau Balang Tonjong → OK_GEO  → Kota Makassar
+[  721] Istana Malige → OK_GEO  → Kota Baubau
+[  722] Danau Mawang → OK_GEO  → Kabupaten Gowa
+[  723] Museum Negeri Provinsi Sulawesi Tenggara → OK_GEO  → Kota Kendari
+[  724] pulau bintang tolala → OK_GEO  → Kabupaten Kolaka Utara
+[  725] Goa Jepang Kawangkoan → OK_TEXT  → Kabupaten Minahasa
+    [SAVE] auto-save (725 diproses, 722 OK)
+[  726] Pantai Pasir Putih → OK_GEO  → Kabupaten Banggai Laut
+[  727] Bukit Marezo → OK_GEO  → Kota Parepare
+[  728] Tomohon Show Window → OK_GEO  → Kota Tomohon
+[  729] Pantai Lilang → OK_GEO  → Kabupaten Minahasa Utara
+[  730] Taraujung Pamboang → OK_TEXT  → Kabupaten Majene
+[  731] PANTAI KARANG EMPAT → OK_GEO  → Kabupaten Bombana
+[  732] Air Terjun Sungai Anuang → OK_GEO  → Kabupaten Luwu Timur
+[  733] Wisata Alam Lewaja → OK_GEO  → Kabupaten Enrekang
+[  734] Pantai Galau → OK_GEO  → Kabupaten Sinjai
+[  735] Pantai RCTI → TEXT_WIN  → Kota Bitung (geo bilang: Kabupaten Minahasa Utara)
+[  736] Pantai Kinunang → OK_GEO  → Kabupaten Minahasa Utara
+[  737] Air Terjun Waesai → OK_GEO  → Kabupaten Barru
+[  738] Destinasi Wisata Bukit Sasayaban → OK_GEO  → Kabupaten Minahasa Selatan
+[  739] Air Terjun Ladenring → TEXT_WIN  → Kabupaten Bone (geo bilang: Kabupaten Soppeng)
+[  740] Pantai Gubahi → TEXT_WIN  → Kabupaten Buton (geo bilang: Kabupaten Buton Tengah)
+[  741] Klenteng KWAN KONG Manado → OK_GEO  → Kota Manado
+[  742] Pantai Pulisan → OK_GEO  → Kabupaten Minahasa Utara
+[  743] Monumen Perjuangan Rakyat Pangkep → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[  744] Wisata Bukit Arang Gorontalo → OK_GEO  → Kabupaten Bone Bolango
+[  745] Tanjung Ngalo Mamuju → OK_TEXT  → Kota Makassar
+[  746] Kebun Anggur DUYU BANGKIT 02/04 → OK_TEXT  → Kota Palu
+[  747] Mattirotasi beach → OK_GEO  → Kota Parepare
+[  748] Tugu Kandean Dulang → OK_GEO  → Kabupaten Toraja Utara
+[  749] Pantai BBC → OK_TEXT  → Kabupaten Kepulauan Talaud
+[  750] Mokokawa → OK_TEXT  → Kabupaten Banggai
+    [SAVE] auto-save (750 diproses, 747 OK)
+[  751] Masjid Keraton Liya → OK_GEO  → Kabupaten Wakatobi
+[  752] Pemandian Ma'obu → TEXT_WIN  → Kabupaten Buton (geo bilang: Kabupaten Buton Tengah)
+[  753] Pantai Bungin → OK_GEO  → Kabupaten Bolaang Mongondow
+[  754] Hubat Sanjai → OK_GEO  → Kabupaten Sinjai
+[  755] Ungkea Beach → OK_GEO  → Kabupaten Morowali Utara
+[  756] Taman Kota Majene → OK_TEXT  → Kabupaten Majene
+[  757] Pantai Padongko → OK_GEO  → Kabupaten Barru
+[  758] Air Terjun Baturiti → OK_GEO  → Kabupaten Parigi Moutong
+[  759] Pantai Malaha → OK_GEO  → Kabupaten Kolaka
+[  760] Pantai Panorama → OK_TEXT  → Kabupaten Mamuju
+[  761] Taman Kota Keydupa → OK_GEO  → Kabupaten Bolaang Mongondow Utara
+[  762] TODDOPULI GREENLAND → OK_GEO  → Kabupaten Bulukumba
+[  763] Gelora ambang → OK_GEO  → Kota Kotamobagu
+[  764] Pantai Kanaan → OK_TEXT  → Kabupaten Minahasa
+[  765] Wisata Alam Bukit Peyapata → OK_GEO  → Kabupaten Bone Bolango
+[  766] Tongkonan Ranteallo → OK_GEO  → Kabupaten Toraja Utara
+[  767] Pantai Kampa → GEO_WIN   → Kabupaten Konawe Kepulauan (teks bilang: Kabupaten Konawe)
+[  768] Pantai Meleura → OK_GEO  → Kabupaten Muna
+[  769] Dermaga Harapan → OK_GEO  → Kabupaten Jeneponto
+[  770] Pantai Pajala → TEXT_WIN  → Kabupaten Muna (geo bilang: Kabupaten Muna Barat)
+[  771] LYWANZA HILLS → OK_TEXT  → Kabupaten Mamuju
+[  772] Pantai Gusung Indah → OK_GEO  → Kabupaten Takalar
+[  773] Taman Pintar → OK_GEO  → Kabupaten Pinrang
+[  774] Lolai Tongkonan Tangke Honai Rangga → OK_GEO  → Kabupaten Toraja Utara
+[  775] Pantai Pa'badilang → OK_GEO  → Kabupaten Kepulauan Selayar
+    [SAVE] auto-save (775 diproses, 772 OK)
+[  776] Pantai mosing → OK_GEO  → Kabupaten Parigi Moutong
+[  777] Bendungan Kalola → OK_GEO  → Kabupaten Wajo
+[  778] Pinus 2 Soputan → OK_TEXT  → Kabupaten Minahasa
+[  779] Hutan Kota Tomohon → OK_GEO  → Kota Tomohon
+[  780] Objek Wisata Danau Seper → OK_GEO  → Kabupaten Minahasa Utara
+[  781] Taman Wisata Alam Batu Angus → OK_TEXT  → Kota Bitung
+[  782] Permandian air terjun Moramo → OK_GEO  → Kabupaten Konawe Selatan
+[  783] Citol Hill TONDOK BAKARU → OK_GEO  → Kabupaten Mamasa
+[  784] Permandian Alam Uelanti → GEO_WIN   → Kabupaten Luwu Timur (teks bilang: Kabupaten Luwu)
+[  785] BUKIT SENAYAN DESA BULO KEC. BULO (NEGERI ATAS AWAN) → OK_GEO  → Kabupaten Polewali Mandar
+[  786] Taman Nirwana Park (Tilung) → OK_GEO  → Kabupaten Luwu Timur
+[  787] Pantai Wisata Lapeo → OK_GEO  → Kabupaten Polewali Mandar
+[  788] Pantai Panjang Toronipa → OK_GEO  → Kabupaten Konawe
+[  789] Permandian Bahopombine → OK_GEO  → Kabupaten Morowali
+[  790] Wisata Permandian Agro Palopo → OK_GEO  → Kota Palopo
+[  791] Parigi Moutong Mutiara Khatulistiwa → OK_GEO  → Kabupaten Parigi Moutong
+[  792] Tirta Ria → OK_TEXT  → Kabupaten Buol
+[  793] Batu Tongkarayya → OK_GEO  → Kabupaten Bulukumba
+[  794] Wisata Hutan Pinus Buntudatu → OK_TEXT  → Kabupaten Tana Toraja
+[  795] Chimoki Beach → OK_GEO  → Kabupaten Bolaang Mongondow Timur
+[  796] Pantai Balo Balo → OK_GEO  → Kabupaten Luwu Timur
+[  797] Kampung Literasi Borongtala → OK_GEO  → Kabupaten Gowa
+[  798] Jelly Fish Lake (Mariona Lake) → OK_TEXT  → Kabupaten Tojo Una-Una
+[  799] AIR TERJUN HUILA → OK_GEO  → Kabupaten Bone Bolango
+[  800] Pasambaya river side → OK_GEO  → Kabupaten Gorontalo
+    [SAVE] auto-save (800 diproses, 797 OK)
+[  801] Agrowisata Qurratu'ain → OK_GEO  → Kota Kendari
+[  802] Asinua Water Park Konawe → OK_GEO  → Kabupaten Konawe
+[  803] Tanjung Silar → OK_GEO  → Kabupaten Bolaang Mongondow Timur
+[  804] Monumen Paccekke → OK_GEO  → Kabupaten Barru
+[  805] PULAU SABANG TENDE → OK_GEO  → Kabupaten Tolitoli
+[  806] Wisata alam puncak kunyi → OK_GEO  → Kabupaten Polewali Mandar
+[  807] Puncak Buntu Sarira Negri Di Atas Awan → OK_TEXT  → Kabupaten Tana Toraja
+[  808] Pantai Oyama → TEXT_WIN  → Kabupaten Banggai Kepulauan (geo bilang: Kabupaten Banggai Laut)
+[  809] Agrowisata California Cialam → OK_GEO  → Kabupaten Konawe Selatan
+[  810] Taman Wisata Hutan Pinus Sorombipi → OK_GEO  → Kabupaten Kolaka Timur
+[  811] Taman BUTENG → TEXT_WIN  → Kabupaten Buton (geo bilang: Kabupaten Buton Tengah)
+[  812] To' Pinus Salu Kodo → OK_GEO  → Kabupaten Mamasa
+[  813] Ikha cell → OK_GEO  → Kota Kotamobagu
+[  814] Tinambung Highland → OK_GEO  → Kabupaten Gowa
+[  815] Museum Pinawetengan → OK_TEXT  → Kabupaten Minahasa
+[  816] Torosiaje → OK_TEXT  → Kabupaten Pohuwato
+[  817] Air Terjun Kandawu Ndawuna → OK_GEO  → Kabupaten Buton
+[  818] D'Marantale → OK_GEO  → Kabupaten Parigi Moutong
+[  819] Air Terjun Sarambu Salu → OK_GEO  → Kabupaten Toraja Utara
+[  820] Objek Wisata Galugu Dua Sa'dan Sangkombong → OK_GEO  → Kabupaten Toraja Utara
+[  821] Taman Kota Buol → OK_GEO  → Kabupaten Buol
+[  822] Pantai Kuri Indah → OK_GEO  → Kabupaten Maros
+[  823] Air Terjun Merdeka → OK_GEO  → Kabupaten Maros
+[  824] Taman Motika → OK_GEO  → Kabupaten Wakatobi
+[  825] Puncak Kayangan 1 Sombori → OK_GEO  → Kabupaten Morowali
+    [SAVE] auto-save (825 diproses, 822 OK)
+[  826] Tanjung biru → OK_GEO  → Kota Makassar
+[  827] Wisata Kebun Jati Gelebug Chandra → OK_GEO  → Kabupaten Bolaang Mongondow
+[  828] Air TERJUN NANGA NANGA → OK_GEO  → Kota Kendari
+[  829] Water Sport Objek Wisata Pantai Molotabu → OK_GEO  → Kabupaten Bone Bolango
+[  830] Kawasan Wisata LEANG LONDRONG → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[  831] Pantai Wisata Moian → OK_GEO  → Kabupaten Parigi Moutong
+[  832] Tumpaan Park → OK_GEO  → Kabupaten Minahasa Selatan
+[  833] Pantai Pulau Kondo → OK_GEO  → Kabupaten Bombana
+[  834] Batu Ejayya → OK_GEO  → Kabupaten Bantaeng
+[  835] Jembatan Muara Sungai Palopo → OK_GEO  → Kota Palopo
+[  836] Pantai Lolak → OK_GEO  → Kabupaten Bolaang Mongondow
+[  837] RAQa River Camp → OK_GEO  → Kabupaten Donggala
+[  838] Air Terjun Simoko → OK_GEO  → Kabupaten Bantaeng
+[  839] Air Terjun Dendengan → OK_TEXT  → Kabupaten Banggai
+[  840] Pulau Karampuang → OK_TEXT  → Kabupaten Mamuju
+[  841] Black Sand Beach(pantai pasir hitam) → OK_GEO  → Kabupaten Buton
+[  842] Pantai Baluno → OK_TEXT  → Kabupaten Majene
+[  843] Bundaran Bahomohoni → OK_GEO  → Kabupaten Morowali
+[  844] Ujung Tape → OK_GEO  → Kabupaten Pinrang
+[  845] Taman Puspa Pesona → OK_GEO  → Kabupaten Barru
+[  846] Liawan → OK_GEO  → Kabupaten Mamasa
+[  847] Permandian Wakantee → TEXT_WIN  → Kabupaten Muna (geo bilang: Kabupaten Muna Barat)
+[  848] Air Terjun Kamumu → OK_TEXT  → Kabupaten Banggai
+[  849] MONUMEN LAPRIS → OK_GEO  → Kabupaten Takalar
+[  850] MANGROVE SALUBIRO KAROSSA → OK_GEO  → Kabupaten Mamuju Tengah
+    [SAVE] auto-save (850 diproses, 847 OK)
+[  851] Taman Margasatwa Tandurusa → OK_GEO  → Kota Bitung
+[  852] Masjid Tua Jara'e → OK_GEO  → Kabupaten Sidenreng Rappang
+[  853] Pantai Bulo Rerer → OK_TEXT  → Kabupaten Minahasa
+[  854] Puncak Bulusaraung → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[  855] WATERPARK AMANAH TANI → OK_GEO  → Kabupaten Luwu Utara
+[  856] Pantai Pasir Putih → OK_GEO  → Kabupaten Bolaang Mongondow
+[  857] Air Terjun Cinta → OK_GEO  → Kabupaten Gowa
+[  858] Pemandian Air Panas Rantekatoan → OK_GEO  → Kabupaten Mamasa
+[  859] OBJEB WISATA PANTAI SALUKAILI → OK_GEO  → Kabupaten Pasangkayu
+[  860] Mangrove Park Tiwoho → OK_GEO  → Kabupaten Minahasa Utara
+[  861] Camping ground kendari → OK_GEO  → Kota Kendari
+[  862] Wisata Banua Pangka Wotu → OK_TEXT  → Kabupaten Luwu Timur
+[  863] Bendungan Bantimurung Bone-Bone Luwu utara → OK_GEO  → Kabupaten Luwu Utara
+[  864] Bukit Bumi Cerah → OK_GEO  → Kabupaten Bone Bolango
+[  865] Pantai Marboro → TEXT_WIN  → Kabupaten Buton (geo bilang: Kabupaten Buton Tengah)
+[  866] Air Terjun Danggang → OK_GEO  → Kabupaten Gowa
+[  867] Cagar Alam Karaengta Maros → OK_GEO  → Kabupaten Maros
+[  868] Pantai Labobo → TEXT_WIN  → Kabupaten Buton (geo bilang: Kabupaten Buton Tengah)
+[  869] Bukit Indah Camp → OK_GEO  → Kabupaten Gowa
+[  870] Gelora Permata Hijau Waetuwo → OK_TEXT  → Kabupaten Wajo
+[  871] Kampoeng Mangrove Ra'ra → OK_GEO  → Kabupaten Jeneponto
+[  872] Air Terjun Kogawuna → OK_GEO  → Kota Baubau
+[  873] Muara Maros Baru → OK_GEO  → Kabupaten Maros
+[  874] Kamali Boneaka → OK_GEO  → Kabupaten Banggai Laut
+[  875] Bendungan Bettu → OK_GEO  → Kabupaten Bulukumba
+    [SAVE] auto-save (875 diproses, 872 OK)
+[  876] Pantai Enu → OK_GEO  → Kabupaten Donggala
+[  877] Lereng CInta → OK_GEO  → Kota Palopo
+[  878] Alun-Alun Pantai Seruni → OK_GEO  → Kabupaten Bantaeng
+[  879] Air Terjun Depa' → OK_GEO  → Kabupaten Gowa
+[  880] Buntu Gallang → OK_GEO  → Kabupaten Enrekang
+[  881] Telaga Biru Ere Merasa → OK_GEO  → Kabupaten Bulukumba
+[  882] Pantai Membuku → OK_GEO  → Kabupaten Buton Utara
+[  883] Pantai Salokaili → OK_GEO  → Kabupaten Pasangkayu
+[  884] Taman Kota Sengkang Kabupaten Wajo → TEXT_WIN  → Kota Makassar (geo bilang: Kabupaten Wajo)
+[  885] Taman Gazebo Pangkep → OK_GEO  → Kabupaten Pangkajene Dan Kepulauan
+[  886] Kampung Kreasi Lowita → OK_GEO  → Kabupaten Pinrang
+[  887] Pantai Tumpaan Sawangan → OK_TEXT  → Kabupaten Minahasa
+[  888] Pariwisata Riverside Dinamunen → OK_GEO  → Kabupaten Minahasa Utara
+[  889] Morowali Sampoddo → OK_GEO  → Kota Palopo
+[  890] Permandian Zahara Wisata Papandangan → OK_GEO  → Kabupaten Polewali Mandar
+[  891] Batu Miana → OK_GEO  → Kabupaten Mamuju Tengah
+[  892] Buyu Balease → OK_TEXT  → Kabupaten Luwu Utara
+[  893] Gunung Empung → TEXT_WIN  → Kabupaten Minahasa (geo bilang: Kota Tomohon)
+[  894] Bukit Rongi → TEXT_WIN  → Kabupaten Buton (geo bilang: Kabupaten Buton Selatan)
+[  895] Bendungan Ponre Ponre → OK_GEO  → Kabupaten Bone
+[  896] Pantai Teletabis → OK_GEO  → Kabupaten Minahasa Selatan
+[  897] Museum Buntu Kalando → OK_TEXT  → Kabupaten Tana Toraja
+[  898] Pantai Raha Morowali → OK_GEO  → Kabupaten Morowali
+[  899] Air Terjun Saliu → OK_TEXT  → Kabupaten Maros
+[  900] Siuri beach → OK_TEXT  → Kabupaten Poso
+    [SAVE] auto-save (900 diproses, 897 OK)
+[  901] Rental Mobil Gorontalo Talani → TEXT_WIN  → Kota Gorontalo (geo bilang: Kabupaten Gorontalo)
+[  902] Air Terjun Sarambu Bittuang → OK_TEXT  → Kabupaten Tana Toraja
+[  903] Puncak Lestari → OK_GEO  → Kabupaten Gorontalo
+[  904] Wisata Kelapa Muda Sabda Alam → OK_GEO  → Kabupaten Jeneponto
+[  905] Boulevard Pantai Kambiow → OK_GEO  → Kabupaten Minahasa Selatan
+[  906] Wisata Istana Karst Ujung Bulu → OK_GEO  → Kabupaten Maros
+[  907] Jl taman gunung tumpa → OK_GEO  → Kota Manado
+[  908] Tempat Ziarah Bukit Pena' → OK_GEO  → Kabupaten Mamasa
+[  909] Pantai Harapan Pajalele → OK_GEO  → Kabupaten Pinrang
+[  910] Kawasan agro wisata desa Kassi → OK_GEO  → Kabupaten Jeneponto
+[  911] Pantai Seta - Seta → OK_GEO  → Kabupaten Luwu Utara
+[  912] Wisata Pemandian Barakati → OK_GEO  → Kabupaten Gorontalo
+[  913] Air Terjun Laumarang → OK_TEXT  → Kabupaten Banggai
+[  914] Wisata Buntu Kepa' → OK_GEO  → Kabupaten Mamasa
+[  915] Pantai Jodoh → OK_GEO  → Kabupaten Bone
+[  916] Wisata Panjat Tebing Batu Dinding Kilo Tiga → OK_GEO  → Kabupaten Minahasa Selatan
+[  917] Air Konde, Pasan Wawali Minahasa Tenggara (Jalan menuju → OK_GEO  → Kabupaten Minahasa Tenggara
+[  918] Objek Wisata Rante Sirrin → OK_GEO  → Kabupaten Toraja Utara
+[  919] Pantai Kayuangin → OK_GEO  → Kabupaten Kolaka
+[  920] Birtaria Kassi → OK_GEO  → Kabupaten Jeneponto
+[  921] Lakadao Beach → TEXT_WIN  → Kabupaten Buton (geo bilang: Kabupaten Buton Selatan)
+[  922] Air Terjun Taipa → OK_GEO  → Kabupaten Maros
+[  923] Wisata Pondok Kelapa → OK_GEO  → Kabupaten Bone
+[  924] Pantai Kayubulan → OK_GEO  → Kabupaten Gorontalo
+[  925] Bola Seratu → OK_GEO  → Kabupaten Wajo
+    [SAVE] auto-save (925 diproses, 922 OK)
+[  926] Wisata Pantai Tanjung Dulang → OK_GEO  → Kabupaten Bolaang Mongondow Utara
+[  927] Obyek Wisata Permandian Air Terjun Sakita → Traceback (most recent call last):
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\frame.py", line 4911, in _set_value
+    self._mgr.column_setitem(icol, iindex, value, inplace_only=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\internals\managers.py", line 1518, in column_setitem
+    col_mgr.setitem_inplace(idx, value)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\internals\managers.py", line 2226, in setitem_inplace
+    arr[indexer] = value
+    ~~~^^^^^^^^^
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\arrays\string_.py", line 863, in __setitem__
+    value = self._maybe_convert_setitem_value(value)
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\arrays\string_.py", line 837, in _maybe_convert_setitem_value
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: Invalid value '-2.5632365' for dtype 'str'. Value should be a string or missing value, got 'float' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\semester6\mc_learning\scrapt_wisata\lokasi_gmaps\scrape_lokasi_gmaps.py", line 694, in <module>
+    main()
+    ~~~~^^
+  File "D:\semester6\mc_learning\scrapt_wisata\lokasi_gmaps\scrape_lokasi_gmaps.py", line 647, in main
+    df.at[idx, "lat_gmaps"]  = res.get("lat_gmaps") if isinstance(res.get("lat_gmaps"), (int, float)) else None
+    ~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\indexing.py", line 2592, in __setitem__
+    return super().__setitem__(key, value)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\indexing.py", line 2542, in __setitem__
+    self.obj._set_value(*key, value=value, takeable=self._takeable)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\frame.py", line 4922, in _set_value
+    self.loc[index, col] = value
+    ~~~~~~~~^^^^^^^^^^^^
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\indexing.py", line 938, in __setitem__
+    iloc._setitem_with_indexer(indexer, value, self.name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\indexing.py", line 1953, in _setitem_with_indexer
+    self._setitem_with_indexer_split_path(indexer, value, name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\indexing.py", line 2044, in _setitem_with_indexer_split_path
+    self._setitem_single_column(loc, value, pi)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\indexing.py", line 2181, in _setitem_single_column
+    self.obj._mgr.column_setitem(loc, plane_indexer, value)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\internals\managers.py", line 1520, in column_setitem
+    new_mgr = col_mgr.setitem((idx,), value)
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\internals\managers.py", line 604, in setitem
+    return self.apply("setitem", indexer=indexer, value=value)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\internals\managers.py", line 442, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\internals\blocks.py", line 1667, in setitem
+    values[indexer] = value
+    ~~~~~~^^^^^^^^^
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\arrays\string_.py", line 863, in __setitem__
+    value = self._maybe_convert_setitem_value(value)
+  File "D:\semester6\mc_learning\scrapt_wisata\.venv\Lib\site-packages\pandas\core\arrays\string_.py", line 837, in _maybe_convert_setitem_value
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: Invalid value '-2.5632365' for dtype 'str'. Value should be a string or missing value, got 'float' instead.

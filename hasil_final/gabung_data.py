@@ -10,7 +10,8 @@ FILE_BASE = os.path.join(BASE_DIR, "hasil_scrap", "wisata_sulawesi_kategori_ai.c
 FILE_HARGA = os.path.join(BASE_DIR, "harga", "scrap_harga_wisata.csv")
 FILE_DESK = os.path.join(BASE_DIR, "deskripsi", "scrap_deskripsi_wisata.csv")
 FILE_IMAGE = os.path.join(BASE_DIR, "image", "scrap_image.csv")
-FILE_KOREKSI = os.path.join(SCRIPT_DIR, "wisata_terkoreksi_geo.csv")
+FILE_SCRAPED = os.path.join(BASE_DIR, "lokasi_gmaps", "lokasi_scraped.csv")
+FILE_NOKAB = os.path.join(BASE_DIR, "lokasi_gmaps", "wisata_no_kab.csv")
 
 OUT_FILE = os.path.join(SCRIPT_DIR, "wisata_sulawesi_lengkap.csv")
 
@@ -151,35 +152,95 @@ def main():
     
     df_final = df_base[cols_order].copy()
     
-    # ── KOREKSI KABUPATEN DARI FILE WISATA TERKOREKSI GEO ─────────────
-    # Ambil kabupaten yang sudah diperbaiki dari hasil_final/wisata_terkoreksi_geo.csv
-    # Provinsi TIDAK diambil dari CSV — selalu diturunkan dari mapping 81 kab/kota
-    print(f"\nMenerapkan koreksi kabupaten dari: {os.path.basename(FILE_KOREKSI)}")
+    # ── KOREKSI KABUPATEN DARI HASIL SCRAPING GMAPS & NOMINATIM ─────────────
+    print(f"\nMenerapkan hasil scraping lokasi (Playwright & Nominatim)...")
+    
+    # Tambah kolom default
+    for col in ['alamat_gmaps', 'lat_gmaps', 'lon_gmaps', 'status_scrape']:
+        if col not in df_final.columns:
+            df_final[col] = ""
+            
+    # Status validasi
+    OK_GMAPS_COORD = {"OK_GEO", "GEO_WIN"}
+    OK_GMAPS_TEXT  = {"OK_TEXT", "TEXT_WIN"}
+    OK_DDG         = {"OK_REVERSE", "OK_FORWARD", "OK_NAME", "OK_ORIGINAL"}
+
+    def clean(v):
+        s = str(v).strip()
+        return "" if s in ("nan", "None", "NaT") else s
+
+    scraped_map = {}
     try:
-        df_koreksi = pd.read_csv(FILE_KOREKSI)
-        # Buat lookup dari place_id -> kabupaten (hanya kabupaten, provinsi dari mapping)
-        kab_lookup = {}
-        for _, row in df_koreksi.iterrows():
-            if 'kabupaten_original' in row and pd.notna(row['kabupaten_original']):
-                kab_lookup[row['place_id']] = str(row['kabupaten_original']).strip()
+        df_scraped = pd.read_csv(FILE_SCRAPED, dtype=str)
+        for _, r in df_scraped.iterrows():
+            pid = clean(r.get('place_id', ''))
+            st = clean(r.get('status_gmaps', ''))
+            kab_ori = clean(r.get('kabupaten', ''))
+            kab_gmaps = clean(r.get('kabupaten_gmaps', ''))
+            
+            if not pid: continue
+            
+            if st in OK_GMAPS_COORD and kab_gmaps:
+                kab_final = kab_gmaps
+                st_final = st
+            elif kab_ori:
+                kab_final = kab_ori
+                st_final = f"TEXT_ONLY_{st}" if st in OK_GMAPS_TEXT else (f"ORIG_{st}" if st else "ORIG")
             else:
-                kab_lookup[row['place_id']] = str(row['kabupaten']).strip()
-        
-        lokasi_fixed = 0
-        for idx, row in df_final.iterrows():
-            pid = row['place_id']
-            if pid in kab_lookup:
-                new_kab = kab_lookup[pid]
-                old_kab = str(row['kabupaten']).strip()
-                if new_kab and new_kab != old_kab:
-                    df_final.at[idx, 'kabupaten'] = new_kab
-                    lokasi_fixed += 1
-                
-        print(f"Koreksi kabupaten diterapkan: {lokasi_fixed} baris diperbarui.")
-    except FileNotFoundError:
-        print(f"[Warning] File koreksi tidak ditemukan: {FILE_KOREKSI}. Melanjutkan tanpa koreksi.")
+                continue
+
+            scraped_map[pid] = {
+                'kab': kab_final,
+                'alamat': clean(r.get('alamat_gmaps', '')),
+                'lat': clean(r.get('lat_gmaps', '')),
+                'lon': clean(r.get('lon_gmaps', '')),
+                'status': st_final
+            }
+        print(f"  > Dimuat {len(scraped_map)} data valid dari lokasi_scraped.csv")
     except Exception as e:
-        print(f"[Warning] Gagal menerapkan koreksi: {e}")
+        print(f"  > [Warning] Gagal baca {FILE_SCRAPED}: {e}")
+
+    ddg_map = {}
+    try:
+        df_nokab = pd.read_csv(FILE_NOKAB, dtype=str)
+        for _, r in df_nokab.iterrows():
+            pid = clean(r.get('place_id', ''))
+            st = clean(r.get('status_ddg', ''))
+            kab = clean(r.get('kab_ddg', ''))
+            if pid and st in OK_DDG and kab:
+                ddg_map[pid] = {
+                    'kab': kab,
+                    'alamat': clean(r.get('alamat_gmaps', '')),
+                    'lat': clean(r.get('lat_gmaps', '')),
+                    'lon': clean(r.get('lon_gmaps', '')),
+                    'status': f"NOMINATIM_{st}"
+                }
+        print(f"  > Dimuat {len(ddg_map)} data valid dari wisata_no_kab.csv")
+    except Exception as e:
+        pass
+
+    lokasi_fixed = 0
+    for idx, row in df_final.iterrows():
+        pid = row['place_id']
+        src = None
+        if pid in scraped_map:
+            src = scraped_map[pid]
+        elif pid in ddg_map:
+            src = ddg_map[pid]
+            
+        if src:
+            old_kab = str(row['kabupaten']).strip()
+            if src['kab'] and src['kab'] != old_kab:
+                df_final.at[idx, 'kabupaten'] = src['kab']
+                lokasi_fixed += 1
+            if src['alamat']: df_final.at[idx, 'alamat_gmaps'] = src['alamat']
+            if src['lat']: df_final.at[idx, 'lat_gmaps'] = src['lat']
+            if src['lon']: df_final.at[idx, 'lon_gmaps'] = src['lon']
+            df_final.at[idx, 'status_scrape'] = src['status']
+        else:
+            df_final.at[idx, 'status_scrape'] = "ORIGINAL"
+
+    print(f"  > Selesai merge. {lokasi_fixed} kabupaten diperbarui.")
     
     # ── NORMALISASI PROVINSI (WAJIB — berdasarkan mapping statis 81 kab/kota) ──────────
     # Provinsi SELALU diturunkan dari KAB_TO_PROVINSI, bukan dari sumber data manapun.

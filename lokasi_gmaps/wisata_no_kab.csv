@@ -1,0 +1,75 @@
+﻿place_id,nama_wisata,kabupaten,provinsi,kabupaten_gmaps,provinsi_gmaps,kab_dari_teks,alamat_gmaps,lat_gmaps,lon_gmaps,status_gmaps,kab_ddg,prov_ddg,snippet_ddg,status_ddg
+ChIJW_XJxVOLvi0RF7doOR7veJ0,Taman Nasional Bantimurung Bulusaraung,Kabupaten Maros,Sulawesi Selatan,,,,"5RXF+G9H, Bentenge, Sulawesi Selatan",,,NO_MATCH,Kabupaten Maros,Sulawesi Selatan,"lat=-4.8011838,lon=119.8234977",OK_REVERSE
+ChIJt92KUDIEpy0RlGfICd6iJl0,Taman Nasional Wakatobi,Kabupaten Wakatobi,Sulawesi Tenggara,,,,"CWPJ+J57, Lentea, Sulawesi Tenggara",,,NO_MATCH,Kabupaten Wakatobi,Sulawesi Tenggara,"lat=-5.9011111,lon=124.1165972",OK_FORWARD
+ChIJSwpWJRsTiTIR5E0QCnZogkg,Pelabuhan Ulu Siau,Kabupaten Kepulauan Siau Tagulandang Biaro,Sulawesi Utara,,,,"PCM8+39J, Tatahadeng, 95861",,,NO_MATCH,,,,STILL_MISSING (NO_MATCH)
+ChIJk1pwuGwNiTIRxNv8HoLmtFI,Permandian Air Panas Timba' Ko Kamp. Mini,Kabupaten Kepulauan Siau Tagulandang Biaro,Sulawesi Utara,,,,"Q999+5RC, Hiung, Kec. Siau Bar. Utara, Kabupaten Siau Tagulandang Biaro, Sulawesi Utara",,,NO_MATCH,,,,STILL_MISSING (NO_MATCH)
+ChIJ0-9vxu_GlS0RaReFgKOigsU,Danau Sidenreng,Kabupaten Sidenreng Rappang,Sulawesi Selatan,,,,Sulawesi Selatan,,,NO_MATCH,Kabupaten Sidenreng Rappang,Sulawesi Selatan,"lat=-4.0032537,lon=119.8699493",OK_REVERSE
+ChIJJ-CQMyihiTIR3hBFvfpaUZE,"Danau ""Cinta"" Makalehi",Kabupaten Kepulauan Siau Tagulandang Biaro,Sulawesi Utara,,,,"P5P9+MXR, Kab.Kepl. Sitaro, Sulawsi Utara,, Makalehi, Siau Bar., Kabupaten Siau Tagulandang Biaro, Sulawesi Utara",,,NO_MATCH,,,,STILL_MISSING (NO_MATCH)
+ChIJ90alQG7cizIRwC3iYnwytw4,Banua Wuhu,Kabupaten Kepulauan Sangihe,Sulawesi Utara,,,,,,,NO_ADDR,,,,STILL_MISSING (NO_ADDR)
+ChIJW0bZR2EJui0R683Gx1C8zX4,Bukit nane polassi,Kabupaten Kepulauan Selayar,Sulawesi Selatan,,,,Sulawesi Selatan 92855,,,NO_MATCH,,,,STILL_MISSING (NO_MATCH)
+ChIJDfBpYPcTiTIRbQIhDZeu8to,TUGU I LOVE SITARO,Kabupaten Kepulauan Siau Tagulandang Biaro,Sulawesi Utara,,,,"PCJ7+P9P, Unnamed Road, Tatahadeng, Kec. Siau Tim., Sulawesi Utara 95861",,,NO_MATCH,,,,STILL_MISSING (NO_MATCH)
+ChIJD2_nyfChhi0RYF9PK3uxaeI,Monumen Teluk Lalong,Kabupaten Luwu,Sulawesi Selatan,,,,KH. Samanhudi,,,NO_MATCH,,,,STILL_MISSING (NO_MATCH)
+ChIJiWvN-sszui0RUxBBMWIqYDw,Liang Tarrusu,Kabupaten Kepulauan Selayar,Sulawesi Selatan,,,,"92855, Bontoborusu, Bontoharu, Selayar Islands Regency, South Sulawesi",,,NO_MATCH,Kabupaten Kepulauan Selayar,Sulawesi Selatan,"lat=-6.186051399999999,lon=120.3948382",OK_REVERSE
+ChIJjRrvKQANiTIR8evujJnMMes,Wisata Puncak Laine,Kabupaten Kepulauan Siau Tagulandang Biaro,Sulawesi Utara,,,,"P9HM+M8, Lai, Kec. Siau Tengah, Kabupaten Siau Tagulandang Biaro, Sulawesi Utara",,,NO_MATCH,,,,STILL_MISSING (NO_MATCH)
+ChIJW3KFDtMNiTIRxAxAxMDenY0,Temboko Mini Wisata Siau,Kabupaten Kepulauan Siau Tagulandang Biaro,Sulawesi Utara,,,,"Q999+HVX, Hiung, Kec. Siau Bar. Utara, Kabupaten Siau Tagulandang Biaro, Sulawesi Utara",,,NO_MATCH,,,,STILL_MISSING (NO_MATCH)
+ChIJK_wLAg3d8jIRhhyLEGIVGL4,Nusa dolong,Kabupaten Kepulauan Talaud,Sulawesi Utara,,,,Nusa Dolong,,,NO_MATCH,,,,STILL_MISSING (NO_MATCH)
+ChIJYxH-Iw_jki0RKxFZgDRBa5I,Bukit Peca,Kabupaten Mamuju,Sulawesi Barat,,,,,,,,Kabupaten Mamuju,Sulawesi Barat,"lat=-2.6458605,lon=119.1563585",OK_REVERSE
+ChIJbyK3VL1PeTIRmPCtqULfFDM,Pantai Gudang Arang,Kabupaten Gorontalo Utara,Gorontalo,,,,,,,,Kabupaten Gorontalo Utara,Gorontalo,"lat=0.859185,lon=122.9184357",OK_REVERSE
+ChIJAWVKF3K9lS0RhTWjveEdSfI,Gunung bacukiki,Kota Parepare,Sulawesi Selatan,,,,,,,,Kota Parepare,Sulawesi Selatan,"lat=-4.0591183,lon=119.6694243",OK_REVERSE
+ChIJ29vuifMlvC0RPUTJAmXvzUw,Bukit Tongke Tongke ( Camping),Kabupaten Sinjai,Sulawesi Selatan,,,,,,,,Kabupaten Sinjai,Sulawesi Selatan,"lat=-5.1558524,lon=120.2628158",OK_REVERSE
+ChIJKZvuEQBzhzIR3_O_dvck6A8,Air Terjun Regesan Tinoor,Kota Tomohon,Sulawesi Utara,,,,,,,,Kota Tomohon,Sulawesi Utara,"lat=1.3782114,lon=124.831298",OK_REVERSE
+ChIJa-LXDTSjizIRQBam-7YmngM,GPDI Bukit Zaitun Hesang,Kabupaten Kepulauan Sangihe,Sulawesi Utara,,,,,,,,Kabupaten Kepulauan Sangihe,Sulawesi Utara,,OK_ORIGINAL
+ChIJaQ1S2DXB8jIRH8d81wtKZbc,Pantai paranti Tabang,Kabupaten Kepulauan Talaud,Sulawesi Utara,,,,,,,,Kabupaten Kepulauan Talaud,Sulawesi Utara,,OK_ORIGINAL
+ChIJD1iqDEq9iy0ROX1XgTdmqQM,Pantai Pompole Tosale,Kabupaten Donggala,Sulawesi Tengah,,,,,,,,Kabupaten Donggala,Sulawesi Tengah,"lat=-0.7659157999999999,lon=119.6698646",OK_REVERSE
+ChIJyanaEADfiy0RqQTBi7_7KAI,Bukit Eksis Matolele,Kabupaten Parigi Moutong,Sulawesi Tengah,,,,,,,,Kabupaten Parigi Moutong,Sulawesi Tengah,"lat=-0.7585611999999999,lon=120.0953226",OK_REVERSE
+ChIJ52Wj0Gpfmi0RHfaEVUQjzTc,Tempat santai,Kabupaten Morowali,Sulawesi Tengah,,,,,,,,Kabupaten Morowali,Sulawesi Tengah,"lat=-2.68656,lon=122.006913",OK_REVERSE
+ChIJnRr4CQSlmi0R6yKMXN0BtJ8,Goa desa topogaro,Kabupaten Morowali,Sulawesi Tengah,,,,,,,,Kabupaten Morowali,Sulawesi Tengah,"lat=-2.2903049,lon=121.7708337",OK_REVERSE
+ChIJBaBbYgC1mC0RQ0l57J3TcmU,Tugu Lingkaran Hati Emas,Kabupaten Konawe Kepulauan,Sulawesi Tenggara,,,,,,,,Kabupaten Konawe Kepulauan,Sulawesi Tenggara,"lat=-4.0243771,lon=122.9917911",OK_REVERSE
+ChIJX6aDJSRHeTIRs4m59jmq3jI,Pantai Ilodulunga,Kabupaten Gorontalo Utara,Gorontalo,,,,,,,,Kabupaten Gorontalo Utara,Gorontalo,"lat=0.8188867,lon=122.8307748",OK_REVERSE
+ChIJU0mBSkyxvi0RIyXEjY30W6k,Wisata Paccumikang,Kabupaten Jeneponto,Sulawesi Selatan,,,,,,,,Kabupaten Jeneponto,Sulawesi Selatan,"lat=-5.432176699999999,lon=119.91982",OK_REVERSE
+ChIJ07stpFK3vi0Rtqa6Ce9u-vQ,Air Terjun Galung Paleng,Kabupaten Jeneponto,Sulawesi Selatan,,,,,,,,Kabupaten Jeneponto,Sulawesi Selatan,"lat=-5.479388399999999,lon=119.8554228",OK_REVERSE
+ChIJTcqFh6ALjC0RP-nR4tsyHAA,Air terjun salubi,Kabupaten Sigi,Sulawesi Tengah,,,,,,,,Kabupaten Sigi,Sulawesi Tengah,"lat=-1.105554,lon=119.8630654",OK_REVERSE
+ChIJM-XFZwCJki0RFEcZ0owlQp0,Air terjun penonoan,Kabupaten Mamuju,Sulawesi Barat,,,,,,,,Kabupaten Mamuju,Sulawesi Barat,"lat=-2.2996867,lon=119.4080117",OK_REVERSE
+ChIJ6ad9rL6FlC0RQkQe8LonYqg,Buttu Lamba,Kabupaten Polewali Mandar,Sulawesi Barat,,,,,,,,Kabupaten Polewali Mandar,Sulawesi Barat,"lat=-3.3858333,lon=119.2963889",OK_REVERSE
+ChIJA7fJCeELii0R2yoDJbm7EHo,Pantai Tambu,Kabupaten Donggala,Sulawesi Tengah,,,,,,,,Kabupaten Donggala,Sulawesi Tengah,"lat=-0.0397885,lon=119.8735333",OK_REVERSE
+ChIJVfpzbLN1hzIRWEYg5Qz6mwY,Gua Jepang Tikala Kumaraka,Kota Manado,Sulawesi Utara,,,,,,,,Kota Manado,Sulawesi Utara,"lat=1.4861888,lon=124.8467395",OK_REVERSE
+ChIJbVROo709fjIRsMrshMUfcmo,Hutan Kota Bonawang Kotamobagu,Kota Kotamobagu,Sulawesi Utara,,,,,,,,Kota Kotamobagu,Sulawesi Utara,"lat=0.7396874999999999,lon=124.2824084",OK_REVERSE
+ChIJ27_Aqsh6hzIR4FmJqPWHwbo,Air Terjun Mangatasik,Kabupaten Minahasa,Sulawesi Utara,,,,,,,,Kabupaten Minahasa,Sulawesi Utara,"lat=1.3867259,lon=124.6580686",OK_REVERSE
+ChIJSSe05taegDIRjOy9G3hG6lU,"Gereja GMIBM Bukit Sion Dodap, Bersatu",Kabupaten Bolaang Mongondow Timur,Sulawesi Utara,,,,,,,,Kabupaten Bolaang Mongondow Timur,Sulawesi Utara,"lat=0.7114520999999999,lon=124.5892071",OK_REVERSE
+ChIJgywosZEJizIR6XTzJKIWqj8,Tahuna Waterpark & Sport Center,Kabupaten Kepulauan Sangihe,Sulawesi Utara,,,,,,,,Kabupaten Kepulauan Sangihe,Sulawesi Utara,,OK_ORIGINAL
+ChIJ__KKOADtiy0RCnwVWNKnjEk,Wisata Pantai Talise Palu,Kota Palu,Sulawesi Tengah,,,,,,,,Kota Palu,Sulawesi Tengah,"lat=-0.8640409000000001,lon=119.8782075",OK_REVERSE
+ChIJbwIrzXbDdTIR5Bm916EG4hs,Bendungan Desa Malonas Kec. Dampelas Kab. Donggala,Kabupaten Donggala,Sulawesi Tengah,,,,,,,,Kabupaten Donggala,Sulawesi Tengah,"lat=0.2711875,lon=119.9434375",OK_REVERSE
+ChIJ8crCUPpFji0RfzGmNHuXiPQ,Goa tangkaboba,Kabupaten Poso,Sulawesi Tengah,,,,,,,,Kabupaten Poso,Sulawesi Tengah,"lat=-1.7616051,lon=120.647341",OK_REVERSE
+ChIJt8As-G7Dji0RVtvibKsCH1M,Tonomini wisata,Kabupaten Poso,Sulawesi Tengah,,,,,,,,Kabupaten Poso,Sulawesi Tengah,"lat=-1.3036955,lon=120.6298413",OK_REVERSE
+ChIJr2zM95Trjy0RsznvWMzNacU,Pantai Nikel Laterit,Kabupaten Morowali,Sulawesi Tengah,,,,,,,,Kabupaten Morowali,Sulawesi Tengah,,OK_ORIGINAL
+ChIJQ9cGwD53pC0RL8WZrovH9Hk,Tanggul Khayal,Kota Baubau,Sulawesi Tenggara,,,,,,,,Kota Baubau,Sulawesi Tenggara,,OK_ORIGINAL
+ChIJp8UjD--foi0RocSpFhU8xR0,Wisata Alam Lambandia,Kabupaten Konawe Selatan,Sulawesi Tenggara,,,,,,,,Kabupaten Konawe Selatan,Sulawesi Tenggara,"lat=-4.361579499999999,lon=122.0138993",OK_REVERSE
+ChIJJcfDIOQNmS0R5lNOjuzDJqU,Twin Lagoon,Kabupaten Konawe Utara,Sulawesi Tenggara,,,,,,,,Kabupaten Konawe Utara,Sulawesi Tenggara,"lat=-3.5034362,lon=122.4468451",OK_REVERSE
+ChIJZdf3RiiTly0RzNpDDiMBzcI,PANTAI KEI-KEI,Kabupaten Kolaka,Sulawesi Tenggara,,,,,,,,Kabupaten Kolaka,Sulawesi Tenggara,"lat=-3.9961765,lon=121.3609886",OK_REVERSE
+ChIJRWmI1_rBoy0RYTVU0B3LI_4,Pantai Tampunabale,Kabupaten Muna,Sulawesi Tenggara,,,,,,,,Kabupaten Muna,Sulawesi Tenggara,,OK_ORIGINAL
+ChIJgWldj1WJoy0RAxEWA62mkUg,Cliff One Waara,Kabupaten Buton,Sulawesi Tenggara,,,,,,,,Kabupaten Buton Tengah,Sulawesi Tenggara,"lat=-5.377208299999999,lon=122.5928058",OK_REVERSE
+ChIJM0L3flHZki0RozZgHB22YNM,Gong Perdamaian Nusantara - Mamuju,Kabupaten Mamuju Tengah,Sulawesi Barat,,,,,,,,Kabupaten Mamuju,Sulawesi Barat,,OK_NAME
+ChIJ1WBI7NqJlC0RAr7RBuwSOvs,Anjungan Pantai Kota Polewali,Kabupaten Polewali Mandar,Sulawesi Barat,,,,,,,,Kabupaten Polewali Mandar,Sulawesi Barat,"lat=-3.4390785,lon=119.3493231",OK_REVERSE
+ChIJu8ReMQCFeTIRtIdn07In98k,Air Terjun Didingga,Kabupaten Gorontalo Utara,Gorontalo,,,,,,,,Kabupaten Gorontalo Utara,Gorontalo,"lat=0.9393654,lon=122.2441458",OK_REVERSE
+ChIJySjZ2-dFlC0RwxJJ_Q3M5eE,Permainan alam bainang,Kabupaten Pinrang,Sulawesi Selatan,,,,,,,,Kabupaten Pinrang,Sulawesi Selatan,"lat=-3.6546875,lon=119.6045625",OK_REVERSE
+ChIJrc9sV833lS0RBuabe956T3c,Spot foto ladang jagung Bukit Jati,Kabupaten Soppeng,Sulawesi Selatan,,,,,,,,Kabupaten Soppeng,Sulawesi Selatan,"lat=-4.3753125,lon=119.8881875",OK_REVERSE
+ChIJk7WKhZKPkS0RjO5BkDhTZrk,Buntu Balebo,Kabupaten Luwu Utara,Sulawesi Selatan,,,,,,,,Kabupaten Luwu Utara,Sulawesi Selatan,"lat=-2.5272222,lon=120.3180556",OK_REVERSE
+ChIJx4GqHmzhky0R00Vvy7DnHcM,WISATA GOA KALO DEWATA,Kota Palopo,Sulawesi Selatan,,,,,,,,Kota Palopo,Sulawesi Selatan,"lat=-2.96729,lon=120.1461957",OK_REVERSE
+ChIJfbHFoTv3fTIRnOgkSeWpD5Q,PANTAI SIDATE PAKUWERU,Kabupaten Minahasa Selatan,Sulawesi Utara,,,,,,,,Kabupaten Minahasa Selatan,Sulawesi Utara,,OK_ORIGINAL
+ChIJdfDCEQBNhzIRQBPNLuQqopo,Puncak Keletambal,Kabupaten Minahasa Tenggara,Sulawesi Utara,,,,,,,,Kabupaten Minahasa Tenggara,Sulawesi Utara,"lat=1.0184811,lon=124.6884157",OK_REVERSE
+ChIJG0mn5zP1iy0RkqiSFZ8WitM,Kawasan Wisata Sou Bauta,Kabupaten Sigi,Sulawesi Tengah,,,,,,,,Kabupaten Sigi,Sulawesi Tengah,"lat=-1.035837,lon=119.874592",OK_REVERSE
+ChIJF5Mo7y-Pgy0RpHQzBU5Agvk,Mangrove Ambelang,Kabupaten Banggai Kepulauan,Sulawesi Tengah,,,,,,,,Kabupaten Banggai Kepulauan,Sulawesi Tengah,"lat=-1.4009002,lon=123.2439708",OK_REVERSE
+ChIJV_bX9LoFly0RxRkd6TZJjf8,Air Terjun Torotuo,Kabupaten Kolaka Utara,Sulawesi Tenggara,,,,,,,,Kabupaten Kolaka Utara,Sulawesi Tenggara,"lat=-3.6438029,lon=121.0246839",OK_REVERSE
+ChIJQ2SCG4PJoy0RkAE81fSK39I,Danau Moko Putih,Kabupaten Muna,Sulawesi Tenggara,,,,,,,,Kabupaten Muna,Sulawesi Tenggara,"lat=-4.9017721,lon=122.7600972",OK_REVERSE
+ChIJW4EtBACVlC0RkvC1fz398fE,Pantai Galetto,Kabupaten Polewali Mandar,Sulawesi Barat,,,,,,,,Kabupaten Polewali Mandar,Sulawesi Barat,"lat=-3.509523,lon=119.04977",OK_REVERSE
+ChIJFZ6KqVxRvi0RTsYMfZRP8kE,Dermaga Padaria,Kabupaten Maros,Sulawesi Selatan,,,,,,,,Kabupaten Maros,Sulawesi Selatan,,OK_ORIGINAL
+ChIJf4iAKCTXvi0R-mmoSfTS92o,Moncong Peda,Kabupaten Takalar,Sulawesi Selatan,,,,,,,,Kabupaten Takalar,Sulawesi Selatan,"lat=-5.466666699999999,lon=119.4955556",OK_REVERSE
+ChIJD1dWpSyjvi0RQEnjpOZHOko,Puncak lurayya,Kabupaten Bulukumba,Sulawesi Selatan,,,,,,,,Kabupaten Bulukumba,Sulawesi Selatan,"lat=-5.327666,lon=120.0090595",OK_REVERSE
+ChIJGURbBR_rky0RgeX5XqJVsgI,Air Terjun Salu Kata,Kabupaten Toraja Utara,Sulawesi Selatan,,,,,,,,Kabupaten Toraja Utara,Sulawesi Selatan,"lat=-3.0055754,lon=119.8142914",OK_REVERSE
+ChIJ5e4if5JZkC0R_yokFhjhKmM,Wisata Kapal Karam Balantang,Kabupaten Luwu Timur,Sulawesi Selatan,,,,,,,,Kabupaten Luwu Timur,Sulawesi Selatan,"lat=-2.64108,lon=121.082169",OK_REVERSE
+ChIJrQaTPF29iy0RwNU27SB23a4,KTM Landevaso,Kabupaten Donggala,Sulawesi Tengah,,,,,,,,Kabupaten Donggala,Sulawesi Tengah,"lat=-0.7690387000000001,lon=119.6806668",OK_REVERSE
+ChIJV7PHQTjfiy0RokVmLDPdTUA,"Pantai Bolinaso, Desa Pelawa Baru",Kabupaten Parigi Moutong,Sulawesi Tengah,,,,,,,,Kabupaten Parigi Moutong,Sulawesi Tengah,"lat=-0.7462891,lon=120.1186766",OK_REVERSE
+ChIJMftu-PZhmi0Rp3IzA231r9A,Hutan Pinus Lantongke,Kabupaten Morowali,Sulawesi Tengah,,,,,,,,Kabupaten Morowali,Sulawesi Tengah,"lat=-2.6829942,lon=121.9387478",OK_REVERSE
+ChIJ56DFHgChmC0R_GBg3hqG39k,DANAU HITAM,Kabupaten Konawe Selatan,Sulawesi Tenggara,,,,,,,,Kabupaten Konawe Selatan,Sulawesi Tenggara,"lat=-4.2316093,lon=122.7605911",OK_REVERSE
+ChIJy93kO24llC0Rw1B3Z-LnR6Y,Wisata Alam Air Terjun Teppok,Kabupaten Sidenreng Rappang,Sulawesi Selatan,,,,,,,,Kabupaten Sidenreng Rappang,Sulawesi Selatan,"lat=-3.6293442,lon=120.0281453",OK_REVERSE
+ChIJ__JTIADvlS0R1dzHETn_4KQ,Floating Houses Tempe Lake,Kabupaten Soppeng,Sulawesi Selatan,,,,,,,,Kabupaten Wajo,Sulawesi Selatan,"lat=-4.1776353,lon=119.9729434",OK_REVERSE
