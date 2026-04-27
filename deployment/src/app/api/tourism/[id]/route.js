@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { updateTourismData, getTourismData, deleteTourismData } from '@/lib/data';
+import { calculateLabel } from '@/lib/labelRekomendasi';
 
 export async function PUT(request, { params }) {
   try {
@@ -12,8 +13,16 @@ export async function PUT(request, { params }) {
     const { id } = await params;
     const body = await request.json();
     
+    // Hitung label rekomendasi secara otomatis (termasuk KDE)
+    const label = await calculateLabel(body);
+    
+    const updatedItem = {
+      ...body,
+      label_rekomendasi: label
+    };
+    
     // Attempt update
-    const success = await updateTourismData(id, body);
+    const success = await updateTourismData(id, updatedItem);
     
     if (success) {
       return NextResponse.json({ message: 'Data updated successfully', id });

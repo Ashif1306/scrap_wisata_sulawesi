@@ -1,0 +1,13 @@
+[INPUT]  D:\semester6\mc_learning\scrapt_wisata\image\..\hasil_final\wisata_sulawesi_lengkap.csv (2715 baris)
+[OUTPUT] D:\semester6\mc_learning\scrapt_wisata\image\scrap_image.csv
+[RESUME] Membaca progress dari D:\semester6\mc_learning\scrapt_wisata\image\scrap_image.csv
+[ 2709] CARI: Bukit Sapi' | Tana Toraja -> OK  https://lh3.googleusercontent.com/gps-cs-s/APNQkAGiY2anJ6h01JRCE4JA_yW2ze7BAKxaF...
+
+============================================================
+  SELESAI!
+  File      : D:\semester6\mc_learning\scrapt_wisata\image\scrap_image.csv
+  Berhasil  : 1
+  Gagal     : 0
+  Dilewati  : 2708
+  Diproses  : 1
+============================================================

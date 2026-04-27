@@ -13,6 +13,7 @@ const KATEGORI_LIST = [
   'Wisata Kota / Landmark'
 ];
 
+
 const KAB_TO_PROVINSI = {
   // Sulawesi Selatan
   "Kota Makassar":"Sulawesi Selatan","Kota Palopo":"Sulawesi Selatan","Kota Parepare":"Sulawesi Selatan",
@@ -75,6 +76,7 @@ export default function TourismForm({ initialData = {}, mode = 'add' }) {
     long: initialData.long || initialData.lon_gmaps || '',
     url_image: initialData.url_image || '',
     deskripsi_wisata: initialData.deskripsi_wisata || '',
+
   });
 
   const [token, setToken] = useState('');
@@ -110,6 +112,8 @@ export default function TourismForm({ initialData = {}, mode = 'add' }) {
       return newData;
     });
   };
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();

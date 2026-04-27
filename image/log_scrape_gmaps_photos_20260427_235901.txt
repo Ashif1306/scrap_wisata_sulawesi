@@ -1,0 +1,12 @@
+[INPUT]  D:\semester6\mc_learning\scrapt_wisata\image\..\hasil_scrap\wisata_sulawesi_cleaned_final.csv (2708 baris)
+[OUTPUT] D:\semester6\mc_learning\scrapt_wisata\image\scrap_image.csv
+[RESUME] Membaca progress dari D:\semester6\mc_learning\scrapt_wisata\image\scrap_image.csv
+
+============================================================
+  SELESAI!
+  File      : D:\semester6\mc_learning\scrapt_wisata\image\scrap_image.csv
+  Berhasil  : 0
+  Gagal     : 0
+  Dilewati  : 2708
+  Diproses  : 0
+============================================================

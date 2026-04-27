@@ -155,10 +155,7 @@ def main():
     # ── KOREKSI KABUPATEN DARI HASIL SCRAPING GMAPS & NOMINATIM ─────────────
     print(f"\nMenerapkan hasil scraping lokasi (Playwright & Nominatim)...")
     
-    # Tambah kolom default
-    for col in ['alamat_gmaps', 'lat_gmaps', 'lon_gmaps', 'status_scrape']:
-        if col not in df_final.columns:
-            df_final[col] = ""
+    # Tambah kolom default dihapus sesuai permintaan
             
     # Status validasi
     OK_GMAPS_COORD = {"OK_GEO", "GEO_WIN"}
@@ -233,12 +230,7 @@ def main():
             if src['kab'] and src['kab'] != old_kab:
                 df_final.at[idx, 'kabupaten'] = src['kab']
                 lokasi_fixed += 1
-            if src['alamat']: df_final.at[idx, 'alamat_gmaps'] = src['alamat']
-            if src['lat']: df_final.at[idx, 'lat_gmaps'] = src['lat']
-            if src['lon']: df_final.at[idx, 'lon_gmaps'] = src['lon']
-            df_final.at[idx, 'status_scrape'] = src['status']
-        else:
-            df_final.at[idx, 'status_scrape'] = "ORIGINAL"
+            pass
 
     print(f"  > Selesai merge. {lokasi_fixed} kabupaten diperbarui.")
     
@@ -265,7 +257,50 @@ def main():
     removed = len_before - len(df_final)
     if removed > 0:
         print(f"Menghapus {removed} data di luar Sulawesi.")
-    
+
+    # ── PRESERVASI BARIS DARI CSV/SUPABASE YANG TIDAK ADA DI BASE ────────
+    # Baris yang ditambahkan manual via deployment (Supabase) tidak ada di
+    # file scraping dasar. Kita pulihkan baris tersebut dari CSV lama.
+    if os.path.exists(OUT_FILE):
+        print(f"\nMemeriksa data existing untuk preservasi ...")
+        try:
+            df_existing = pd.read_csv(OUT_FILE, dtype=str)
+            # Cari baris yang ada di CSV lama tapi tidak ada di base baru
+            existing_ids = set(df_existing['place_id'].dropna())
+            new_ids = set(df_final['place_id'].dropna())
+            missing_ids = existing_ids - new_ids
+            if missing_ids:
+                df_missing = df_existing[df_existing['place_id'].isin(missing_ids)].copy()
+                # Pastikan kolom sama (ambil kolom yang cocok saja)
+                common_cols = [c for c in df_final.columns if c in df_missing.columns]
+                df_missing = df_missing[common_cols]
+                df_final = pd.concat([df_final, df_missing], ignore_index=True)
+                print(f"  > Dipulihkan {len(df_missing)} baris data yang sebelumnya ada (ditambah manual/Supabase).")
+            else:
+                print(f"  > Tidak ada baris yang hilang, semua data sudah lengkap.")
+        except Exception as e:
+            print(f"  > [Warning] Gagal membaca CSV existing: {e}")
+
+    # ── MERGE LABEL REKOMENDASI ──────────────────────────────
+    FILE_LABEL = os.path.join(SCRIPT_DIR, "wisata_sulawesi_label.csv")
+    print(f"\nMenggabungkan label rekomendasi dari: {os.path.basename(FILE_LABEL)}")
+    try:
+        df_label = pd.read_csv(FILE_LABEL)
+        # Ambil hanya kolom yang dibutuhkan untuk join
+        df_label = df_label[['nama_wisata', 'label_rekomendasi']].drop_duplicates(subset='nama_wisata')
+        len_before_merge = len(df_final)
+        df_final = df_final.merge(df_label, on='nama_wisata', how='left')
+        matched = df_final['label_rekomendasi'].notna().sum()
+        missing = df_final['label_rekomendasi'].isna().sum()
+        print(f"  > {matched} destinasi berhasil dilabeli.")
+        if missing > 0:
+            print(f"  > [Warning] {missing} destinasi tidak memiliki label (akan diisi 'Belum Dinilai').")
+            df_final['label_rekomendasi'] = df_final['label_rekomendasi'].fillna('Belum Dinilai')
+    except FileNotFoundError:
+        print(f"  > [Warning] File label tidak ditemukan: {FILE_LABEL}")
+        print(f"  > Jalankan label_rekomendasi.py terlebih dahulu!")
+        df_final['label_rekomendasi'] = 'Belum Dinilai'
+
     print(f"\nMenyimpan file csv hasil akhir ke: {OUT_FILE}")
     df_final.to_csv(OUT_FILE, index=False, encoding="utf-8-sig")
     print(f"Data gabungan berhasil disimpan! Total: {len(df_final)} baris dan {len(df_final.columns)} kolom.")

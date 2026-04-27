@@ -1,0 +1,38 @@
+=================================================================
+  SCRAPE LOKASI WISATA DARI GOOGLE MAPS
+=================================================================
+[INPUT]  D:\semester6\mc_learning\scrapt_wisata\lokasi_gmaps\..\hasil_final\wisata_sulawesi_lengkap.csv (2714 baris)
+[OUTPUT] D:\semester6\mc_learning\scrapt_wisata\lokasi_gmaps\lokasi_scraped.csv
+[RESUME] 2707 entri sudah diproses sebelumnya
+[    3] Taman Nasional Bantimurung Bulusaraung → NO_MATCH
+[   15] Taman Nasional Wakatobi → NO_MATCH
+[  226] Matua Waterpark → OK_TEXT  → Kabupaten Enrekang
+[  486] Pelabuhan Ulu Siau → NO_MATCH
+[  965] Permandian Air Panas Timba' Ko Kamp. Mini → NO_MATCH
+[ 1065] Danau Sidenreng → NO_MATCH
+[ 1357] Danau "Cinta" Makalehi → NO_MATCH
+[ 1465] Banua Wuhu → NO_ADDR (tidak ada info alamat)
+[ 1577] Bukit Sapi' → OK_TEXT  → Kabupaten Tana Toraja
+[ 1635] Bukit nane polassi → NO_MATCH
+[ 1791] Gereja Katolik Paroki Hati Tak Ternoda Santa Perawan Ma → OK_TEXT  → Kabupaten Tana Toraja
+[ 1845] TUGU I LOVE SITARO → NO_MATCH
+[ 1911] Bukit Pasir → OK_GEO  → Kabupaten Toraja Utara
+[ 2125] Monumen Teluk Lalong → NO_MATCH
+[ 2129] Liang Tarrusu → NO_MATCH
+[ 2204] Wisata Puncak Laine → NO_MATCH
+[ 2580] Temboko Mini Wisata Siau → NO_MATCH
+[ 2611] Nusa dolong → NO_MATCH
+[ 2709] Museum Landorundun → NO_ADDR (tidak ada info alamat)
+[ 2712] Gunung Bawakaraeng → OK_TEXT  → Kabupaten Sinjai
+[ 2713] Hutan Pinus Camping Ground Lembanna → OK_GEO  → Kabupaten Gowa
+[ 2714] Pasar Rakyat Bolu → OK_GEO  → Kabupaten Toraja Utara
+
+=================================================================
+  SELESAI!
+  Output      : D:\semester6\mc_learning\scrapt_wisata\lokasi_gmaps\lokasi_scraped.csv
+  OK (geo+teks confirm) + GEO_WIN : 7
+  No Alamat   : 2
+  Gagal/Lain  : 13
+  Dilewati    : 2692
+  Diproses    : 22
+=================================================================

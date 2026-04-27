@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { addTourismData } from '@/lib/data';
+import { calculateLabel } from '@/lib/labelRekomendasi';
 
 export async function POST(request) {
   try {
@@ -11,10 +12,13 @@ export async function POST(request) {
 
     const body = await request.json();
     
-    // Add default values for fields if they are missing
+    // Hitung label rekomendasi secara otomatis (termasuk KDE)
+    const label = await calculateLabel(body);
+    
     const newItem = {
       ...body,
-      status_scrape: 'MANUAL_ENTRY'
+      status_scrape: 'MANUAL_ENTRY',
+      label_rekomendasi: label
     };
     
     const success = await addTourismData(newItem);

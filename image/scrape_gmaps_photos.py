@@ -55,9 +55,9 @@ class LoggerWriter:
 #  KONFIGURASI
 # ─────────────────────────────────────────────
 BASE_DIR   = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR   = os.path.join(BASE_DIR, "..", "hasil_scrap")
+DATA_DIR   = os.path.join(BASE_DIR, "..", "hasil_final")
 
-INPUT_FILE  = os.path.join(DATA_DIR, "wisata_sulawesi_cleaned_final.csv")
+INPUT_FILE  = os.path.join(DATA_DIR, "wisata_sulawesi_lengkap.csv")
 OUTPUT_FILE = os.path.join(BASE_DIR, "scrap_image.csv")
 
 DEFAULT_DELAY      = 3.5    # detik antar baris
@@ -298,9 +298,10 @@ def main() -> None:
 
     # Bersihkan link API Google Maps dari data sebelum memproses
     for i in range(len(df)):
-        img = str(df.at[i, "image"]).strip()
-        if "googleapis.com" in img:
-            df.at[i, "image"] = ""
+        if "url_image" in df.columns:
+            img = str(df.at[i, "url_image"]).strip()
+            if "googleapis.com" in img:
+                df.at[i, "url_image"] = ""
 
     # Fitur Resume: Ambil progress yang sudah tersimpan sebelumnya
     if os.path.exists(args.output):
@@ -310,7 +311,7 @@ def main() -> None:
             for i in range(min(len(df), len(df_prog))):
                 prog_img = str(df_prog.at[i, "url_image"]).strip()
                 if prog_img and prog_img.lower() not in ("nan", ""):
-                    df.at[i, "image"] = prog_img
+                    df.at[i, "url_image"] = prog_img
         except Exception as e:
             print(f"[WARN] Gagal memuat progress (mungkin ini run perdana): {e}")
 
@@ -324,7 +325,7 @@ def main() -> None:
         try:
             os.makedirs(os.path.dirname(args.output), exist_ok=True)
             df_out = df.copy()
-            df_out.rename(columns={'nama_wisata': 'nama wisata', 'alamat': 'lokasi', 'image': 'url_image'}, inplace=True)
+            df_out.rename(columns={'nama_wisata': 'nama wisata', 'alamat': 'lokasi'}, inplace=True)
             df_out[['nama wisata', 'lokasi', 'kabupaten', 'provinsi', 'url_image']].to_csv(args.output, index=False, encoding="utf-8-sig")
             print(f"       [SUCCESS] Progress terbaru sukses diselamatkan di: {args.output}")
         except Exception as e:
@@ -385,7 +386,7 @@ def main() -> None:
             nama      = str(row.get("nama_wisata", "")).strip()
             alamat    = str(row.get("alamat", "")).strip()
             place_id  = str(row.get("place_id", "")).strip()
-            img_cur   = str(row.get("image", "")).strip()
+            img_cur   = str(row.get("url_image", "")).strip()
 
             # Skip baris tanpa nama
             if not nama:
@@ -413,7 +414,7 @@ def main() -> None:
                 print(f"ERROR: {e}")
 
             if url and _is_valid_gmaps_photo(url):
-                df.at[idx, "image"]           = url
+                df.at[idx, "url_image"]       = url
                 df.at[idx, "image_gmaps_src"] = "gmaps-visitor-photo"
                 n_ok += 1
                 print(f"OK  {url[:80]}...")
@@ -424,7 +425,7 @@ def main() -> None:
             # Auto-save
             if processed % AUTOSAVE_INTERVAL == 0:
                 df_out = df.copy()
-                df_out.rename(columns={'nama_wisata': 'nama wisata', 'alamat': 'lokasi', 'image': 'url_image'}, inplace=True)
+                df_out.rename(columns={'nama_wisata': 'nama wisata', 'alamat': 'lokasi'}, inplace=True)
                 df_out[['nama wisata', 'lokasi', 'kabupaten', 'provinsi', 'url_image']].to_csv(args.output, index=False, encoding="utf-8-sig")
                 print(f"    [SAVE] auto-save ({processed} baris diproses, {n_ok} OK)")
 
@@ -438,7 +439,7 @@ def main() -> None:
 
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     df_out = df.copy()
-    df_out.rename(columns={'nama_wisata': 'nama wisata', 'alamat': 'lokasi', 'image': 'url_image'}, inplace=True)
+    df_out.rename(columns={'nama_wisata': 'nama wisata', 'alamat': 'lokasi'}, inplace=True)
     df_out[['nama wisata', 'lokasi', 'kabupaten', 'provinsi', 'url_image']].to_csv(args.output, index=False, encoding="utf-8-sig")
 
     print("\n" + "="*60)

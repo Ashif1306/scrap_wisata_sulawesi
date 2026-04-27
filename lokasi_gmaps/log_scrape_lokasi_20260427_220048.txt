@@ -1,0 +1,12 @@
+=================================================================
+  SCRAPE LOKASI WISATA DARI GOOGLE MAPS
+=================================================================
+[INPUT]  D:\semester6\mc_learning\scrapt_wisata\lokasi_gmaps\..\hasil_final\wisata_sulawesi_lengkap.csv (2714 baris)
+[OUTPUT] D:\semester6\mc_learning\scrapt_wisata\lokasi_gmaps\lokasi_scraped.csv
+[    1] Losari Beach Platform → OK_GEO  → Kota Makassar
+[    2] Benteng Rotterdam → OK_GEO  → Kota Makassar
+[    3] Taman Nasional Bantimurung Bulusaraung → NO_MATCH
+[    4] Pantai Tak Berombak, PTB Maros → OK_GEO  → Kabupaten Maros
+[    5] Tongkonan Ke'te' Kesu' → 
+[STOP] Ctrl+C! Menyimpan progress darurat...
+       [OK] Tersimpan di D:\semester6\mc_learning\scrapt_wisata\lokasi_gmaps\lokasi_scraped.csv

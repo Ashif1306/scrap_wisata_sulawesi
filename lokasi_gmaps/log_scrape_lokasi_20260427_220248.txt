@@ -1,0 +1,21 @@
+=================================================================
+  SCRAPE LOKASI WISATA DARI GOOGLE MAPS
+=================================================================
+[INPUT]  D:\semester6\mc_learning\scrapt_wisata\lokasi_gmaps\..\hasil_final\wisata_sulawesi_lengkap.csv (2714 baris)
+[OUTPUT] D:\semester6\mc_learning\scrapt_wisata\lokasi_gmaps\lokasi_scraped.csv
+[RESUME] 2714 entri sudah diproses sebelumnya
+[    3] Taman Nasional Bantimurung Bulusaraung → NO_MATCH
+[    5] Tongkonan Ke'te' Kesu' → OK_GEO  → Kabupaten Toraja Utara
+[    6] Menara Keagungan Limboto → OK_GEO  → Kabupaten Gorontalo
+[    7] Taman Pakui Sayang → OK_GEO  → Kota Makassar
+[    8] Masjid Raya Makassar → OK_GEO  → Kota Makassar
+[    9] Taman Vatulemo → OK_TEXT  → Kota Palu
+[   10] Monumen Cinta Sejati Habibie-Ainun → OK_GEO  → Kota Parepare
+[   11] Pantai Losari → OK_GEO  → Kota Makassar
+[   12] Tribun Pantai Seruni → OK_GEO  → Kabupaten Bantaeng
+[   13] Bugis Waterpark Adventure → OK_GEO  → Kota Makassar
+[   14] Taman Kalong Watansoppeng → OK_GEO  → Kabupaten Soppeng
+[   15] Taman Nasional Wakatobi → NO_MATCH
+
+[STOP] Ctrl+C! Menyimpan progress darurat...
+       [OK] Tersimpan di D:\semester6\mc_learning\scrapt_wisata\lokasi_gmaps\lokasi_scraped.csv
