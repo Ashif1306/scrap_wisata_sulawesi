@@ -79,3 +79,22 @@ export async function updateTourismData(id, updatedItem) {
     return false;
   }
 }
+
+export async function deleteTourismData(id) {
+  try {
+    const { error } = await supabase
+      .from(TABLE_NAME)
+      .delete()
+      .eq('place_id', id);
+      
+    if (error) {
+      console.error("Supabase delete error:", error);
+      return false;
+    }
+    
+    return true;
+  } catch (error) {
+    console.error("Error deleting tourism data in Supabase:", error);
+    return false;
+  }
+}

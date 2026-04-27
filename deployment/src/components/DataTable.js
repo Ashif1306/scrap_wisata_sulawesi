@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from 'react';
-import { MapPin, Star, X, Ticket, FileText, ExternalLink, Edit } from 'lucide-react';
+import { MapPin, Star, X, Ticket, FileText, ExternalLink, Edit, Trash2 } from 'lucide-react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const getCategoryStyle = (category) => {
   const cat = category ? category.toLowerCase() : '';
@@ -30,8 +31,14 @@ const formatHarga = (harga) => {
 };
 
 export default function DataTable({ data, start }) {
+  const router = useRouter();
   const [selectedItem, setSelectedItem] = useState(null);
   const [imgError, setImgError] = useState(false);
+  
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const [deleteToken, setDeleteToken] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [deleteError, setDeleteError] = useState('');
 
   React.useEffect(() => {
     if (selectedItem) {
@@ -39,6 +46,9 @@ export default function DataTable({ data, start }) {
       setImgError(false); // reset image error on new selection
     } else {
       document.body.style.overflow = 'unset';
+      setShowDeleteConfirm(false);
+      setDeleteToken('');
+      setDeleteError('');
     }
     
     // Cleanup on unmount to prevent scroll lock on other pages
@@ -46,6 +56,33 @@ export default function DataTable({ data, start }) {
       document.body.style.overflow = 'unset';
     };
   }, [selectedItem]);
+
+  const handleDelete = async () => {
+    if (!deleteToken) return;
+    setIsDeleting(true);
+    setDeleteError('');
+    try {
+      const res = await fetch(`/api/tourism/${selectedItem.place_id}`, {
+        method: 'DELETE',
+        headers: {
+          'Authorization': `Bearer ${deleteToken}`
+        }
+      });
+      if (!res.ok) {
+        if (res.status === 401) {
+          throw new Error('Token keamanan salah!');
+        }
+        throw new Error('Gagal menghapus data.');
+      }
+      // Success
+      setSelectedItem(null);
+      router.refresh();
+    } catch (err) {
+      setDeleteError(err.message);
+    } finally {
+      setIsDeleting(false);
+    }
+  };
 
   return (
     <>
@@ -329,51 +366,113 @@ export default function DataTable({ data, start }) {
                     />
                   </div>
                 </div>
+              )}              {/* ===== TOMBOL AKSI ===== */}
+              {!showDeleteConfirm ? (
+                <div style={{ display: 'flex', gap: '1rem', width: '100%', flexWrap: 'wrap' }}>
+                  <button
+                    onClick={() => setShowDeleteConfirm(true)}
+                    style={{
+                      display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.6rem',
+                      flex: 1, padding: '0.9rem',
+                      background: 'rgba(239, 68, 68, 0.1)',
+                      color: '#f87171', borderRadius: '14px', textDecoration: 'none',
+                      fontWeight: '700', fontSize: '0.95rem',
+                      border: '1px solid rgba(239, 68, 68, 0.3)',
+                      transition: 'all 0.2s ease', cursor: 'pointer'
+                    }}
+                    onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(239, 68, 68, 0.2)'; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(239, 68, 68, 0.1)'; }}
+                  >
+                    <Trash2 size={18} /> Hapus
+                  </button>
+
+                  <Link
+                    href={`/edit/${selectedItem.place_id}`}
+                    style={{
+                      display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.6rem',
+                      flex: 1, padding: '0.9rem',
+                      background: 'rgba(255, 255, 255, 0.1)',
+                      color: 'white', borderRadius: '14px', textDecoration: 'none',
+                      fontWeight: '700', fontSize: '0.95rem',
+                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      transition: 'all 0.2s ease'
+                    }}
+                    onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)'; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'; }}
+                  >
+                    <Edit size={18} /> Edit Data
+                  </Link>
+
+                  <a
+                    href={
+                      selectedItem.lat && selectedItem.long
+                        ? `https://www.google.com/maps/search/?api=1&query=${selectedItem.lat},${selectedItem.long}${selectedItem.place_id ? `&query_place_id=${selectedItem.place_id}` : ''}`
+                        : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(selectedItem.nama_wisata)}`
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.6rem',
+                      flex: 2, padding: '0.9rem',
+                      background: 'linear-gradient(135deg, var(--accent-blue), var(--accent-teal))',
+                      color: 'white', borderRadius: '14px', textDecoration: 'none',
+                      fontWeight: '700', fontSize: '0.95rem',
+                      boxShadow: '0 4px 20px rgba(20, 184, 166, 0.3)',
+                      transition: 'all 0.2s ease'
+                    }}
+                    onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 25px rgba(20, 184, 166, 0.45)'; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(20, 184, 166, 0.3)'; }}
+                  >
+                    <MapPin size={18} /> Buka di Google Maps
+                  </a>
+                </div>
+              ) : (
+                <div style={{ background: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.3)', borderRadius: '14px', padding: '1.2rem', width: '100%' }}>
+                  <h4 style={{ color: '#f87171', marginBottom: '0.8rem', fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <Trash2 size={16} /> Konfirmasi Penghapusan
+                  </h4>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginBottom: '1rem' }}>
+                    Masukkan token keamanan untuk menghapus destinasi wisata ini secara permanen.
+                  </p>
+                  
+                  {deleteError && (
+                    <div style={{ color: '#f87171', fontSize: '0.85rem', marginBottom: '1rem', background: 'rgba(239,68,68,0.15)', padding: '0.5rem 0.8rem', borderRadius: '8px' }}>
+                      {deleteError}
+                    </div>
+                  )}
+
+                  <div style={{ display: 'flex', gap: '0.8rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                    <input
+                      type="password"
+                      placeholder="Token keamanan..."
+                      value={deleteToken}
+                      onChange={(e) => setDeleteToken(e.target.value)}
+                      style={{ flex: 1, minWidth: '150px', padding: '0.8rem', borderRadius: '8px', border: '1px solid rgba(239,68,68,0.4)', background: 'rgba(0,0,0,0.3)', color: 'white', outline: 'none' }}
+                    />
+                    <button
+                      onClick={handleDelete}
+                      disabled={isDeleting || !deleteToken}
+                      style={{
+                        padding: '0.8rem 1.5rem', background: '#ef4444', color: 'white', borderRadius: '8px', fontWeight: '700',
+                        border: 'none', cursor: (isDeleting || !deleteToken) ? 'not-allowed' : 'pointer',
+                        opacity: (isDeleting || !deleteToken) ? 0.7 : 1, transition: '0.2s'
+                      }}
+                    >
+                      {isDeleting ? 'Menghapus...' : 'Ya, Hapus'}
+                    </button>
+                    <button
+                      onClick={() => { setShowDeleteConfirm(false); setDeleteToken(''); setDeleteError(''); }}
+                      disabled={isDeleting}
+                      style={{
+                        padding: '0.8rem 1.5rem', background: 'transparent', color: 'var(--text-secondary)', borderRadius: '8px', fontWeight: '600',
+                        border: '1px solid var(--glass-border)', cursor: 'pointer', transition: '0.2s'
+                      }}
+                    >
+                      Batal
+                    </button>
+                  </div>
+                </div>
               )}
-
-              {/* ===== TOMBOL AKSI ===== */}
-              <div style={{ display: 'flex', gap: '1rem', width: '100%' }}>
-                <Link
-                  href={`/edit/${selectedItem.place_id}`}
-                  style={{
-                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.6rem',
-                    flex: 1, padding: '0.9rem',
-                    background: 'rgba(255, 255, 255, 0.1)',
-                    color: 'white', borderRadius: '14px', textDecoration: 'none',
-                    fontWeight: '700', fontSize: '0.95rem',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    transition: 'all 0.2s ease'
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'; }}
-                >
-                  <Edit size={18} /> Edit Data
-                </Link>
-
-                <a
-                  href={
-                    selectedItem.lat && selectedItem.long
-                      ? `https://www.google.com/maps/search/?api=1&query=${selectedItem.lat},${selectedItem.long}${selectedItem.place_id ? `&query_place_id=${selectedItem.place_id}` : ''}`
-                      : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(selectedItem.nama_wisata)}`
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.6rem',
-                    flex: 2, padding: '0.9rem',
-                    background: 'linear-gradient(135deg, var(--accent-blue), var(--accent-teal))',
-                    color: 'white', borderRadius: '14px', textDecoration: 'none',
-                    fontWeight: '700', fontSize: '0.95rem',
-                    boxShadow: '0 4px 20px rgba(20, 184, 166, 0.3)',
-                    transition: 'all 0.2s ease'
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 25px rgba(20, 184, 166, 0.45)'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(20, 184, 166, 0.3)'; }}
-                >
-                  <MapPin size={18} /> Buka di Google Maps
-                </a>
-              </div>
-
             </div>
           </div>
         </div>
