@@ -98,3 +98,37 @@ export async function deleteTourismData(id) {
     return false;
   }
 }
+
+export async function bulkUpdateTourismData(items) {
+  let successCount = 0;
+  let failCount = 0;
+  const errors = [];
+
+  for (const item of items) {
+    const { place_id, ...fields } = item;
+    if (!place_id) {
+      failCount++;
+      errors.push({ place_id: 'unknown', error: 'Missing place_id' });
+      continue;
+    }
+
+    try {
+      const { error } = await supabase
+        .from(TABLE_NAME)
+        .update(fields)
+        .eq('place_id', place_id);
+
+      if (error) {
+        failCount++;
+        errors.push({ place_id, error: error.message });
+      } else {
+        successCount++;
+      }
+    } catch (err) {
+      failCount++;
+      errors.push({ place_id, error: err.message });
+    }
+  }
+
+  return { successCount, failCount, errors };
+}

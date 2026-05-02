@@ -8,10 +8,10 @@ Tujuan : Membuat variabel target 'label_rekomendasi' (Terbaik/Baik/Sedang/Buruk)
 
 Metode :
   1. Data Cleaning         – handle missing values
-  2. Spatial Density       – KernelDensity (Haversine) untuk deteksi hotspot
+  2. Kualitas Tertimbang   – Bayesian Average Rating (penilaian kualitas sesungguhnya)
   3. Normalisasi           – MinMaxScaler per fitur (log1p untuk outlier)
   4. Mapping Kategori Harga– bobot numerik untuk variabel teks
-  5. Skor Komposit         – weighted sum 6 dimensi
+  5. Skor Komposit         – weighted sum 5 dimensi
   6. Pelabelan Threshold Alami – berbasis mean±std (distribusi natural)
 
 Output : wisata_sulawesi_label.csv (tersimpan di folder hasil_final/)
@@ -19,7 +19,6 @@ Output : wisata_sulawesi_label.csv (tersimpan di folder hasil_final/)
 
 import numpy as np
 import pandas as pd
-from sklearn.neighbors import KernelDensity
 from sklearn.preprocessing import MinMaxScaler
 
 # ─────────────────────────────────────────────
@@ -67,22 +66,24 @@ print("   Missing values setelah cleaning:")
 print(df[['lat','long','rating','jumlah_riview','harga','kategori_harga']].isnull().sum().to_string())
 
 # ─────────────────────────────────────────────
-# 3. SPATIAL DENSITY – KDE Haversine
+# 3. KUALITAS TERTIMBANG (Bayesian Average Rating)
 # ─────────────────────────────────────────────
-print("\n[3/7] Menghitung kepadatan spasial (KDE Haversine) ...")
+print("\n[3/7] Menghitung kualitas tertimbang (Bayesian Average) ...")
 
-# KDE Haversine membutuhkan koordinat dalam RADIAN
-coords_rad = np.radians(df[["lat", "long"]].values)
+# Menghitung parameter Bayesian
+# C = rata-rata rating seluruh destinasi
+# m = jumlah review minimum (menggunakan median sebagai batas wajar)
+C = df["rating"].mean()
+m = df["jumlah_riview"].median()
 
-kde = KernelDensity(metric="haversine", bandwidth=0.05, kernel="gaussian")
-kde.fit(coords_rad)
+def bayesian_rating(row):
+    v = row["jumlah_riview"]
+    R = row["rating"]
+    # Jika total vote + min_vote = 0 (data kosong), fallback ke mean global
+    return (v / (v + m) * R) + (m / (v + m) * C) if (v + m) > 0 else C
 
-# log-density → density (exp agar nilainya positif untuk normalisasi)
-log_density   = kde.score_samples(coords_rad)
-kde_density   = np.exp(log_density)
-
-df["_kde_density"] = kde_density
-print(f"   KDE selesai. Range density: [{kde_density.min():.4f}, {kde_density.max():.4f}]")
+df["_kualitas_bayesian"] = df.apply(bayesian_rating, axis=1)
+print(f"   Bayesian Average selesai. Range: [{df['_kualitas_bayesian'].min():.4f}, {df['_kualitas_bayesian'].max():.4f}]")
 
 
 # ─────────────────────────────────────────────
@@ -106,8 +107,8 @@ norm_review = normalize(pd.Series(np.log1p(df["jumlah_riview"])))
 norm_harga_raw = normalize(pd.Series(np.log1p(df["harga"])))
 norm_harga     = 1.0 - norm_harga_raw   # invert: harga murah → mendekati 1
 
-# 4d. Kepadatan Spasial
-norm_kde = normalize(df["_kde_density"])
+# 4d. Kualitas Tertimbang
+norm_bayesian = normalize(df["_kualitas_bayesian"])
 
 # ─────────────────────────────────────────────
 # 5. MAPPING KATEGORI HARGA → BOBOT NUMERIK
@@ -133,14 +134,14 @@ norm_kat_harga = (
 # ─────────────────────────────────────────────
 # 6. SKOR KOMPOSIT (Weighted Sum)
 # ─────────────────────────────────────────────
-#   30% rating | 20% review | 20% KDE | 15% harga | 15% kat_harga
+#   30% rating | 20% review | 20% Bayesian | 15% harga | 15% kat_harga
 # ─────────────────────────────────────────────
 print("\n[6/7] Menghitung skor komposit ...")
 
 WEIGHTS = {
     "rating"    : 0.30,
     "review"    : 0.20,
-    "kde"       : 0.20,
+    "bayesian"  : 0.20,
     "harga"     : 0.15,
     "kat_harga" : 0.15,
 }
@@ -148,7 +149,7 @@ WEIGHTS = {
 df["skor_komposit"] = (
     WEIGHTS["rating"]    * norm_rating    +
     WEIGHTS["review"]    * norm_review    +
-    WEIGHTS["kde"]       * norm_kde       +
+    WEIGHTS["bayesian"]  * norm_bayesian  +
     WEIGHTS["harga"]     * norm_harga     +
     WEIGHTS["kat_harga"] * norm_kat_harga
 )
@@ -200,7 +201,7 @@ for label, count in dist.items():
 # ─────────────────────────────────────────────
 # 8. CLEANUP KOLOM SEMENTARA
 # ─────────────────────────────────────────────
-df.drop(columns=["_kde_density"], inplace=True)
+df.drop(columns=["_kualitas_bayesian"], inplace=True)
 
 # ─────────────────────────────────────────────
 # 9. SIMPAN OUTPUT
@@ -208,7 +209,14 @@ df.drop(columns=["_kde_density"], inplace=True)
 print(f"\nMenyimpan hasil ke: {OUTPUT_PATH}")
 cols_to_save = ['nama_wisata', 'kabupaten', 'provinsi', 'label_rekomendasi']
 df[cols_to_save].to_csv(OUTPUT_PATH, index=False, encoding="utf-8-sig")
-print(f"   SELESAI! {len(df):,} baris disimpan.")
+
+print(f"Mengupdate data lengkap ke: {INPUT_PATH}")
+# Kita hapus skor_komposit agar skema tetap sama dengan database Supabase
+if "skor_komposit" in df.columns:
+    df.drop(columns=["skor_komposit"], inplace=True)
+df.to_csv(INPUT_PATH, index=False, encoding="utf-8-sig")
+
+print(f"   SELESAI! {len(df):,} baris diperbarui di kedua file.")
 print(f"\n{'='*55}")
-print("   KOLOM BARU: skor_komposit | label_rekomendasi")
+print("   LABEL REKOMENDASI BERHASIL DIUPDATE")
 print(f"{'='*55}\n")
