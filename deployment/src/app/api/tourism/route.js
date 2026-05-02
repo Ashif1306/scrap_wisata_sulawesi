@@ -17,7 +17,6 @@ export async function POST(request) {
     
     const newItem = {
       ...body,
-      status_scrape: 'MANUAL_ENTRY',
       label_rekomendasi: label
     };
     
